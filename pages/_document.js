@@ -32,48 +32,48 @@ export default class QeepDocument extends Document {
                     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css' />
                     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
                     <link href="/static/css/nucleo-icons.css" rel="stylesheet" />
-        </Head>
-        <body>
+                </Head>
+                <body>
             
-            <Main />
+                    <Main />
 
-            <div>
-                {/* Core JS Files */}
-                <script src="/static/js/jquery-3.2.1.min.js" type="text/javascript"></script>
-                <script src="/static/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
-                <script src="/static/js/popper.js" type="text/javascript"></script>
-                <script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
+                    <div>
+                        {/* Core JS Files */}
+                        <script src="/static/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+                        <script src="/static/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
+                        <script src="/static/js/popper.js" type="text/javascript"></script>
+                        <script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
 
-                {/* Switches */}
-                <script src="/static/js/bootstrap-switch.min.js"></script>
+                        {/* Switches */}
+                        <script src="/static/js/bootstrap-switch.min.js"></script>
 
-                {/* Plugins for Slider */}
-                <script src="/static/js/nouislider.js"></script>
+                        {/* Plugins for Slider */}
+                        <script src="/static/js/nouislider.js"></script>
 
-                {/* Photoswipe files */}
-                <script src="/static/js/photo_swipe/photoswipe.min.js"></script>
-                <script src="/static/js/photo_swipe/photoswipe-ui-default.min.js"></script>
-                <script src="/static/js/photo_swipe/init-gallery.js"></script>
+                        {/* Photoswipe files */}
+                        <script src="/static/js/photo_swipe/photoswipe.min.js"></script>
+                        <script src="/static/js/photo_swipe/photoswipe-ui-default.min.js"></script>
+                        <script src="/static/js/photo_swipe/init-gallery.js"></script>
 
-                {/* Plugins for Select */}
-                <script src="/static/js/bootstrap-select.js"></script>
+                        {/* Plugins for Select */}
+                        <script src="/static/js/bootstrap-select.js"></script>
 
-                {/* for fileupload */}
-                <script src="/static/js/jasny-bootstrap.min.js"></script>
+                        {/* for fileupload */}
+                        <script src="/static/js/jasny-bootstrap.min.js"></script>
 
-                {/* Plugins for Tags */}
-                <script src="/static/js/bootstrap-tagsinput.js"></script>
+                        {/* Plugins for Tags */}
+                        <script src="/static/js/bootstrap-tagsinput.js"></script>
 
-                {/* Plugins for DateTimePicker */}
-                <script src="/static/js/moment.min.js"></script>
-                <script src="/static/js/bootstrap-datetimepicker.min.js"></script>
+                        {/* Plugins for DateTimePicker */}
+                        <script src="/static/js/moment.min.js"></script>
+                        <script src="/static/js/bootstrap-datetimepicker.min.js"></script>
 
-                <script src="/static/js/paper-kit.js?v=2.1.0"></script>
-            </div>
+                        <script src="/static/js/paper-kit.js?v=2.1.0"></script>
+                    </div>
 
-            <NextScript />
-        </body>
-      </html>
-    )
-  }
+                    <NextScript />
+                </body>
+            </html>
+        )
+    }
 }
