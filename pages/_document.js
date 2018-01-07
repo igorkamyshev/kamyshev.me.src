@@ -27,7 +27,8 @@ export default class QeepDocument extends Document {
 
                     <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
                     <link href="/static/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
-                    <link href="/static/css/demo.css" rel="stylesheet" />
+                    <link href="/static/css/template.css" rel="stylesheet" />
+                    <link href="/static/css/custom.css" rel="stylesheet" />
 
                     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css' />
                     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />

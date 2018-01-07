@@ -1,7 +1,11 @@
+import { css } from 'emotion'
+
+import SocialButton from '../common/borderSocialButton'
+
 import image from '../../utils/image'
 
 
-export default ({ title, tagline, cover, avatar }) =>
+export default ({ title, tagline, cover, avatar, socialLinks }) =>
     <div className="profile">
         <div className="page-header page-header-small" style={{ backgroundImage: `url(${image(cover)})` }}>
             <div className="filter"></div>
@@ -19,6 +23,11 @@ export default ({ title, tagline, cover, avatar }) =>
                                     {title}
                                     <br />
                                     <small>{tagline}</small>
+                                    <div className={s.socialLinks}>
+                                        {socialLinks.filter(link => link.primary).map((link, index) =>
+                                            <SocialButton key={index} type={link.type} url={link.url} />
+                                        )}
+                                    </div>
                                 </h4>
                             </div>
                         </div>
@@ -27,3 +36,10 @@ export default ({ title, tagline, cover, avatar }) =>
             </div>
         </div>
     </div>
+
+
+const s = {
+    socialLinks: css`
+        margin-top: 0.5rem;
+    `,
+}

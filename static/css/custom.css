@@ -1,0 +1,80 @@
+/* redifine color for Instagram */
+
+.btn-instagram {
+    color: #FFFFFF;
+    background-color: #e94a62;
+    border-color: #e94a62;
+    opacity: 0.8;
+  }
+  .btn-instagram:hover, .btn-instagram:focus, .btn-instagram:active, .btn-instagram.active, .open > .btn-instagram.dropdown-toggle {
+    background-color: #e94a62;
+    border-color: #e94a62;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+  .btn-instagram.btn-border {
+    border-color: #e94a62;
+    color: #e94a62;
+  }
+  .btn-instagram.btn-border:hover, .btn-instagram.btn-border:focus, .btn-instagram.btn-border:active, .btn-instagram.btn-border.active, .open > .btn-instagram.btn-border.dropdown-toggle {
+    background-color: #e94a62;
+    border-color: #e94a62;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .btn-instagram.btn-border:disabled, .btn-instagram.btn-border[disabled], .btn-instagram.btn-border.disabled {
+    background-color: transparent;
+    border-color: #e94a62;
+  }
+  .btn-instagram.btn-link {
+    color: #e94a62;
+    opacity: 0.8;
+  }
+  .btn-instagram.btn-link:hover, .btn-instagram.btn-link:focus, .btn-instagram.btn-link:active, .btn-instagram.btn-link.active, .open > .btn-instagram.btn-link.dropdown-toggle {
+    background-color: transparent;
+    color: #e94a62;
+    opacity: 1;
+  }
+  .btn-instagram.btn-link:hover i, .btn-instagram.btn-link:focus i, .btn-instagram.btn-link:active i, .btn-instagram.btn-link.active i, .open > .btn-instagram.btn-link.dropdown-toggle i {
+    color: #e94a62;
+    opacity: 1;
+  }
+
+/* define color fot Telegram  */
+.btn-telegram {
+    color: #FFFFFF;
+    background-color: #3bb0eb;
+    border-color: #3bb0eb;
+    opacity: 0.8;
+  }
+  .btn-telegram:hover, .btn-telegram:focus, .btn-telegram:active, .btn-telegram.active, .open > .btn-telegram.dropdown-toggle {
+    background-color: #3bb0eb;
+    border-color: #3bb0eb;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+  .btn-telegram.btn-border {
+    border-color: #3bb0eb;
+    color: #3bb0eb;
+  }
+  .btn-telegram.btn-border:hover, .btn-telegram.btn-border:focus, .btn-telegram.btn-border:active, .btn-telegram.btn-border.active, .open > .btn-telegram.btn-border.dropdown-toggle {
+    background-color: #3bb0eb;
+    border-color: #3bb0eb;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .btn-telegram.btn-border:disabled, .btn-telegram.btn-border[disabled], .btn-telegram.btn-border.disabled {
+    background-color: transparent;
+    border-color: #3bb0eb;
+  }
+  .btn-telegram.btn-link {
+    color: #3bb0eb;
+    opacity: 0.8;
+  }
+  .btn-telegram.btn-link:hover, .btn-telegram.btn-link:focus, .btn-telegram.btn-link:active, .btn-telegram.btn-link.active, .open > .btn-telegram.btn-link.dropdown-toggle {
+    background-color: transparent;
+    color: #3bb0eb;
+    opacity: 1;
+  }
+  .btn-telegramr.btn-link:hover i, .btn-telegram.btn-link:focus i, .btn-telegram.btn-link:active i, .btn-telegram.btn-link.active i, .open > .btn-telegram.btn-link.dropdown-toggle i {
+    color: #3bb0eb;
+    opacity: 1;
+  }
