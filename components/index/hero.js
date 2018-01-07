@@ -10,7 +10,7 @@ export default ({ title, tagline, cover, avatar, socialLinks }) =>
         <div className="page-header page-header-small" style={{ backgroundImage: `url(${image(cover)})` }}>
             <div className="filter"></div>
         </div>
-        <div className="profile-content section">
+        <div className={`profile-content section ${s.info}`}>
             <div className="container">
                 <div className="row">
                     <div className="profile-picture">
@@ -41,5 +41,8 @@ export default ({ title, tagline, cover, avatar, socialLinks }) =>
 const s = {
     socialLinks: css`
         margin-top: 0.5rem;
+    `,
+    info: css`
+        padding-bottom: 0;
     `,
 }
