@@ -1,5 +1,5 @@
 export default {
-    name: 'Igor Kameshev',
+    name: 'Igor Kamyshev',
     description: 'Web-developer',
     photo: 'novel',
 }
