@@ -13,13 +13,13 @@ export default ({ title, tagline, cards }) =>
                     <h5 className="description">{tagline}</h5>
                 </div>
                 <div className="project-pills">
-                    <ul class="nav nav-pills nav-pills-info">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#pill-all" role="tab">Все категории</a>
+                    <ul className="nav nav-pills nav-pills-info">
+                        <li className="nav-item">
+                            <a className="nav-link active" data-toggle="pill" href="#pill-all" role="tab">Все категории</a>
                         </li>
-                        {filterUniq(flatten(cards.map(card => card.categories))).map(category =>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href={`#pill-${category}`} role="tab">{category}</a>
+                        {filterUniq(flatten(cards.map(card => card.categories))).map((category, index) =>
+                            <li className="nav-item" key={index}>
+                                <a className="nav-link" data-toggle="pill" href={`#pill-${category}`} role="tab">{category}</a>
                             </li>
                         )}
                     </ul>
@@ -34,8 +34,8 @@ export default ({ title, tagline, cards }) =>
                     </div>
                 </div>
 
-                {filterUniq(flatten(cards.map(card => card.categories))).map(category =>
-                    <div className="tab-pane" id={`pill-${category}`} role="tabpanel">
+                {filterUniq(flatten(cards.map(card => card.categories))).map((category, index) =>
+                    <div className="tab-pane" id={`pill-${category}`} role="tabpanel" key={index}>
                         <div className="row">
                             {cards.filter(card => card.categories.includes(category)).map(renderCard)}
                         </div>
@@ -46,7 +46,7 @@ export default ({ title, tagline, cards }) =>
     </div>
 
 const renderCard = (card, index, arr) =>
-    <div className={`col-md-${column(index, arr.length)}`}>
+    <div className={`col-md-${column(index, arr.length)}`} key={index}>
         <div className={`card ${s.card}`} data-background="image" style={{ backgroundImage: `url(${image(card.image)})` }}>
             <div className="card-body">
                 <h6 className="card-category">{card.categories.join(', ')}</h6>
