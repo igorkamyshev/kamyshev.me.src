@@ -14,11 +14,11 @@ export default class QeepDocument extends Document {
         return (
             <html>
                 <Head>
-                    <meta charset="utf-8" />
+                    <meta charSet="utf-8" />
                     
                     <link rel="icon" type="image/png" href="/static/img/favicon.ico" />
                     <link rel="apple-touch-icon" sizes="76x76" href="/static/img/apple-icon.png" />
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+                    <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
                     <title>Igor Kamyshev</title>
 

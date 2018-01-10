@@ -1114,8 +1114,8 @@ camelcase@^4.1.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
 caniuse-lite@^1.0.30000784:
-  version "1.0.30000787"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000787.tgz#a76c4fa1d6ac00640447ec83c1e7c6b33dd615c5"
+  version "1.0.30000789"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000789.tgz#2e3d937b267133f63635ef7f441fac66360fc889"
 
 case-sensitive-paths-webpack-plugin@2.1.1:
   version "2.1.1"
@@ -4098,6 +4098,14 @@ react-proxy@^3.0.0-alpha.0:
   dependencies:
     lodash "^4.6.1"
 
+react-timeline-scribble@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-timeline-scribble/-/react-timeline-scribble-1.0.3.tgz#396257c74adea8c95475271d0bf529ca68908975"
+  dependencies:
+    emotion "^8.0.12"
+    react "^16.2.0"
+    react-dom "^16.2.0"
+
 react@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
@@ -4756,9 +4764,13 @@ stylis-rule-sheet@^0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/stylis-rule-sheet/-/stylis-rule-sheet-0.0.5.tgz#ebae935cc1f6fb31b9b62dba47f2ea8b833dad9f"
 
-stylis@3.4.5, stylis@^3.3.2:
+stylis@3.4.5:
   version "3.4.5"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.4.5.tgz#d7b9595fc18e7b9c8775eca8270a9a1d3e59806e"
+
+stylis@^3.3.2:
+  version "3.4.7"
+  resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.4.7.tgz#4fa57ef276d1ed20aafda4e1a97c35b5b87d59ce"
 
 supports-color@^2.0.0:
   version "2.0.0"
