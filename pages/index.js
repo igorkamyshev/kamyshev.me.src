@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Hero from '../components/index/hero'
 import Cards from '../components/index/cards'
 import Timeline from '../components/index/timeline'
+import Contacts from '../components/index/contacts'
 
 import novel from '../data/novel'
 import links from '../data/social'
@@ -29,5 +30,10 @@ export default () =>
         <Timeline
             cover={'work'}
             events={work}
+        />
+
+        <Contacts
+            title={'Связаться'}
+            cover={'contacts'}
         />
     </Layout>

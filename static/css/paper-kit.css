@@ -1810,7 +1810,7 @@ textarea.form-control {
 .section-dark {
   position: relative;
 }
-.section-image .title,
+/* .section-image .title,
 .section-image .info-title,
 .section-image .card-plain .card-title,
 .section-gold .title,
@@ -1820,8 +1820,8 @@ textarea.form-control {
 .section-dark .info-title,
 .section-dark .card-plain .card-title {
   color: #FFFFFF !important;
-}
-.section-image .category,
+} */
+/* .section-image .category,
 .section-image .description,
 .section-image .card-plain .card-description,
 .section-image .card-plain .card-category,
@@ -1834,7 +1834,7 @@ textarea.form-control {
 .section-dark .card-plain .card-description,
 .section-dark .card-plain .card-category {
   color: rgba(255, 255, 255, 0.7);
-}
+} */
 .section-image hr,
 .section-gold hr,
 .section-dark hr {
