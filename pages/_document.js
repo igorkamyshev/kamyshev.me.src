@@ -26,7 +26,7 @@ export default class QeepDocument extends Document {
                     <meta name="viewport" content="width=device-width" />
 
                     <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
-                    <link href="/static/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
+                    <link href="/static/css/paper-kit.css" rel="stylesheet"/>
                     <link href="/static/css/template.css" rel="stylesheet" />
                     <link href="/static/css/custom.css" rel="stylesheet" />
 
