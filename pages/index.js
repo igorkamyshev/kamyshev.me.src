@@ -35,5 +35,6 @@ export default () =>
         <Contacts
             title={'Связаться'}
             cover={'contacts'}
+            socialLinks={links}
         />
     </Layout>

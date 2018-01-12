@@ -1,15 +1,22 @@
 import { css } from 'emotion'
 
+import SocialButton from '../common/borderSocialButton'
+
 import image from '../../utils/image'
 
 
-export default ({ title, cover }) => 
+export default ({ title, cover, socialLinks }) => 
     <div className="contactus-1 section-image" style={{ backgroundImage: `url(${image(cover)})` }}>
         <div className="container">
             <div className="row">
                 <div className="col-md-10 ml-auto mr-auto">
                     <div className={`card card-contact no-transition ${s.container}`}>
-                        <h3 className="card-title text-center">{title}</h3>
+                        <h3 className="card-title text-center">
+                            {title} <br /><br />
+                            {socialLinks.map((link, index) =>
+                                <SocialButton key={index} type={link.type} url={link.url} />
+                            )}
+                        </h3>
                         <div className="row">
                             <div className="col-md-5 ml-auto">
                                 <div className="card-body">
