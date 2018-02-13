@@ -4111,9 +4111,9 @@ react-proxy@^3.0.0-alpha.0:
   dependencies:
     lodash "^4.6.1"
 
-react-timeline-scribble@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/react-timeline-scribble/-/react-timeline-scribble-1.0.11.tgz#7079ce46752fab4ae5b6cd0fa98083f80f7fcb7e"
+react-timeline-scribble@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/react-timeline-scribble/-/react-timeline-scribble-1.0.12.tgz#70909d29761a051fada173fb58a0eba9f4d0ed64"
   dependencies:
     emotion "^8.0.12"
     react "^16.2.0"
