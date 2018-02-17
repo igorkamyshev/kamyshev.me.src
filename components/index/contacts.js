@@ -3,6 +3,7 @@ import { css } from 'emotion'
 import SocialButton from '../common/borderSocialButton'
 
 import image from '../../utils/image'
+import { telegram } from '../../utils/notify'
 
 
 export default ({ title, cover, socialLinks }) => 
