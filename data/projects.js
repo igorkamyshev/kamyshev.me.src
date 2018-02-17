@@ -19,7 +19,7 @@ export default [
         type: 'personal',
         categories: ['Управление'],
         title: 'Python Textbooks',
-        description: 'Канал в Telegram с литературой по Python. 6000 подписчиков.',
+        description: 'Канал в Telegram с литературой по Python. 6700 подписчиков.',
         image: 'projects/python-textbooks',
         link: 'https://t.me/python_textbooks',
 
@@ -28,7 +28,7 @@ export default [
         type: 'personal',
         categories: ['Управление'],
         title: 'Frontend Textbooks',
-        description: 'Канал в Telegram с литературой по Frontend. 1500 подписчиков.',
+        description: 'Канал в Telegram с литературой по Frontend. 1700 подписчиков.',
         image: 'projects/frontend-textbooks',
         link: 'https://t.me/frontend_textbooks',
     },
