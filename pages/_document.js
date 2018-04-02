@@ -20,7 +20,7 @@ export default class QeepDocument extends Document {
                     <link rel="apple-touch-icon" sizes="76x76" href="/static/img/apple-icon.png" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-                    <title>Igor Kamyshev</title>
+                    <title>Igor Kamyshev | Personal Site</title>
 
                     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
                     <meta name="viewport" content="width=device-width" />
