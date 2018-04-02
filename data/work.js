@@ -1,7 +1,7 @@
 export default [
     {
         interval: 'апрель 2018 - сейчас',
-        title: 'Нетология',
+        title: 'Netology',
         subtitle: 'Методист',
         description:
             <p>Разрабатываю домашние задания для студентов</p>,
