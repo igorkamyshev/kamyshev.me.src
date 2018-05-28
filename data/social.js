@@ -6,7 +6,7 @@ export default [
     },
     {
         type: 'GitHub',
-        url: 'https://github.com/TheNovel',
+        url: 'https://github.com/igorkamyshev',
         primary: true,
     },
     {
