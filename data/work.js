@@ -7,7 +7,7 @@ export default [
             <p>Веду лекции, разрабатываю конспекты лекций, домашние задания и дипломные проекты для курса по React.</p>,
     },
     {
-        interval: 'ноябрь 2016 - сейчас',
+        interval: 'ноябрь 2016 -  июнь 2018',
         title: 'QEEP-Pro',
         subtitle: 'Full-stack Web Developer',
         description:

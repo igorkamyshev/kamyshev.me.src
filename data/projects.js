@@ -1,6 +1,22 @@
 export default [
     {
         type: 'personal',
+        categories: ['Управление'],
+        title: 'Holistic SMM Agency',
+        description: 'Образовательные каналы в Telegram. Суммарная аудитория порядка 15 тысяч.',
+        image: 'projects/holistic-smm',
+        link: 'https://holistic-smm.ru',
+    },
+    {
+        type: 'personal',
+        categories: ['Разработка'],
+        title: 'notify',
+        description: 'Сервис для отправки уведомлений через публичный API.',
+        image: 'projects/notify',
+        link: 'https://usenotify.info',
+    },
+    {
+        type: 'personal',
         categories: ['Разработка'],
         title: 'be half',
         description: 'Бот в Telegram для учета расходов двух людей.',
@@ -14,38 +30,5 @@ export default [
         description: 'Платформа для публикации анонимных сообщений на заданную тему.',
         image: 'projects/before-i-die',
         link: 'https://before-i-die.ru',
-    },
-    {
-        type: 'personal',
-        categories: ['Управление'],
-        title: 'Python Textbooks',
-        description: 'Канал в Telegram с литературой по Python. 9600 подписчиков.',
-        image: 'projects/python-textbooks',
-        link: 'https://t.me/python_textbooks',
-
-    },
-    {
-        type: 'personal',
-        categories: ['Управление'],
-        title: 'Frontend Textbooks',
-        description: 'Канал в Telegram с литературой по Frontend. 2400 подписчиков.',
-        image: 'projects/frontend-textbooks',
-        link: 'https://t.me/frontend_textbooks',
-    },
-    {
-        type: 'personal',
-        categories: ['Разработка'],
-        title: 'notify',
-        description: 'Сервис для отправки уведомлений через публичный API.',
-        image: 'projects/notify',
-        link: 'https://usenotify.info',
-    },
-    {
-        type: 'personal',
-        categories: ['Управление'],
-        title: 'Data Science Notes',
-        description: 'Канал в Telegram с материалами по Data Science. 2300 подписчиков.',
-        image: 'projects/ds-notes',
-        link: 'https://t.me/ds_notes',
     },
 ]
