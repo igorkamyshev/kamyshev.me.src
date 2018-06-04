@@ -12,8 +12,8 @@ export default [
         subtitle: 'Full-stack Web Developer',
         description:
             <React.Fragment>
-                <p>Писал бизнес-логику и делал интерфейсы CRM и ERM на PHP (Symfony), JS (Express) или Scala (Play) и ReactJS / VueJS, управлял командой из 3 разработчиков (Scrum, Agile)</p>
-                <p>Участвовал в разработке <a target="_blank" href="https://procraft.com">Procraft.com</a> и <a target="_blank" href="https://qeep.pro">QEEP-Pro</a></p>
+                <p>Писал бизнес-логику и делал интерфейсы CRM и ERP на PHP (Symfony), JS (Express) или Scala (Play) и ReactJS / VueJS, управлял командой из 3 разработчиков (Scrum, Agile)</p>
+                <p>Участвовал в разработке <a href="https://procraft.com">Procraft.com</a> и <a href="https://qeep.pro">QEEP-Pro</a></p>
             </React.Fragment>,
     },
     {
