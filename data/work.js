@@ -1,10 +1,20 @@
 export default [
     {
+        interval: 'июнь 2018 - сейчас',
+        title: 'Breadhead',
+        subtitle: 'Full-stack Web Developer',
+        description:
+            <React.Fragment>
+                <p>Пишу бизнес логику для веб-приложений на PHP (Yii2)</p>
+                <p>Участвую в разработке <a href="https://faster.ru/">Faster</a></p>
+            </React.Fragment>,
+    },
+    {
         interval: 'апрель 2018 - сейчас',
         title: 'Netology',
         subtitle: 'Методист',
         description:
-            <p>Веду лекции, разрабатываю конспекты лекций, домашние задания и дипломные проекты для курса по React.</p>,
+            <p>Веду лекции, разрабатываю конспекты лекций, домашние задания и дипломные проекты для курса по React</p>,
     },
     {
         interval: 'ноябрь 2016 -  июнь 2018',
