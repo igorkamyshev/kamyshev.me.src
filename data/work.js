@@ -5,7 +5,7 @@ export default [
         subtitle: 'Full-stack Web Developer',
         description:
             <React.Fragment>
-                <p>Пишу бизнес логику для веб-приложений на PHP (Yii2), разрабатываю интрефейсы на ReactJS</p>
+                <p>Пишу бизнес-логику для веб-приложений на PHP (Yii2), разрабатываю интрефейсы на ReactJS</p>
                 <p>Участвую в разработке <a href="https://faster.ru/">Faster</a></p>
             </React.Fragment>,
     },
