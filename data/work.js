@@ -2,7 +2,7 @@ export default [
     {
         interval: 'июнь 2018 - сейчас',
         title: 'Breadhead',
-        subtitle: 'Full-stack Web Developer',
+        subtitle: 'Software Engineer',
         description:
             <React.Fragment>
                 <p>Пишу бизнес-логику для веб-приложений на PHP (Yii2), разрабатываю интрефейсы на ReactJS</p>

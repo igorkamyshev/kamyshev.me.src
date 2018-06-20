@@ -1,5 +1,5 @@
 export default {
     name: 'Igor Kamyshev',
-    description: 'Web-developer',
+    description: 'Software Engineer',
     photo: 'novel',
 }
