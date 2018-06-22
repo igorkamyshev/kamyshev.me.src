@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 
-const BASE_PATH = 'https://usenotify.info/api/v0/'
+const BASE_PATH = 'http://api.usenotify.info/v0/'
 
 export const telegram = (from, name, text) =>
     axios.post(`${BASE_PATH}telegram`, {
