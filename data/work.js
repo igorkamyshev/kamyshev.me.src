@@ -5,16 +5,19 @@ export default [
         subtitle: 'Software Engineer',
         description:
             <React.Fragment>
-                <p>Пишу бизнес-логику для веб-приложений на PHP (Yii2), разрабатываю интрефейсы на ReactJS</p>
+                <p>Пишу бизнес-логику для веб-приложений на PHP (Yii2, частично Symfony), разрабатываю интрефейсы на ReactJS</p>
                 <p>Участвую в разработке <a href="https://faster.ru/">Faster</a></p>
             </React.Fragment>,
     },
     {
         interval: 'апрель 2018 - сейчас',
         title: 'Netology',
-        subtitle: 'Методист',
+        subtitle: 'React-эксперт',
         description:
-            <p>Веду лекции, разрабатываю конспекты лекций, домашние задания и дипломные проекты для курса по React</p>,
+            <React.Fragment>
+                <p>Разрабатываю конспекты лекций, домашние задания и дипломные проекты для курса по React</p>
+                <p>Веду лекции и курирую дипломные проекты студентов</p>
+            </React.Fragment>,
     },
     {
         interval: 'ноябрь 2016 -  июнь 2018',
