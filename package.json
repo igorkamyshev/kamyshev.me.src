@@ -14,7 +14,7 @@
     "react-timeline-scribble": "^1.0.12"
   },
   "devDependencies": {
-    "eslint": "^5.3.0",
+    "eslint": "^5.4.0",
     "eslint-plugin-react": "^7.11.1"
   }
 }
