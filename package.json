@@ -11,7 +11,7 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-notify-toast": "^0.5.0",
-    "react-timeline-scribble": "^1.0.12"
+    "react-timeline-scribble": "^1.0.14"
   },
   "devDependencies": {
     "eslint": "^5.6.1",
