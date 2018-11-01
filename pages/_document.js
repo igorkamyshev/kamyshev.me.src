@@ -35,6 +35,19 @@ export default class QeepDocument extends Document {
                     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css' />
                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
                     <link href="/static/css/nucleo-icons.css" rel="stylesheet" />
+
+                    <link href="https://www.google-analytics.com" rel="preconnect" />
+
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117862348-1"></script>
+                    <script>
+                        {`
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+
+                            gtag('config', 'UA-117862348-1');
+                        `}
+                    </script>
                 </Head>
                 <body>
             
