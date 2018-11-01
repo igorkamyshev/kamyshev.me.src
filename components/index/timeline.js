@@ -1,13 +1,14 @@
-import { css } from 'emotion'
+import cx from 'classnames'
 import { Timeline, Event } from 'react-timeline-scribble'
 
 import image from '../../utils/image'
+import styles from './timeline.css'
 
 
 export default ({ events, cover }) =>
     <div className="contactus-1 section-image" style={{ backgroundImage: `url(${image(cover)})` }}>
         <div className="container">
-            <div className={`card card-contact no-transition ${s.card}`}>
+            <div className={cx('card', 'card-contact', styles.card)}>
                 <Timeline>
                     {events.map(event =>
                         <Event interval={event.interval} title={event.title} subtitle={event.subtitle} key={event.title}>
@@ -18,14 +19,3 @@ export default ({ events, cover }) =>
             </div>
         </div>
     </div>
-
-
-const s = {
-    card: css`
-        padding: 4rem;
-
-        @media (max-width: 767px) {
-            padding: 2rem 1rem;
-        }
-    `,
-}

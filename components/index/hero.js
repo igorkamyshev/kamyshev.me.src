@@ -1,8 +1,9 @@
-import { css } from 'emotion'
+import cx from 'classnames'
 
 import SocialButton from '../common/borderSocialButton'
 
 import image from '../../utils/image'
+import styles from './hero.css'
 
 
 export default ({ title, tagline, cover, avatar, socialLinks }) =>
@@ -10,7 +11,7 @@ export default ({ title, tagline, cover, avatar, socialLinks }) =>
         <div className="page-header page-header-small" style={{ backgroundImage: `url(${image(cover)})` }}>
             <div className="filter"></div>
         </div>
-        <div className={`profile-content section ${s.info}`}>
+        <div className={cx('profile-content', 'section', styles.info)}>
             <div className="container">
                 <div className="row">
                     <div className="profile-picture">
@@ -23,7 +24,7 @@ export default ({ title, tagline, cover, avatar, socialLinks }) =>
                                     {title}
                                     <br />
                                     <small>{tagline}</small>
-                                    <div className={s.socialLinks}>
+                                    <div className={styles.socialLinks}>
                                         {socialLinks.filter(link => link.primary).map((link, index) =>
                                             <SocialButton key={index} type={link.type} url={link.url} />
                                         )}
@@ -36,13 +37,3 @@ export default ({ title, tagline, cover, avatar, socialLinks }) =>
             </div>
         </div>
     </div>
-
-
-const s = {
-    socialLinks: css`
-        margin-top: 0.5rem;
-    `,
-    info: css`
-        padding-bottom: 0;
-    `,
-}

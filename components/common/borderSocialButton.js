@@ -1,19 +1,13 @@
-import { css } from 'emotion'
+import cx from 'classnames'
 
+import styles from './borderSocialButton.css'
 
 export default ({ type, url }) =>
     <a href={url} target="blank" aria-label={`open ${type}`}>
-        <button className={`btn btn-just-icon btn-border ${button(type)} ${s.btn}`} aria-hidden="true">
+        <button className={cx('btn', 'btn-just-icon', 'btn-border', button(type), styles.btn)} aria-hidden="true">
             <i className={`fa ${icon(type)}`} aria-hidden="true"></i>
         </button>
     </a>
-
-
-const s = {
-    btn: css`
-        margin: 0.3rem;
-    `,
-}
 
 const icon = type => `fa-${type.toLowerCase()}`
 

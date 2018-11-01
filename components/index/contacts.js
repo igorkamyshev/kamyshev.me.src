@@ -1,11 +1,11 @@
 import React from 'react'
-import { css } from 'emotion'
 import Notifications, { notify as toast } from 'react-notify-toast'
 
 import SocialButton from '../common/borderSocialButton'
 
 import image from '../../utils/image'
 import * as notify from '../../utils/notify'
+import styles from './contacts.css'
 
 
 export default class Contacts extends React.Component {
@@ -55,7 +55,7 @@ export default class Contacts extends React.Component {
                 <Notifications />
                 <div className="container">
                     <div className="card card-contact no-transition">
-                        <div className={s.container}>
+                        <div className={styles.container}>
                             <h2 className="text-center">
                                 {title}<br /><br />
                                 {socialLinks.map((link, index) =>
@@ -108,11 +108,4 @@ export default class Contacts extends React.Component {
             </div>
         )
     }
-}
-
-
-const s = {
-    container: css`
-        padding: 3rem;
-    `,
 }

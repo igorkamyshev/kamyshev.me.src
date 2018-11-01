@@ -1,10 +1,11 @@
-import { css } from 'emotion'
+import cx from 'classnames'
 
 import image from '../../utils/image'
+import styles from './cards.css'
 
 
 export default ({ title, tagline, cards }) =>
-    <div className={`projects-1 ${s.section}`}>
+    <div className={cx('projects-1', styles.section)}>
         <div className="container">
             <div className="row">
                 <div className="col-md-8 ml-auto mr-auto text-center">
@@ -26,7 +27,7 @@ export default ({ title, tagline, cards }) =>
 
 const renderCard = (card, index, arr) =>
     <div className={`col-md-${column(index, arr.length)}`} key={card.title}>
-        <div className={`card ${s.card}`} data-background="image" style={{ backgroundImage: `url(${image(card.image)})` }}>
+        <div className={cx('card', styles.card)} data-background="image" style={{ backgroundImage: `url(${image(card.image)})` }}>
             <a href={card.link} target="blank">
                 <div className="card-body">
                     <h6 className="card-category">{card.categories.join(', ')}</h6>
@@ -37,16 +38,6 @@ const renderCard = (card, index, arr) =>
             </a>
         </div>
     </div>
-
-
-const s = {
-    section: css`
-        padding-top: 0px;
-    `,
-    card: css`
-        margin-top: 10px;
-    `,
-}
 
 const column = (index, length) =>
     (index === length - 1 && length % 2 !== 0) ? 12
