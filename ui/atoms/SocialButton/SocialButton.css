@@ -1,0 +1,27 @@
+.SocialButton {
+  margin: 0.3rem;
+  box-sizing: border-box;
+  border-width: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.75;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-color: #66615B;
+  color: #FFFFFF;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  transition: all 150ms linear;
+  vertical-align: middle;
+  background-color: transparent;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  padding: 8px;
+
+  & > i {
+    font-size: 16px;
+    padding: 2px 0px;
+  }
+}

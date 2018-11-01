@@ -1,14 +1,17 @@
 import cx from 'classnames'
 
-import styles from './borderSocialButton.css'
 import ExternalLink from '@site/ui/atoms/ExternalLink'
 
-export default ({ type, url }) =>
+import styles from './SocialButton.css'
+
+const SocialButton = ({ type, url }) =>
   <ExternalLink href={url} aria-label={`open ${type}`}>
-    <button className={cx('btn', 'btn-just-icon', 'btn-border', button(type), styles.btn)} aria-hidden="true">
+    <button className={cx('btn-border', button(type), styles.SocialButton)} aria-hidden="true">
       <i className={`fa ${icon(type)}`} aria-hidden="true"></i>
     </button>
   </ExternalLink>
+
+export default SocialButton
 
 const icon = type => `fa-${type.toLowerCase()}`
 

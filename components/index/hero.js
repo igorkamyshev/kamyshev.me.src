@@ -1,6 +1,6 @@
 import cx from 'classnames'
 
-import SocialButton from '../common/borderSocialButton'
+import SocialButton from '@site/ui/atoms/SocialButton'
 
 import image from '../../utils/image'
 import styles from './hero.css'
