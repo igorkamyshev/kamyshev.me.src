@@ -2,7 +2,7 @@ import cx from 'classnames'
 
 import image from '../../utils/image'
 import styles from './cards.css'
-import ExternalLink from '../../ui/ExternalLink';
+import ExternalLink from '@site/ui/atoms/ExternalLink'
 
 
 export default ({ title, tagline, cards }) =>

@@ -1,7 +1,7 @@
 import cx from 'classnames'
 
 import styles from './borderSocialButton.css'
-import ExternalLink from '@site/ui/ExternalLink'
+import ExternalLink from '@site/ui/atoms/ExternalLink'
 
 export default ({ type, url }) =>
   <ExternalLink href={url} aria-label={`open ${type}`}>
