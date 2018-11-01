@@ -1,0 +1,10 @@
+{
+  "name": "Igor Kamyshev's Personal Site",
+  "short_name": "kamyshev.me",
+  "theme_color": "#000000",
+  "background_color": "#636363",
+  "display": "minimal-ui",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/"
+}

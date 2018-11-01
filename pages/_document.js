@@ -30,6 +30,8 @@ export default class QeepDocument extends Document {
                     <link href="/static/css/template.css" rel="stylesheet" />
                     <link href="/static/css/custom.css" rel="stylesheet" />
 
+                    <link rel="manifest" href="/static/manifest.json"></link>
+
                     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css' />
                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
 
