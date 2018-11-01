@@ -60,7 +60,7 @@ p {
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
-  color: #9A9A9A;
+  color: #636363;
   line-height: 1.5em;
 }
 
@@ -100,7 +100,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 }
 
 .description {
-  color: #9A9A9A;
+  color: #636363;
 }
 
 blockquote small {
@@ -9378,6 +9378,12 @@ a.pswp__share--download:hover {
 
 .fileinput .btn {
   vertical-align: middle;
+}
+
+.img-no-padding {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .fileinput-exists .fileinput-new,

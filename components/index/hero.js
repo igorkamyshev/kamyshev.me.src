@@ -18,8 +18,8 @@ export default ({ title, tagline, cover, avatar, socialLinks }) =>
                             <div className="fileinput-new img-no-padding">
                                 <img src={image(avatar)} alt="..." />
                             </div>
-                            <div className="name">
-                                <h4 className="title text-center">
+                            <div className="name text-center">
+                                <h2 className="title">
                                     {title}
                                     <br />
                                     <small>{tagline}</small>
@@ -28,7 +28,7 @@ export default ({ title, tagline, cover, avatar, socialLinks }) =>
                                             <SocialButton key={index} type={link.type} url={link.url} />
                                         )}
                                     </div>
-                                </h4>
+                                </h2>
                             </div>
                         </div>
                     </div>
