@@ -4821,6 +4821,20 @@ select.selectpicker {
   min-height: 65vh !important;
   max-height: 700px;
 }
+
+
+@media screen and (max-width: 992px) {
+  .page-header.page-header-small {
+    min-height: 45vh !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page-header.page-header-small {
+    min-height: 30vh !important;
+  }
+}
+
 .page-header.page-header-xs {
   min-height: 40vh !important;
 }
