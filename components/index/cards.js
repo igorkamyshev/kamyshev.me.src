@@ -2,6 +2,7 @@ import cx from 'classnames'
 
 import image from '../../utils/image'
 import styles from './cards.css'
+import ExternalLink from '../../ui/ExternalLink';
 
 
 export default ({ title, tagline, cards }) =>
@@ -28,14 +29,14 @@ export default ({ title, tagline, cards }) =>
 const renderCard = (card, index, arr) =>
   <div className={`col-md-${column(index, arr.length)}`} key={card.title}>
     <div className={cx('card', styles.card)} data-background="image" style={{ backgroundImage: `url(${image(card.image)})` }}>
-      <a href={card.link} target="blank">
+      <ExternalLink href={card.link}>
         <div className="card-body">
           <h6 className="card-category">{card.categories.join(', ')}</h6>
           <h3 className="card-title">{card.title}</h3>
           <p className="card-description">{card.description}</p>
           <br />
         </div>
-      </a>
+      </ExternalLink>
     </div>
   </div>
 
