@@ -33,7 +33,7 @@ export default class QeepDocument extends Document {
 
           <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css' />
 
-          {/* hmmm */}
+          {/* Required by /ui/moleclues/SocialButton */}
           <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
 
           <meta name="google-site-verification" content="rkMUHPzS1QzK63X9HLLeatYU3hmLQxxLBKDgjlYu_RI" />
