@@ -2357,13 +2357,6 @@ pre.prettyprint {
   margin-top: 30px;
   display: block;
 }
-.presentation-page .section-sharing .fa-pay {
-  font-size: 30px;
-  display: inline-block;
-  margin: 5px 1px 0;
-  width: auto;
-  color: #FFFFFF;
-}
 .presentation-page .section-sharing .text-muted {
   opacity: .8;
 }
@@ -2474,10 +2467,6 @@ pre.prettyprint {
 }
 .section-testimonials .card img {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
-}
-.section-testimonials .fa-star {
-  font-size: 20px;
-  color: #fec42d;
 }
 .section-testimonials .card.card-testimonial .card-body {
   margin-top: 0;

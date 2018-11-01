@@ -37,6 +37,7 @@
     "normalize.css": "^8.0.0",
     "postcss": "^7.0.5",
     "postcss-custom-properties": "^8.0.8",
+    "postcss-inherit": "^4.1.0",
     "postcss-nesting": "^7.0.0",
     "postcss-normalize": "^7.0.1",
     "postcss-preset-env": "^6.3.0",

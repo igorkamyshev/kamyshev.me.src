@@ -1,7 +1,7 @@
 import React from 'react'
 import Notifications, { notify as toast } from 'react-notify-toast'
 
-import SocialButton from '@site/ui/atoms/SocialButton'
+import SocialButton from '@site/ui/molecules/SocialButton'
 
 import image from '../../utils/image'
 import * as notify from '../../utils/notify'
