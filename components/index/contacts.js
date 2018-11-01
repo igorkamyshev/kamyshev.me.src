@@ -66,8 +66,9 @@ export default class Contacts extends React.Component {
 
                                 <div className="row">
                                     <div className="col-md-6">
-                                        <label>Имя</label>
+                                        <label htmlFor="name">Имя</label>
                                         <input
+                                            id="name"
                                             className="form-control"
                                             placeholder="Имя"
                                             value={name}
@@ -75,8 +76,9 @@ export default class Contacts extends React.Component {
                                         />
                                     </div>
                                     <div className="col-md-6">
-                                        <label>Email</label>
+                                        <label htmlFor="email">Email</label>
                                         <input
+                                            id="email"
                                             className="form-control"
                                             placeholder="Email"
                                             value={email}
@@ -85,8 +87,9 @@ export default class Contacts extends React.Component {
                                     </div>
                                 </div>
 
-                                <label>Сообщение</label>
+                                <label htmlFor="message">Сообщение</label>
                                 <textarea
+                                    id="message"
                                     className="form-control"
                                     rows="4"
                                     value={message}
