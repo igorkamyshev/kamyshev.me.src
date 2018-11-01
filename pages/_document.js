@@ -38,16 +38,8 @@ export default class QeepDocument extends Document {
 
                     <link href="https://www.google-analytics.com" rel="preconnect" />
 
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117862348-1"></script>
-                    <script>
-                        {`
-                            window.dataLayer = window.dataLayer || [];
-                            function gtag(){dataLayer.push(arguments);}
-                            gtag('js', new Date());
-
-                            gtag('config', 'UA-117862348-1');
-                        `}
-                    </script>
+                    <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-117862348-1"></script>
+                    <script defer src="/static/js/gtm.js"></script>
                 </Head>
                 <body>
             
