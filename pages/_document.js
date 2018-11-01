@@ -12,7 +12,7 @@ export default class QeepDocument extends Document {
 
     render() {
         return (
-            <html>
+            <html lang="ru">
                 <Head>
                     <meta charSet="utf-8" />
                     
