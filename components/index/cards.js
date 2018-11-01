@@ -15,13 +15,7 @@ export default ({ title, tagline, cards }) =>
             <div className="space-top"></div>
 
             <div className="tab-content">
-                <div className="tab-pane active" id="pill-all" role="tabpanel">
-                    <div className="row">
-                        {cards.map(renderCard)}
-                    </div>
-                </div>
-
-                <div className="tab-pane" role="tabpanel">
+                <div className="tab-pane active" role="tabpanel">
                     <div className="row">
                         {cards.map(renderCard)}
                     </div>
@@ -31,7 +25,7 @@ export default ({ title, tagline, cards }) =>
     </div>
 
 const renderCard = (card, index, arr) =>
-    <div className={`col-md-${column(index, arr.length)}`} key={index}>
+    <div className={`col-md-${column(index, arr.length)}`} key={card.title}>
         <div className={`card ${s.card}`} data-background="image" style={{ backgroundImage: `url(${image(card.image)})` }}>
             <div className="card-body">
                 <h6 className="card-category">{card.categories.join(', ')}</h6>
