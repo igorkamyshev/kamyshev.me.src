@@ -3,7 +3,6 @@ import flush from 'styled-jsx/server'
 
 
 export default class QeepDocument extends Document {
-
     static getInitialProps({ renderPage }) {
         const { html, head, errorHtml, chunks } = renderPage()
         const styles = flush()
@@ -15,7 +14,7 @@ export default class QeepDocument extends Document {
             <html lang="ru">
                 <Head>
                     <meta charSet="utf-8" />
-                    
+
                     <link rel="icon" type="image/png" href="/static/img/favicon.ico" />
                     <link rel="apple-touch-icon" sizes="76x76" href="/static/img/apple-icon.png" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -26,12 +25,12 @@ export default class QeepDocument extends Document {
                     <meta name="viewport" content="width=device-width" />
 
                     <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
-                    <link href="/static/css/paper-kit.css" rel="stylesheet"/>
+                    <link href="/static/css/paper-kit.css" rel="stylesheet" />
                     <link href="/static/css/template.css" rel="stylesheet" />
                     <link href="/static/css/custom.css" rel="stylesheet" />
 
                     <link rel="manifest" href="/static/manifest.json"></link>
-                    <meta name="theme-color" content="#000000"/>
+                    <meta name="theme-color" content="#000000" />
 
                     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css' />
                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
