@@ -23,8 +23,8 @@ export default class Contacts extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    handleChange(field, event) {
-        this.setState({
+    handleChange(field) {
+        return (event) => this.setState({
             [field]: event.target.value,
         })
     }
@@ -32,10 +32,10 @@ export default class Contacts extends React.Component {
     handleSubmit(event) {
         notify.telegram(this.state.email, this.state.name, this.state.message)
             .then(
-                () => {
-                    this.setState({ message: '' })
-                    toast.show('Сообщение отправлено', 'success')
-                },
+                () => this.setState(
+                    { message: '' },
+                    () => toast.show('Сообщение отправлено', 'success')
+                ),
                 () => toast.show('Что-то пошло не так, попробуйте позже', 'warning')
             )
 
@@ -54,55 +54,51 @@ export default class Contacts extends React.Component {
             >
                 <Notifications />
                 <div className="container">
-                    <div className="row">
-                        <div className="col-md-10 ml-auto mr-auto">
-                            <div className="card card-contact no-transition">
-                                <div className={s.container}>
-                                    <h2 className="text-center">
-                                        { title }<br /><br />
-                                        {socialLinks.map((link, index) =>
-                                            <SocialButton key={index} type={link.type} url={link.url} />
-                                        )}
-                                    </h2>
-                                    <form className="contact-form" onSubmit={this.handleSubmit}>
+                    <div className="card card-contact no-transition">
+                        <div className={s.container}>
+                            <h2 className="text-center">
+                                {title}<br /><br />
+                                {socialLinks.map((link, index) =>
+                                    <SocialButton key={index} type={link.type} url={link.url} />
+                                )}
+                            </h2>
+                            <form className="contact-form" onSubmit={this.handleSubmit}>
 
-                                        <div className="row">
-                                            <div className="col-md-6">
-                                                <label>Имя</label>
-                                                <input
-                                                    className="form-control"
-                                                    placeholder="Имя"
-                                                    value={name}
-                                                    onChange={event => this.handleChange('name', event)}
-                                                />
-                                            </div>
-                                            <div className="col-md-6">
-                                                <label>Email</label>
-                                                <input
-                                                    className="form-control"
-                                                    placeholder="Email"
-                                                    value={email}
-                                                    onChange={event => this.handleChange('email', event)}
-                                                />
-                                            </div>
-                                        </div>
-
-                                        <label>Сообщение</label>
-                                        <textarea
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <label>Имя</label>
+                                        <input
                                             className="form-control"
-                                            rows="4"
-                                            value={message}
-                                            onChange={event => this.handleChange('message', event)}
+                                            placeholder="Имя"
+                                            value={name}
+                                            onChange={this.handleChange('name')}
                                         />
-
-                                        <div className="row">
-                                            <div className="col-md-4 offset-md-4">
-                                                <input type="submit" className="btn btn-danger btn-lg btn-fill" value="Отправить" />
-                                            </div>
-                                        </div>
-                                    </form>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <label>Email</label>
+                                        <input
+                                            className="form-control"
+                                            placeholder="Email"
+                                            value={email}
+                                            onChange={this.handleChange('email')}
+                                        />
+                                    </div>
                                 </div>
-                            </div>
+
+                                <label>Сообщение</label>
+                                <textarea
+                                    className="form-control"
+                                    rows="4"
+                                    value={message}
+                                    onChange={this.handleChange('message')}
+                                />
+
+                                <div className="row">
+                                    <div className="col-md-4 offset-md-4">
+                                        <input type="submit" className="btn btn-danger btn-lg btn-fill" value="Отправить" />
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
