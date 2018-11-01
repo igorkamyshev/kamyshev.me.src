@@ -27,17 +27,14 @@ export default ({ title, tagline, cards }) =>
 const renderCard = (card, index, arr) =>
     <div className={`col-md-${column(index, arr.length)}`} key={card.title}>
         <div className={`card ${s.card}`} data-background="image" style={{ backgroundImage: `url(${image(card.image)})` }}>
-            <div className="card-body">
-                <h6 className="card-category">{card.categories.join(', ')}</h6>
-                <a href={card.link} target="blank">
+            <a href={card.link} target="blank">
+                <div className="card-body">
+                    <h6 className="card-category">{card.categories.join(', ')}</h6>
                     <h3 className="card-title">{card.title}</h3>
-                </a>
-                <p className="card-description">{card.description}</p>
-                <br/>
-                <a href={card.link} target="blank" className="btn btn-info btn-round">
-                    <i className="fa fa-book" aria-hidden="true"></i> Открыть
-                </a>
-            </div>
+                    <p className="card-description">{card.description}</p>
+                    <br />
+                </div>
+            </a>
         </div>
     </div>
 
@@ -52,5 +49,5 @@ const s = {
 }
 
 const column = (index, length) =>
-    (index === length -1 && length % 2 !== 0) ? 12
+    (index === length - 1 && length % 2 !== 0) ? 12
         : (index % 4 === 0 || index % 4 === 3) ? 7 : 5
