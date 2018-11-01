@@ -12,29 +12,29 @@ import work from '../data/work'
 
 
 export default () => 
-    <Layout>
-        <Hero
-            title={novel.name}
-            tagline={novel.description}
-            avatar={novel.photo}
-            socialLinks={links}
-            cover={'cover'}
-        />
+  <Layout>
+    <Hero
+      title={novel.name}
+      tagline={novel.description}
+      avatar={novel.photo}
+      socialLinks={links}
+      cover={'cover'}
+    />
 
-        <Cards
-            title={'Проекты'}
-            tagline={'Созданы с любовью и мастерством'}
-            cards={projects}
-        />
+    <Cards
+      title={'Проекты'}
+      tagline={'Созданы с любовью и мастерством'}
+      cards={projects}
+    />
 
-        <Timeline
-            cover={'work'}
-            events={work}
-        />
+    <Timeline
+      cover={'work'}
+      events={work}
+    />
 
-        <Contacts
-            title={'Связаться'}
-            cover={'contacts'}
-            socialLinks={links}
-        />
-    </Layout>
+    <Contacts
+      title={'Связаться'}
+      cover={'contacts'}
+      socialLinks={links}
+    />
+  </Layout>
