@@ -23,6 +23,7 @@ export default class QeepDocument extends Document {
                     <meta name="google-site-verification" content="rkMUHPzS1QzK63X9HLLeatYU3hmLQxxLBKDgjlYu_RI" />
 
                     <title>Igor Kamyshev | Personal Site</title>
+                    <meta name="description" content="Igor Kamyshev's presonal site"></meta>
 
                     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
                     <meta name="viewport" content="width=device-width" />
