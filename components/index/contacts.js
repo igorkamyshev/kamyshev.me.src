@@ -98,7 +98,7 @@ export default class Contacts extends React.Component {
 
                                 <div className="row">
                                     <div className="col-md-4 offset-md-4">
-                                        <input type="submit" className="btn btn-danger btn-lg btn-fill" value="Отправить" />
+                                        <input type="submit" className="btn btn-lg btn-fill" value="Отправить" />
                                     </div>
                                 </div>
                             </form>
