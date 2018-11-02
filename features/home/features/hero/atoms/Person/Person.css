@@ -1,11 +1,11 @@
 .name {
+  min-height: 32px;
   margin-top: 30px;
   margin-bottom: 25px;
-  min-height: 32px;
 }
 
 .description {
   font-size: 60%;
-  color: #636363;
   line-height: 1.5em;
+  color: #636363;
 }

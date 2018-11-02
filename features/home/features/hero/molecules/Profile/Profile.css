@@ -1,25 +1,29 @@
 .wrapper {
-  border-radius: 12px;
-  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
-  background-color: #FFFFFF;
+  position: relative;
 
-  padding: 40px;
-
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  width: 100%;
+  z-index: 3;
 
   display: grid;
-  grid-template-columns: auto auto;
   grid-template-rows: 1fr;
-
-  gap: 40px;
+  grid-template-columns: auto auto;
+  align-items: center;
   
   justify-items: center;
-  align-items: center;
-  position: relative;
+  width: 100%;
+
+  padding: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: -200px;
+
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+
+  gap: 40px;
   
   @media (min-width: 576px) {
     max-width: 540px;
@@ -36,22 +40,18 @@
   @media (min-width: 1200px){
     max-width: 1140px;
   }
-  margin-bottom: 40px;
-  margin-top: -200px;
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
     grid-template-rows: 150px 1fr;
-    gap: 0px;
-
-    margin-top: -80px;
+    grid-template-columns: 1fr;
 
     padding: 0;
-    box-shadow: none;
-    background-color: transparent;
-  }
 
-  z-index: 3;
+    margin-top: -80px;
+    background-color: transparent;
+    box-shadow: none;
+    gap: 0px;
+  }
 }
 
 .avatar {
@@ -74,9 +74,9 @@
 }
 
 .info {
-  text-align: center!important;
 
   justify-self: start;
+  text-align: center!important;
 
   @media (max-width: 768px) {
     justify-self: center;
