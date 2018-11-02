@@ -15,6 +15,7 @@
 
 .specific {
   color: var(--color);
+  background-color: #ffffff;
   border-color: var(--color);
 
   &:hover, &:focus, &:active, &.active {
