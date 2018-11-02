@@ -1920,18 +1920,6 @@ pre.prettyprint {
   margin-top: 50px;
 }
 
-.wrapper .demo-header .filter::after {
-  background-color: rgba(0, 0, 0, 0.5);
-  content: "";
-  display: block;
-  height: 600px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-}
-
 /* comment area */
 .media-post .form {
   width: 100%;
@@ -1956,20 +1944,6 @@ pre.prettyprint {
 }
 .presentation-page .section-light-brown {
   color: #66615b;
-}
-.presentation-page .section-dark-filter {
-  position: relative;
-}
-.presentation-page .section-dark-filter:after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: block;
-  top: 0;
-  left: 0;
-  background: black;
-  opacity: .66;
-  content: "";
 }
 .presentation-page .section-header {
   position: relative;
@@ -2357,13 +2331,6 @@ pre.prettyprint {
   margin-top: 30px;
   display: block;
 }
-.presentation-page .section-sharing .fa-pay {
-  font-size: 30px;
-  display: inline-block;
-  margin: 5px 1px 0;
-  width: auto;
-  color: #FFFFFF;
-}
 .presentation-page .section-sharing .text-muted {
   opacity: .8;
 }
@@ -2474,10 +2441,6 @@ pre.prettyprint {
 }
 .section-testimonials .card img {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
-}
-.section-testimonials .fa-star {
-  font-size: 20px;
-  color: #fec42d;
 }
 .section-testimonials .card.card-testimonial .card-body {
   margin-top: 0;

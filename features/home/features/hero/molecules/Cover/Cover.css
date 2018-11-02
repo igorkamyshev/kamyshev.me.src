@@ -1,0 +1,35 @@
+.сover {
+  background-color: #B2AFAB;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  height: 65vh;
+
+  @media screen and (max-width: 992px) {
+    height: 45vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 30vh;
+  }
+
+  &::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.image {
+  width: 100%;
+}

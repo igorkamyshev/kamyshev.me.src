@@ -1,0 +1,50 @@
+.SocialButton {
+  margin: 5px;
+  border-width: 2px;
+  font-size: 12px;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+
+  & > i {
+    font-size: 16px;
+    padding: 2px 0px;
+  }
+}
+
+.specific {
+  border-color: var(--color);
+  color: var(--color);
+
+  &:hover, &:focus, &:active, &.active {
+    background-color: var(--color);
+    border-color: var(--color);
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.telegram {
+  --color: #3bb0eb;
+  @inherit: .specific;
+}
+
+.github {
+  --color: #333;
+  @inherit: .specific;
+}
+
+.linkedin {
+  --color: #0976b4;
+  @inherit: .specific;
+}
+
+.instagram {
+  --color: #e94a62;
+  @inherit: .specific;
+}
+
+.twitter {
+  --color: #55acee;
+  @inherit: .specific;
+}
