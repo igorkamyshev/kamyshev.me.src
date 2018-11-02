@@ -5,12 +5,9 @@ import SocialButton from '@site/ui/molecules/SocialButton'
 import image from '../../utils/image'
 import styles from './hero.css'
 
-
-export default ({ title, tagline, cover, avatar, socialLinks }) =>
+export default ({ title, tagline, avatar, socialLinks, children }) =>
   <div className="profile">
-    <div className="page-header page-header-small" style={{ backgroundImage: `url(${image(cover)})` }}>
-      <div className="filter"></div>
-    </div>
+    {children}
     <div className={cx('profile-content', 'section', styles.info)}>
       <div className="container">
         <div className="row">
