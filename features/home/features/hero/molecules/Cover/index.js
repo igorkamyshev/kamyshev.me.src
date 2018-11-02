@@ -5,7 +5,7 @@ const image = require('./cover.jpg')
 
 const Cover = () => (
   <div className={styles.сover}>
-    <img className={styles.image} src={image} />
+    <img role="presentation" className={styles.image} src={image} />
   </div>
 )
 
