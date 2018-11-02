@@ -1,0 +1,82 @@
+.wrapper {
+  border-radius: 12px;
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+
+  padding: 40px;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+
+  gap: 40px;
+  
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px){
+    max-width: 1140px;
+  }
+  
+  top: -80px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+    gap: 0px;
+
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  z-index: 3;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.avatarWrapper {
+  justify-self: end;
+
+  @media (max-width: 768px) {
+    justify-self: center;
+  }
+}
+
+.info {
+  text-align: center!important;
+
+  justify-self: start;
+
+  @media (max-width: 768px) {
+    justify-self: center;
+  }
+}

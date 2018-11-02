@@ -7,10 +7,10 @@
   width: 100%;
   z-index: 1;
 
-  height: 65vh;
+  height: 45vh;
 
   @media screen and (max-width: 992px) {
-    height: 45vh;
+    height: 40vh;
   }
 
   @media screen and (max-width: 600px) {
