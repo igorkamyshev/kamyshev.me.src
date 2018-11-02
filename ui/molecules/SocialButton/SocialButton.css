@@ -14,7 +14,6 @@
 }
 
 .specific {
-  --color: #3bb0eb;
   border-color: var(--color);
   color: var(--color);
 
