@@ -1,4 +1,5 @@
 {
+  "presets": ["next/babel"],
   "plugins": [
     [
       "module-resolver",
@@ -9,16 +10,5 @@
         }
       }
     ]
-  ],
-  "env": {
-    "development": {
-      "presets": ["next/babel"]
-    },
-    "production": {
-      "presets": ["next/babel"]
-    },
-    "test": {
-      "presets": ["env", "react"]
-    }
-  }
+  ]
 }
