@@ -74,9 +74,7 @@
 }
 
 .info {
-
   justify-self: start;
-  text-align: center!important;
 
   @media (max-width: 768px) {
     justify-self: center;
