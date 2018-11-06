@@ -1,26 +1,27 @@
 .SocialButton {
-  margin: 5px;
-  border-width: 2px;
-  font-size: 12px;
-  border-radius: 50px;
-  height: 40px;
   width: 40px;
+  height: 40px;
   padding: 8px;
+  margin: 5px;
+  font-size: 12px;
+  border-width: 2px;
+  border-radius: 50px;
 
   & > i {
-    font-size: 16px;
     padding: 2px 0px;
+    font-size: 16px;
   }
 }
 
 .specific {
-  border-color: var(--color);
   color: var(--color);
+  background-color: #ffffff;
+  border-color: var(--color);
 
   &:hover, &:focus, &:active, &.active {
+    color: rgba(255, 255, 255, 0.7);
     background-color: var(--color);
     border-color: var(--color);
-    color: rgba(255, 255, 255, 0.7);
   }
 }
 

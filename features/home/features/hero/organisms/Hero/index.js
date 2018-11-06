@@ -1,17 +1,18 @@
 import React from 'react'
 
-import HeroOld from '@site/components/index/hero'
 import Cover from '../../molecules/Cover'
+import Profile from '../../molecules/Profile'
 
-const Hero = ({ title, tagline, avatar, socialLinks }) => (
-  <HeroOld
-    title={title}
-    tagline={tagline}
-    avatar={avatar}
-    socialLinks={socialLinks}
-  >
+const Hero = ({ name, description, avatar, socialLinks }) => (
+  <header>
     <Cover />
-  </HeroOld>
+    <Profile
+      name={name}
+      description={description}
+      avatar={avatar}
+      socialLinks={socialLinks}
+    />
+  </header>
 )
 
 export default Hero

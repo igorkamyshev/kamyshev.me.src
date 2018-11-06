@@ -5,8 +5,8 @@ import links from '@site/data/social'
 
 const container = (WrappedComponent) => () =>
   <WrappedComponent
-    title={novel.name}
-    tagline={novel.description}
+    name={novel.name}
+    description={novel.description}
     avatar={novel.photo}
     socialLinks={links}
   />

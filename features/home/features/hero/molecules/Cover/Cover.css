@@ -1,16 +1,15 @@
 .сover {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
   background-color: #B2AFAB;
   background-position: center center;
   background-size: cover;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  z-index: 1;
-
-  height: 65vh;
 
   @media screen and (max-width: 992px) {
-    height: 45vh;
+    height: 40vh;
   }
 
   @media screen and (max-width: 600px) {
@@ -18,15 +17,15 @@
   }
 
   &::after {
-    content: '';
-    background-color: rgba(0, 0, 0, 0.5);
-    display: block;
-    height: 100%;
-    left: 0;
     position: absolute;
     top: 0;
-    width: 100%;
+    left: 0;
     z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 

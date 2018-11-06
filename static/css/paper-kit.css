@@ -9772,8 +9772,7 @@ body {
   margin-bottom: 50px;
   margin-top: 50px;
 }
-.settings .fileinput,
-.profile .fileinput {
+.fileinput {
   margin-top: -140px;
   position: relative;
   z-index: 3;
