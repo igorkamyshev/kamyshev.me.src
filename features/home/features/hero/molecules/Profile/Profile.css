@@ -78,5 +78,6 @@
 
   @media (max-width: 768px) {
     justify-self: center;
+    text-align: center;
   }
 }
