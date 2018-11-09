@@ -27,7 +27,7 @@
     "eslint": "^5.8.0",
     "eslint-plugin-jest": "^21.27.2",
     "eslint-plugin-react": "^7.11.1",
-    "normalize.css": "^8.0.0",
+    "normalize.css": "^8.0.1",
     "postcss": "^7.0.5",
     "postcss-custom-properties": "^8.0.9",
     "postcss-inherit": "^4.1.0",
