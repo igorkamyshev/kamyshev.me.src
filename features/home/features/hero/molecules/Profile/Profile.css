@@ -1,45 +1,15 @@
 .wrapper {
   position: relative;
-
   z-index: 3;
-
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: auto auto;
   align-items: center;
-  
   justify-items: center;
-  width: 100%;
-
-  padding: 40px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-top: -200px;
-
-  margin-right: auto;
   margin-bottom: 40px;
-  margin-left: auto;
-  background-color: #FFFFFF;
-  border-radius: 12px;
-  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 
   gap: 40px;
-  
-  @media (min-width: 576px) {
-    max-width: 540px;
-  }
-
-  @media (min-width: 768px) {
-    max-width: 720px;
-  }
-
-  @media (min-width: 992px) {
-    max-width: 960px;
-  }
-
-  @media (min-width: 1200px){
-    max-width: 1140px;
-  }
 
   @media (max-width: 768px) {
     grid-template-rows: 150px 1fr;
