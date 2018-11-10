@@ -1,4 +1,31 @@
 .container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 39px;
+  padding-bottom: 39px;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(12, 1fr);
+
+  & * {
+    grid-column: span 5;
+
+    &:nth-child(4n),
+    &:first-child {
+      grid-column: span 7;
+    }
+
+    &:last-child:nth-child(odd) {
+      grid-column: span 12;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+
+    & * {
+      grid-column: span 1 !important;
+    }
+  }
 }
