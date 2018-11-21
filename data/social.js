@@ -23,7 +23,7 @@ export default [
     },
     {
         type: Social.Twitter,
-        url: 'https://twitter.com/igor_a_kamyshev',
+        url: 'https://twitter.com/kamyshev_code',
         primary: false,
     },
 ]
