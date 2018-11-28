@@ -1,11 +1,12 @@
 import React from 'react'
 
+import Picture from '@site/ui/atoms/Picture'
+
 import styles from './Cover.css'
-const image = require('./cover.jpg')
 
 const Cover = () => (
   <div className={styles.сover}>
-    <img role="presentation" className={styles.image} src={image} />
+    <Picture role="presentation" className={styles.image} src="cover.jpg" />
   </div>
 )
 
