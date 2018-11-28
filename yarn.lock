@@ -3051,10 +3051,10 @@ escape-string-regexp@1.0.5, escape-string-regexp@^1.0.2, escape-string-regexp@^1
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-plugin-jest@^22.0.0:
-  version "22.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.0.0.tgz#87dc52bbdd47f37f23bf2b10bb8469458bb3ed68"
-  integrity sha512-YOj8cYI5ZXEZUrX2kUBLachR1ffjQiicIMBoivN7bXXHnxi8RcwNvmVzwlu3nTmjlvk5AP3kIpC5i8HcinmhPA==
+eslint-plugin-jest@^22.1.0:
+  version "22.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.1.0.tgz#9a4dfa3367563e8301560a7fb92ec309096dbca3"
+  integrity sha512-WcQd5LxEoAS20zuWEAd8CX0pVC+gGInZPcsoYvK5w7BrEJNmltyTxYYh1r0ct4GsahD2GvNySlcTcLtK2amFZA==
 
 eslint-plugin-react@^7.11.1:
   version "7.11.1"
@@ -5066,10 +5066,10 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
 
-known-css-properties@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/known-css-properties/-/known-css-properties-0.9.0.tgz#28f8a7134cfa3b0aa08b1e5edf64a57f64fc23af"
-  integrity sha512-2G/A/8XPhH6MmuVgl079wYsgdqfXE3cfm62txk/ajS4wvRWo6tEHcgQCJCHOOy12Fse1Sxlbf7/IJBpR9hnVew==
+known-css-properties@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/known-css-properties/-/known-css-properties-0.10.0.tgz#8378a8921e6c815ecc47095744a8900af63d577d"
+  integrity sha512-OMPb86bpVbnKN/2VJw1Ggs1Hw/FNGwEL1QYiNIEHaB5FSLybJ4QD7My5Hm9yDhgpRrRnnOgu0oKeuuABzASeBw==
 
 launch-editor@2.2.1:
   version "2.2.1"
@@ -6740,10 +6740,10 @@ postcss-lab-function@^2.0.1:
     postcss "^7.0.2"
     postcss-values-parser "^2.0.0"
 
-postcss-less@^3.0.1:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/postcss-less/-/postcss-less-3.0.2.tgz#9cf94e2cc90f8566858939e278fb9f0b713908df"
-  integrity sha512-+JBOampmDnuaf4w8OIEqkCiF+sOm/nWukDsC+1FTrYcIstptOISzGpYZk24Qh+Ewlmzmi53sRyiTbiGvMCDRwA==
+postcss-less@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-less/-/postcss-less-3.1.0.tgz#0e14a80206b452f44d3a09d082fa72645e8168cc"
+  integrity sha512-+fDH2A9zV8B4gFu3Idhq8ma09/mMBXXc03T2lL9CHjBQqKrfUit+TrQrnojc6Y4k7N4E+tyE1Uj5U1tcoKtXLQ==
   dependencies:
     postcss "^7.0.3"
 
@@ -8415,10 +8415,10 @@ stylelint-order@^0.8.1:
     postcss "^6.0.14"
     postcss-sorting "^3.1.0"
 
-stylelint@^9.8.0:
-  version "9.8.0"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.8.0.tgz#bfdade6360d82afe820d6b15251b01acf8ffd04d"
-  integrity sha512-qYYgP9UnZ6S4uaXrfEGPIMeNv21gP4t3E7BtnYfJIiHKvz7AbrCP0vj1wPgD6OFyxLT5txQxtoznfSkm2vsUkQ==
+stylelint@^9.9.0:
+  version "9.9.0"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.9.0.tgz#dde466e9b049e0bd30e912ad280f1a2ecf6efdf8"
+  integrity sha512-kIuX0/9/I2mZeHz6EoFt7UpLt7Mz+ic9/PmFwKMdq4BkQHikg3FkcgAElLdAmaI8Au1JEUOS996ZFE+mwXytmA==
   dependencies:
     autoprefixer "^9.0.0"
     balanced-match "^1.0.0"
@@ -8435,7 +8435,7 @@ stylelint@^9.8.0:
     ignore "^5.0.4"
     import-lazy "^3.1.0"
     imurmurhash "^0.1.4"
-    known-css-properties "^0.9.0"
+    known-css-properties "^0.10.0"
     leven "^2.1.0"
     lodash "^4.17.4"
     log-symbols "^2.0.0"
@@ -8447,7 +8447,7 @@ stylelint@^9.8.0:
     postcss "^7.0.0"
     postcss-html "^0.34.0"
     postcss-jsx "^0.35.0"
-    postcss-less "^3.0.1"
+    postcss-less "^3.1.0"
     postcss-markdown "^0.34.0"
     postcss-media-query-parser "^0.2.3"
     postcss-reporter "^6.0.0"
