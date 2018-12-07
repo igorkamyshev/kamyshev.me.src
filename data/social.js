@@ -3,7 +3,7 @@ import { Social } from '@site/ui/molecules/SocialButton'
 export default [
     {
         type: Social.Telegram,
-        url: 'https://t.me/igor_kamyshev',
+        url: 'https://t.me/igorkamyshev',
         primary: true,
     },
     {
