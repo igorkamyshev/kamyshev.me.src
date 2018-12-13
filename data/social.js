@@ -18,7 +18,7 @@ export default [
     },
     {
         type: Social.Instagram,
-        url: 'https://www.instagram.com/kamyshev_trip,
+        url: 'https://www.instagram.com/kamyshev_trip',
         primary: false,
     },
     {
