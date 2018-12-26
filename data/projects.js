@@ -2,7 +2,7 @@ export default [
   {
     categories: ['Личные'],
     title: 'Holistic SMM Agency',
-    description: 'Образовательные каналы в Telegram — 22 тысячи подписчиков.',
+    description: 'Образовательные каналы в Telegram — 24 тысячи подписчиков.',
     image: 'projects/holistic-smm',
     link: 'https://holistic-smm.ru',
   },
