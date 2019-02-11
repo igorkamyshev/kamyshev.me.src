@@ -15,7 +15,7 @@
     "next": "^7.0.2",
     "next-compose-plugins": "^2.1.1",
     "next-optimized-images": "^1.4.1",
-    "prop-types": "^15.6.2",
+    "prop-types": "^15.7.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-notify-toast": "^0.5.0",
