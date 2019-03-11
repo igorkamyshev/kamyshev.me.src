@@ -17,7 +17,7 @@
     "next-optimized-images": "^1.4.1",
     "react": "^16.8.4",
     "prop-types": "^15.7.2",
-    "react-dom": "^16.8.3",
+    "react-dom": "^16.8.4",
     "react-notify-toast": "^0.5.0",
     "react-timeline-scribble": "^1.0.14"
   },
