@@ -1,0 +1,22 @@
+{
+  "name": "kamyshev.me.src",
+  "version": "2.0.0",
+  "repository": "git@github.com:igorkamyshev/kamyshev.me.src.git",
+  "author": "Igor Kamyshev <igor@kamyshev.me>",
+  "license": "MIT",
+  "scripts": {
+    "s": "yarn soda",
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "@solid-soda/scripts": "^1.2.4",
+    "parcel-bundler": "^1.12.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn soda lint-staged",
+      "commit-msg": "yarn soda commitlint"
+    }
+  }
+}
