@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "next",
     "prod": "next build && next start",
-    "build": "next build && next export",
+    "build": "next build && next export -o dist",
     "lint": "yarn lint-css && yarn lint-js",
     "lint-css": "stylelint 'pages/**/*.css' && stylelint 'ui/**/*.css' & stylelint 'features/**/*.css'",
     "lint-js": "eslint 'pages/**/*.js' && eslint 'ui/**/*.js' && eslint 'features/**/*.js'",
