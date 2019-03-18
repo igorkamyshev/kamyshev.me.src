@@ -1,4 +1,4 @@
-const closeButtons = document.getElementsByClassName('close')
+const closeButtons = document.querySelectorAll('[data-checker]')
 
 const listener = ({ target }) => {
   const checker = document.getElementById(target.dataset.checker)

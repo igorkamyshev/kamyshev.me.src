@@ -1,13 +1,10 @@
 mixin card(name, open=true, large=false)
   div(class="container")
     label(for=`${name}-check`) #{name}
-    input(type="checkbox" class="checker" id=`${name}-check` checked=open)
+    input(class="card__checker" type="checkbox" id=`${name}-check` checked=open)
 
-    div(class=`card ${large ? 'card-large' : ''}` id=`${name}-card`)
-      header
-        div(data-card=`${name}-card`) drag
-        div(class="close" data-checker=`${name}-check`) close
-      if block
-        block
-      else
-        p Coming soon...
+    section(class=`card ${large ? 'card_large' : ''}` id=`${name}-card`)
+      header(class="card__header")
+        div(class="card__drug" data-card=`${name}-card`)
+        div(class="card__close" data-checker=`${name}-check`) close
+      block

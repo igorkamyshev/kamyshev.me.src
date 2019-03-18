@@ -1,7 +1,7 @@
-import { addZhandler } from './code/addZHandler'
-import { addDragHandler } from './code/addDragHandler'
-import { addArticleToggle } from './code/addArticleToggle'
-import { addCloseButtonsHandler } from './code/addCloseButtonsHandler'
+import { addZhandler } from './interactive/addZHandler'
+import { addDragHandler } from './interactive/addDragHandler'
+import { addArticleToggle } from './interactive/addArticleToggle'
+import { addCloseButtonsHandler } from './interactive/addCloseButtonsHandler'
 
 document.addEventListener('DOMContentLoaded', () => {
   addZhandler()

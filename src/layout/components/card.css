@@ -1,5 +1,17 @@
+.card {
+  border: 1px solid red;
+  width: 500px;
+  position: absolute;
+  background: white;
+  color: black;
+}
+
+.card_large {
+  width: 700px;
+}
+
 /* Hide the browser's default checkbox */
-.checker {
+.card__checker {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -8,26 +20,29 @@
 }
 
 /* Hide the card if checkbox not checked */
-.checker + .card {
+.card__checker + .card {
   display: none;
 }
 
 /* Show the card if checkbox not checked */
-.checker:checked + .card {
+.card__checker:checked + .card {
   display: block;
 }
 
-.card {
-  border: 1px solid red;
-  width: 150px;
-  position: absolute;
-  background: white;
-  color: black;
+.card__header {
+  display: flex;
+  justify-content: space-between;
 }
 
-.card-large {
-  width: 300px;
+.card__drug {
+  width: 100%;
+  content: '';
 }
+
+.card__close {
+}
+
+// Workaround for different positions
 
 .container:nth-child(4n + 1) .card {
   top: 150px;

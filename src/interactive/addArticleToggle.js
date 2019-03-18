@@ -1,7 +1,7 @@
 const articleCheckbox = document.getElementById('articles-check')
-const articleCloseButton = document.querySelectorAll(
+const articleCloseButton = document.querySelector(
   '[data-checker=articles-check]',
-)[0]
+)
 
 const redirect = toHome =>
   window.history.pushState({}, '', toHome ? '/' : '/articles.html')
@@ -11,6 +11,5 @@ const clickListener = () => redirect(true)
 
 export const addArticleToggle = () => {
   articleCheckbox.addEventListener('change', changeListener)
-
   articleCloseButton.addEventListener('click', clickListener)
 }
