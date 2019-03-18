@@ -8,18 +8,26 @@
     "build": "parcel build src/pages/index.pug",
     "dev": "parcel src/pages/index.pug",
     "s": "yarn soda",
-    "ci": "yarn s lint"
+    "size": "size-limit",
+    "ci": "yarn s lint && yarn size"
   },
   "devDependencies": {
     "@solid-soda/scripts": "^1.2.4",
     "autoprefixer": "^9.5.0",
     "parcel-bundler": "^1.12.2",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "size-limit": "^0.21.1"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn soda lint-staged",
+      "pre-commit": "yarn soda lint-staged && yarn size",
       "commit-msg": "yarn soda commitlint"
     }
-  }
+  },
+  "size-limit": [
+    {
+      "limit": "2 KB",
+      "path": "./src/index.js"
+    }
+  ]
 }
