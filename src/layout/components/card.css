@@ -18,14 +18,14 @@
 }
 
 .card {
-  border: 1px solid white;
+  border: 1px solid red;
   width: 150px;
   position: absolute;
-  background: red;
+  background: white;
+  color: black;
 }
 
 .card-large {
-  border: 1px solid white;
   width: 300px;
 }
 
