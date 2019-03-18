@@ -1,15 +1,8 @@
+@import './layout/components/card.css';
+
 body {
   background: blue;
   color: white;
-}
-
-.about-check + .about {
-  display: none;
-}
-
-.about-check:checked + .about {
-  color: red;
-  display: flex;
 }
 
 .preload {

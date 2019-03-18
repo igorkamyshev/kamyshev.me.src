@@ -1,0 +1,46 @@
+/* Hide the browser's default checkbox */
+.checker {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Hide the card if checkbox not checked */
+.checker + .card {
+  display: none;
+}
+
+/* Show the card if checkbox not checked */
+.checker:checked + .card {
+  display: flex;
+}
+
+.card {
+  border: 1px solid white;
+  width: 150px;
+  position: absolute;
+}
+
+.card-large {
+  border: 1px solid white;
+  width: 300px;
+}
+
+.card-1 {
+  top: 150px;
+  left: 150px;
+}
+.card-2 {
+  top: 250px;
+  left: 250px;
+}
+.card-3 {
+  top: 350px;
+  left: 350px;
+}
+.card-4 {
+  top: 450px;
+  left: 450px;
+}

@@ -1,0 +1,28 @@
+include ./components/card.pug
+
+mixin page(isArticles=false)
+  doctype html
+
+  html(lang="ru")
+    head
+      title Игорь Камышев
+      link(rel='stylesheet', href='../styles.css')
+
+    body
+      p Новый сайт
+
+      +card("about", 1)
+        p something about me
+
+      +card("projects", 2)
+        p something about projects
+
+      +card("experience", 3)
+        p freelance, qeep, breadhead
+
+      +card("articles", 4, isArticles, true)
+        p one article =)
+
+      a(class="preload" href="../pages/articles.pug") articles
+
+      script(src='../index.js')
