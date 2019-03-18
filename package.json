@@ -5,8 +5,8 @@
   "author": "Igor Kamyshev <igor@kamyshev.me>",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build src/pages/index.pug",
-    "dev": "parcel src/pages/index.pug",
+    "build": "parcel build src/pages/*",
+    "dev": "concurrently --kill-others \"parcel src/pages/index.pug\" \"parcel watch src/pages/articles.pug\"",
     "s": "yarn soda",
     "size": "size-limit",
     "ci": "yarn s lint && yarn size"
@@ -14,6 +14,8 @@
   "devDependencies": {
     "@solid-soda/scripts": "^1.2.4",
     "autoprefixer": "^9.5.0",
+    "concurrently": "^4.1.0",
+    "jstransformer-markdown-it": "^2.1.0",
     "parcel-bundler": "^1.12.2",
     "pug": "^2.0.3",
     "size-limit": "^0.21.1"

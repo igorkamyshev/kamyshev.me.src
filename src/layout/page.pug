@@ -13,17 +13,15 @@ mixin page(isArticles=false)
 
       div
         +card("about")
-          p something about me
+          include ./blocks/about.pug
 
         +card("projects")
-          p something about projects
+          include ./blocks/projects.pug
 
         +card("experience")
-          p freelance, qeep, breadhead
+          include ./blocks/experience.pug
 
         +card("articles", isArticles, true)
-          p one article =)
-
-      a(class="preload" href="../pages/articles.pug") articles
+          include ./blocks/articles.pug
 
       script(src='../index.js')

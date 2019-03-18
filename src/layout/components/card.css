@@ -14,7 +14,7 @@
 
 /* Show the card if checkbox not checked */
 .checker:checked + .card {
-  display: flex;
+  display: block;
 }
 
 .card {
