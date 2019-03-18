@@ -1,1 +1,5 @@
 @import './layout/components/card.css';
+
+body {
+  font-size: 2em;
+}
