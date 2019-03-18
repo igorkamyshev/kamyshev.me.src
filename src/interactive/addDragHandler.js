@@ -22,7 +22,6 @@ const customDragAndDrop = (header, card) => event => {
     card.style.top = `${e.pageY - shiftY}px`
   }
 
-  card.style.position = 'absolute'
   moveAt(event)
 
   document.onmousemove = moveAt

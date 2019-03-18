@@ -1,13 +1,17 @@
 .card {
   border: 1px solid red;
   width: 500px;
+  height: 400px;
   position: absolute;
   background: white;
   color: black;
+
+  overflow-y: scroll;
 }
 
 .card_large {
   width: 700px;
+  height: 500px;
 }
 
 /* Hide the browser's default checkbox */

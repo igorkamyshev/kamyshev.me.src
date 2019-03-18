@@ -6,9 +6,11 @@ const applyZ = card => () => {
     .getComputedStyle(card, null)
     .getPropertyValue('z-index')
 
-  if (nowZ < maxZ) {
+  const nowZParsed = nowZ === 'auto' ? 0 : nowZ
+
+  if (nowZParsed <= maxZ) {
     maxZ++
-    card.style.zIndex = maxZ
+    card.style.zIndex = maxZ + 1
   }
 }
 
