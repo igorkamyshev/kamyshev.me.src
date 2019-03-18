@@ -1,17 +1,22 @@
 .card {
   border: 1px solid red;
   width: 500px;
-  height: 400px;
-  position: absolute;
+  max-width: 100%;
   background: white;
   color: black;
 
-  overflow-y: scroll;
+  @media (--phoneUp) {
+    height: 400px;
+    overflow-y: scroll;
+    position: absolute;
+  }
 }
 
 .card_large {
   width: 700px;
-  height: 500px;
+  @media (--phoneUp) {
+    height: 500px;
+  }
 }
 
 /* Hide the browser's default checkbox */
@@ -36,6 +41,10 @@
 .card__header {
   display: flex;
   justify-content: space-between;
+
+  @media (--phoneDown) {
+    display: none;
+  }
 }
 
 .card__drug {
@@ -49,22 +58,30 @@
 // Workaround for different positions
 
 .container:nth-child(4n + 1) .card {
-  top: 150px;
-  left: 150px;
-  z-index: 1;
+  @media (--phoneUp) {
+    top: 150px;
+    left: 150px;
+    z-index: 1;
+  }
 }
 .container:nth-child(4n + 2) .card {
-  top: 250px;
-  left: 250px;
-  z-index: 2;
+  @media (--phoneUp) {
+    top: 250px;
+    left: 250px;
+    z-index: 2;
+  }
 }
 .container:nth-child(4n + 3) .card {
-  top: 350px;
-  left: 350px;
-  z-index: 3;
+  @media (--phoneUp) {
+    top: 350px;
+    left: 350px;
+    z-index: 3;
+  }
 }
 .container:nth-child(4n + 4) .card {
-  top: 450px;
-  left: 450px;
-  z-index: 4;
+  @media (--phoneUp) {
+    top: 450px;
+    left: 450px;
+    z-index: 4;
+  }
 }

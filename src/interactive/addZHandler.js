@@ -1,3 +1,5 @@
+import { PHONE_UP, PHONE_DOWN } from './CONFIG'
+
 const cards = document.getElementsByClassName('card')
 let maxZ = cards.length
 
@@ -21,10 +23,10 @@ const applyAll = () => {
 }
 
 export const addZhandler = () => {
-  if (window.innerWidth > 400) {
+  if (window.innerWidth > PHONE_DOWN) {
     applyAll()
   } else {
-    window.matchMedia('(min-width: 401px)').addListener(e => {
+    window.matchMedia(`(min-width: ${PHONE_UP}px)`).addListener(e => {
       if (e.matches) {
         applyAll()
       }

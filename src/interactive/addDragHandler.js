@@ -1,3 +1,5 @@
+import { PHONE_DOWN, PHONE_UP } from './CONFIG'
+
 const cardHeaders = document.querySelectorAll('[data-card]')
 
 const calculateCoordinates = elem => {
@@ -52,16 +54,16 @@ const resetAll = () => {
 }
 
 export const addDragHandler = () => {
-  window.matchMedia('(max-width: 400px)').addListener(e => {
+  window.matchMedia(`(max-width: ${PHONE_DOWN}px)`).addListener(e => {
     if (e.matches) {
       resetAll()
     }
   })
 
-  if (window.innerWidth > 400) {
+  if (window.innerWidth > PHONE_DOWN) {
     applyDragHandlers()
   } else {
-    window.matchMedia('(min-width: 401px)').addListener(e => {
+    window.matchMedia(`(min-width: ${PHONE_UP}px)`).addListener(e => {
       if (e.matches) {
         applyDragHandlers()
       }
