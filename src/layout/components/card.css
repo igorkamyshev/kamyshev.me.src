@@ -21,6 +21,7 @@
   border: 1px solid white;
   width: 150px;
   position: absolute;
+  background: red;
 }
 
 .card-large {
@@ -28,19 +29,23 @@
   width: 300px;
 }
 
-.container:nth-child(4n + 3) .card {
+.container:nth-child(4n + 1) .card {
   top: 150px;
   left: 150px;
-}
-.container:nth-child(4n + 0) .card {
-  top: 250px;
-  left: 250px;
-}
-.container:nth-child(4n + 1) .card {
-  top: 350px;
-  left: 350px;
+  z-index: 1;
 }
 .container:nth-child(4n + 2) .card {
+  top: 250px;
+  left: 250px;
+  z-index: 2;
+}
+.container:nth-child(4n + 3) .card {
+  top: 350px;
+  left: 350px;
+  z-index: 3;
+}
+.container:nth-child(4n + 4) .card {
   top: 450px;
   left: 450px;
+  z-index: 4;
 }
