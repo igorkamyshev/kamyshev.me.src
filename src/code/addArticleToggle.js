@@ -1,6 +1,6 @@
 const articleCheckbox = document.getElementById('articles-check')
 const articleCloseButton = document.querySelectorAll(
-  '[data-card=articles-check]',
+  '[data-checker=articles-check]',
 )[0]
 
 const redirect = toHome =>

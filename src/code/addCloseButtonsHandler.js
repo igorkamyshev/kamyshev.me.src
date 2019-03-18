@@ -1,7 +1,7 @@
 const closeButtons = document.getElementsByClassName('close')
 
 const listener = ({ target }) => {
-  const checker = document.getElementById(target.dataset.card)
+  const checker = document.getElementById(target.dataset.checker)
   checker.checked = false
 }
 

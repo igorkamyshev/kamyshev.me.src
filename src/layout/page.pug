@@ -11,17 +11,18 @@ mixin page(isArticles=false)
     body
       p Новый сайт
 
-      +card("about", 1)
-        p something about me
+      div
+        +card("about")
+          p something about me
 
-      +card("projects", 2)
-        p something about projects
+        +card("projects")
+          p something about projects
 
-      +card("experience", 3)
-        p freelance, qeep, breadhead
+        +card("experience")
+          p freelance, qeep, breadhead
 
-      +card("articles", 4, isArticles, true)
-        p one article =)
+        +card("articles", isArticles, true)
+          p one article =)
 
       a(class="preload" href="../pages/articles.pug") articles
 

@@ -1,10 +1,12 @@
-mixin card(name, index = 1, open=true, large=false)
+mixin card(name, open=true, large=false)
+  div(class="container")
     label(for=`${name}-check`) #{name}
     input(type="checkbox" class="checker" id=`${name}-check` checked=open)
 
-    div(class=`card ${large ? 'card-large' : ''} card-${index}`)
+    div(class=`card ${large ? 'card-large' : ''}` id=`${name}-card`)
       header
-        div(class="close" data-card=`${name}-check`) close
+        div(data-card=`${name}-card`) drag
+        div(class="close" data-checker=`${name}-check`) close
       if block
         block
       else

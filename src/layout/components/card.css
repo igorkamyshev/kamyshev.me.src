@@ -28,19 +28,19 @@
   width: 300px;
 }
 
-.card-1 {
+.container:nth-child(4n + 3) .card {
   top: 150px;
   left: 150px;
 }
-.card-2 {
+.container:nth-child(4n + 0) .card {
   top: 250px;
   left: 250px;
 }
-.card-3 {
+.container:nth-child(4n + 1) .card {
   top: 350px;
   left: 350px;
 }
-.card-4 {
+.container:nth-child(4n + 2) .card {
   top: 450px;
   left: 450px;
 }
