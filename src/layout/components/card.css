@@ -48,11 +48,7 @@
 
 /* Hide the browser's default checkbox */
 .card__checker {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+  display: none;
 }
 
 /* Hide the card if checkbox not checked */
