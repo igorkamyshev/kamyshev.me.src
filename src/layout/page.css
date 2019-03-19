@@ -68,7 +68,10 @@
 }
 
 .articles {
-  max-width: 650px;
+  & > * {
+    max-width: 650px;
+  }
+
   & > h1,
   & > h2,
   & > h3 {
