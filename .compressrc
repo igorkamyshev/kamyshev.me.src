@@ -1,3 +1,0 @@
-{
-  "test": "(.+?)\\.(css|js|woff|otf)",
-}
