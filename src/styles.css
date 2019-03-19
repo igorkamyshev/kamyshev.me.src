@@ -34,6 +34,11 @@ body {
   margin: 0;
 }
 
+ul {
+  list-style: square outside none;
+  padding-left: 18px;
+}
+
 li {
   font-size: 18px;
   line-height: 20px;
