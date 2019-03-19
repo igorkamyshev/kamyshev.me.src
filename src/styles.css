@@ -1,3 +1,20 @@
+/* fonts */
+@font-face {
+  font-family: 'Steinbeck';
+  src: url('./fonts/SteinbeckRegular/Steinbeck Regular.woff');
+  src: url('./fonts/SteinbeckRegular/Steinbeck Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Steinbeck';
+  src: url('./fonts/SteinbeckItalic/Steinbeck Italic.woff');
+  src: url('./fonts/SteinbeckItalic/Steinbeck Italic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
 /* custom media queries */
 @custom-media --phoneDown (max-width: 500px);
 @custom-media --phoneUp (min-width: 501px);
@@ -6,4 +23,5 @@
 
 body {
   font-size: 2em;
+  font-family: 'Steinbeck';
 }
