@@ -3,7 +3,7 @@
   font-family: 'Steinbeck';
   src: url('./fonts/SteinbeckRegular/Steinbeck Regular.woff');
   src: url('./fonts/SteinbeckRegular/Steinbeck Regular.otf');
-  font-display: swap;
+  font-display: block;
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +12,7 @@
   font-family: 'Steinbeck';
   src: url('./fonts/SteinbeckItalic/Steinbeck Italic.woff');
   src: url('./fonts/SteinbeckItalic/Steinbeck Italic.otf');
-  font-display: swap;
+  font-display: block;
   font-weight: normal;
   font-style: italic;
 }
@@ -22,8 +22,28 @@
 @custom-media --phoneUp (min-width: 501px);
 
 @import './layout/components/card.css';
+@import './layout/page.css';
 
 body {
-  font-size: 2em;
   font-family: 'Steinbeck';
+}
+
+p {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 26px;
+  line-height: 29px;
+  font-weight: normal;
+}
+
+blockquote {
+  font-size: 18px;
 }

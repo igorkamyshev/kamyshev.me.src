@@ -1,0 +1,9 @@
+.about > p {
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.experience > h2 + p {
+  font-size: 26px;
+  line-height: 29px;
+}

@@ -1,9 +1,9 @@
-mixin card(name, open=true, large=false)
+mixin card(name, cardClass="", open=true, large=false)
   div(class="container")
     label(for=`${name}-check`) #{name}
     input(class="card__checker" type="checkbox" id=`${name}-check` checked=open)
 
-    section(class=`card ${large ? 'card_large' : ''}` id=`${name}-card`)
+    section(class=`card ${large ? 'card_large' : ''} ${cardClass}` id=`${name}-card`)
       header(class="card__header")
         div(class="card__drug" data-card=`${name}-card`)
         div(class="card__close" data-checker=`${name}-check`) close

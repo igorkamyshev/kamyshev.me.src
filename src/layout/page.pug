@@ -15,16 +15,16 @@ mixin page(isArticles=false)
       p Новый сайт
 
       div
-        +card("about")
+        +card("about", "about")
           include ./blocks/about.pug
 
         +card("projects")
           include ./blocks/projects.pug
 
-        +card("experience")
+        +card("experience", "experience")
           include ./blocks/experience.pug
 
-        +card("articles", isArticles, true)
+        +card("articles", "", isArticles, true)
           include ./blocks/articles.pug
 
       script(src='../index.js')
