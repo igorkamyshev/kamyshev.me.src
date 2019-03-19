@@ -1,9 +1,9 @@
 .card {
-  border: 1px solid red;
   width: 669px;
   max-width: 100%;
   background: white;
   color: black;
+  border: 2px solid var(--color-primary);
 
   @media (--phoneUp) {
     height: 464px;

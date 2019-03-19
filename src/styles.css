@@ -26,6 +26,8 @@
 
 body {
   font-family: 'Steinbeck';
+
+  --color-primary: #2613ff;
 }
 
 p {
