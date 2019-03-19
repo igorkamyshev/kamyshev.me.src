@@ -13,6 +13,8 @@
     height: 464px;
     overflow-y: hidden;
     position: absolute;
+    top: 170px;
+    z-index: 3;
   }
 }
 
@@ -38,6 +40,10 @@
   @media (--phoneUp) {
     height: 390px;
     overflow-y: scroll;
+  }
+
+  & > *:first-child {
+    margin-block-start: 8px;
   }
 }
 
@@ -104,31 +110,27 @@
 // Workaround for different positions
 
 .container:nth-child(4n + 1) .card {
-  @media (--phoneUp) {
-    top: 150px;
-    left: 150px;
-    z-index: 1;
-  }
+  width: 10px;
 }
 .container:nth-child(4n + 2) .card {
   @media (--phoneUp) {
-    top: 250px;
-    left: 250px;
-    z-index: 2;
+    top: calc(100vh - 500px);
+    left: calc(100vw - 800px);
+    z-index: 4;
   }
 }
 .container:nth-child(4n + 3) .card {
   @media (--phoneUp) {
-    top: 350px;
-    left: 350px;
-    z-index: 3;
+    top: 100px;
+    left: calc(100vw - 765px);
+    z-index: 2;
   }
 }
 .container:nth-child(4n + 4) .card {
   @media (--phoneUp) {
-    top: 450px;
-    left: 450px;
-    z-index: 4;
+    top: 100px;
+    left: 50px;
+    z-index: 5;
   }
 }
 

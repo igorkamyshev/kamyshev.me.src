@@ -38,12 +38,51 @@
   line-height: 29px;
 }
 
-.experience > h2 + p {
-  font-size: 26px;
-  line-height: 29px;
+.experience {
+  & > h1,
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
+    margin-block-start: 40px;
+    margin-block-end: 8px;
+  }
+
+  & > h3 + p {
+    font-size: 26px;
+    line-height: 29px;
+  }
+}
+
+.projects {
+  & > h1,
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
+    margin-block-start: 36px;
+    margin-block-end: 12px;
+  }
+}
+
+.articles {
+  & > h1,
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
+    margin-block-start: 80px;
+    margin-block-end: 20px;
+  }
 }
 
 .link-line {
+  margin-block-start: 24px;
+  margin-block-end: 24px;
+
   & > a:not(:last-child) {
     margin-right: 24px;
   }
