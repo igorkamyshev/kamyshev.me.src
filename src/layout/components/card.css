@@ -2,9 +2,12 @@
   width: 100%;
   background: white;
   color: black;
-  border: 2px solid var(--color-primary);
+  border-left: 2px solid var(--color-primary);
+  border-right: 2px solid var(--color-primary);
+  float: left;
 
   @media (--phoneUp) {
+    border: 2px solid var(--color-primary);
     width: 669px;
     height: 464px;
     overflow-y: hidden;
@@ -16,6 +19,14 @@
   @media (--phoneUp) {
     width: 85vw;
     height: calc(100vh - 158px);
+  }
+}
+
+.container label {
+  @media (--phoneDown) {
+    border-top: 2px solid var(--color-primary);
+    border-left: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-primary);
   }
 }
 
@@ -122,4 +133,18 @@
     left: 450px;
     z-index: 4;
   }
+}
+
+.container:last-child .card__checker ~ label {
+  @media (--phoneDown) {
+    border-bottom: 2px solid var(--color-primary);
+  }
+}
+
+.container:last-child .card__checker:checked ~ label {
+  border-bottom: none;
+}
+
+.container:last-child .card {
+  border-bottom: 2px solid var(--color-primary);
 }

@@ -4,7 +4,9 @@
       min-width: 26px;
       display: block;
       font-size: 26px;
-      margin: 24px;
+      padding: 24px;
+      float: left;
+      width: 100%;
     }
   }
 
