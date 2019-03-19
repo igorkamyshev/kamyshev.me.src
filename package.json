@@ -5,7 +5,7 @@
   "author": "Igor Kamyshev <igor@kamyshev.me>",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf .cache && rimraf dist && parcel build src/pages/*",
+    "build": "rimraf .cache && rimraf dist && parcel build src/pages/* && node postparcel.js",
     "dev": "rimraf .cache && concurrently --kill-others \"parcel src/pages/index.pug\" \"parcel watch src/pages/articles.pug\"",
     "s": "yarn soda",
     "size": "size-limit",
