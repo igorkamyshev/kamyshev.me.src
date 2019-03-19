@@ -1,8 +1,8 @@
 /* fonts */
 @font-face {
   font-family: 'Steinbeck';
-  src: url('./fonts/SteinbeckRegular/Steinbeck Regular.woff');
-  src: url('./fonts/SteinbeckRegular/Steinbeck Regular.otf');
+  src: url('./fonts/SteinbeckRegular/Steinbeck Regular.woff') format('woff'),
+    url('./fonts/SteinbeckRegular/Steinbeck Regular.otf') format('otf');
   font-display: block;
   font-weight: normal;
   font-style: normal;
@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: 'Steinbeck';
-  src: url('./fonts/SteinbeckItalic/Steinbeck Italic.woff');
-  src: url('./fonts/SteinbeckItalic/Steinbeck Italic.otf');
+  src: url('./fonts/SteinbeckItalic/Steinbeck Italic.woff') format('woff'),
+    url('./fonts/SteinbeckItalic/Steinbeck Italic.otf') format('otf');
   font-display: block;
   font-weight: normal;
   font-style: italic;
