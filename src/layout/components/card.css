@@ -13,15 +13,15 @@
     height: 464px;
     overflow-y: hidden;
     position: absolute;
-    top: 170px;
-    z-index: 3;
   }
 }
 
-/* Workaround for different positions */
-
+/* For different positions */
 .container:nth-child(4n + 1) .card {
-  width: 10px;
+  @media (--phoneUp) {
+    top: 170px;
+    z-index: 3;
+  }
 }
 .container:nth-child(4n + 2) .card {
   @media (--phoneUp) {
