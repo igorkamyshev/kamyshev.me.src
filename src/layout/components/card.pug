@@ -3,8 +3,9 @@ mixin card(name, cardClass="", open=true, large=false)
     label(for=`${name}-check`) #{name}
     input(class="card__checker" type="checkbox" id=`${name}-check` checked=open)
 
-    section(class=`card ${large ? 'card_large' : ''} ${cardClass}` id=`${name}-card`)
+    section(class=`card ${large ? 'card_large' : ''}` id=`${name}-card`)
       header(class="card__header")
         div(class="card__drug" data-card=`${name}-card`)
         div(class="card__close" data-checker=`${name}-check`) close
-      block
+      div(class=`card__body ${large ? 'card__body_large' : ''} ${cardClass}`)
+        block
