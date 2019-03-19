@@ -18,6 +18,33 @@
   }
 }
 
+// Workaround for different positions
+
+.container:nth-child(4n + 1) .card {
+  width: 10px;
+}
+.container:nth-child(4n + 2) .card {
+  @media (--phoneUp) {
+    top: calc(100vh - 500px);
+    left: calc(100vw - 800px);
+    z-index: 4;
+  }
+}
+.container:nth-child(4n + 3) .card {
+  @media (--phoneUp) {
+    top: 100px;
+    left: calc(100vw - 760px);
+    z-index: 2;
+  }
+}
+.container:nth-child(4n + 4) .card {
+  @media (--phoneUp) {
+    top: 100px;
+    left: 50px;
+    z-index: 5;
+  }
+}
+
 .card_large {
   @media (--phoneUp) {
     width: 85vw;
@@ -105,33 +132,6 @@
   border: none;
   display: flex;
   justify-content: center;
-}
-
-// Workaround for different positions
-
-.container:nth-child(4n + 1) .card {
-  width: 10px;
-}
-.container:nth-child(4n + 2) .card {
-  @media (--phoneUp) {
-    top: calc(100vh - 500px);
-    left: calc(100vw - 800px);
-    z-index: 4;
-  }
-}
-.container:nth-child(4n + 3) .card {
-  @media (--phoneUp) {
-    top: 100px;
-    left: calc(100vw - 760px);
-    z-index: 2;
-  }
-}
-.container:nth-child(4n + 4) .card {
-  @media (--phoneUp) {
-    top: 100px;
-    left: 50px;
-    z-index: 5;
-  }
 }
 
 .container:last-child .card__checker ~ label {

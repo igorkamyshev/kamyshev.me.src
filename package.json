@@ -5,8 +5,8 @@
   "author": "Igor Kamyshev <igor@kamyshev.me>",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build src/pages/*",
-    "dev": "concurrently --kill-others \"parcel src/pages/index.pug\" \"parcel watch src/pages/articles.pug\"",
+    "build": "rimraf .cache && rimraf dist && parcel build src/pages/*",
+    "dev": "rimraf .cache && concurrently --kill-others \"parcel src/pages/index.pug\" \"parcel watch src/pages/articles.pug\"",
     "s": "yarn soda",
     "size": "size-limit",
     "ci": "yarn s lint && yarn size"
@@ -20,6 +20,7 @@
     "postcss-custom-media": "^7.0.7",
     "postcss-nesting": "^7.0.0",
     "pug": "^2.0.3",
+    "rimraf": "^2.6.3",
     "size-limit": "^0.21.1"
   },
   "husky": {
