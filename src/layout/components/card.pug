@@ -1,11 +1,17 @@
-mixin card(name, cardClass="", open=true, large=false)
+include ./plus.pug
+include ./minus.pug
+
+mixin card(name, title, hideTitle=false, open=true, large=false)
   div(class="container")
-    label(for=`${name}-check`) #{name}
     input(class="card__checker" type="checkbox" id=`${name}-check` checked=open)
+    label(for=`${name}-check`)
+      span #{title}
+      +minus("card__open-sign")
+      +plus("card__close-sign")
 
     section(class=`card ${large ? 'card_large' : ''}` id=`${name}-card`)
       header(class="card__header")
-        div(class="card__drug" data-card=`${name}-card`)
-        div(class="card__close" data-checker=`${name}-check`) close
-      div(class=`card__body ${large ? 'card__body_large' : ''} ${cardClass}`)
+        h2(class="card__drug" data-card=`${name}-card`) #{`${!hideTitle ? title : ''}`}
+        button(class="card__close" data-checker=`${name}-check`) close
+      article(class=`card__body ${large ? 'card__body_large' : ''} ${name}`)
         block

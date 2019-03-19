@@ -2,12 +2,14 @@ import { PHONE_DOWN, PHONE_UP } from './CONFIG'
 
 const cardHeaders = document.querySelectorAll('[data-card]')
 
+const DEFAULT_MARGIN = 24
+
 const calculateCoordinates = elem => {
   const box = elem.getBoundingClientRect()
 
   return {
-    top: box.top + pageYOffset,
-    left: box.left + pageXOffset,
+    top: box.top + pageYOffset - DEFAULT_MARGIN,
+    left: box.left + pageXOffset - DEFAULT_MARGIN,
   }
 }
 

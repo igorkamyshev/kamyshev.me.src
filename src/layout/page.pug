@@ -12,19 +12,17 @@ mixin page(isArticles=false)
       meta(name="description" content="Разработчик и пароход")
 
     body
-      p Новый сайт
-
-      div
-        +card("about", "about")
+      main(class="app")
+        +card("about", "обо мне", true)
           include ./blocks/about.pug
 
-        +card("projects")
+        +card("projects", "проекты")
           include ./blocks/projects.pug
 
-        +card("experience", "experience")
+        +card("experience", "опыт")
           include ./blocks/experience.pug
 
-        +card("articles", "", isArticles, true)
+        +card("articles", "статьи", false, isArticles, true)
           include ./blocks/articles.pug
 
       script(src='../index.js')

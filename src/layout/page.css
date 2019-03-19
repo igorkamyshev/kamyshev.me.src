@@ -1,3 +1,36 @@
+.app {
+  @media (--phoneDown) {
+    & label {
+      min-width: 26px;
+      display: block;
+      font-size: 26px;
+      margin: 24px;
+    }
+  }
+
+  @media (--phoneUp) {
+    position: relative;
+    float: left;
+    border: 2px solid var(--color-primary);
+    margin: 24px;
+    padding: 20px 24px;
+    height: 80px;
+
+    & > * {
+      float: left;
+
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+
+    & label {
+      font-size: 40px;
+      color: var(--color-primary);
+    }
+  }
+}
+
 .about > p {
   font-size: 26px;
   line-height: 29px;

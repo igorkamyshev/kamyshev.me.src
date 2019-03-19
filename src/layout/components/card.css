@@ -1,11 +1,11 @@
 .card {
-  width: 669px;
-  max-width: 100%;
+  width: 100%;
   background: white;
   color: black;
   border: 2px solid var(--color-primary);
 
   @media (--phoneUp) {
+    width: 669px;
     height: 464px;
     overflow-y: hidden;
     position: absolute;
@@ -13,8 +13,8 @@
 }
 
 .card_large {
-  width: 85vw;
   @media (--phoneUp) {
+    width: 85vw;
     height: calc(100vh - 158px);
   }
 }
@@ -45,13 +45,25 @@
 }
 
 /* Hide the card if checkbox not checked */
-.card__checker + .card {
+.card__checker ~ .card {
+  display: none;
+}
+
+.card__checker ~ label > .card__open-sign {
   display: none;
 }
 
 /* Show the card if checkbox not checked */
-.card__checker:checked + .card {
+.card__checker:checked ~ .card {
   display: block;
+}
+
+.card__checker:checked ~ label > .card__open-sign {
+  display: inline;
+}
+
+.card__checker:checked ~ label > .card__close-sign {
+  display: none;
 }
 
 .card__header {
@@ -67,10 +79,14 @@
 
 .card__drug {
   width: 100%;
-  content: '';
+  margin: 24px;
+  text-transform: capitalize;
 }
 
 .card__close {
+  width: 74px;
+  margin: 8px;
+  padding: 0px;
 }
 
 // Workaround for different positions
