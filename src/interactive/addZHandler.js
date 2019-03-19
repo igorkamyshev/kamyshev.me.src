@@ -11,6 +11,11 @@ const applyZ = card => () => {
   const nowZParsed = nowZ === 'auto' ? 0 : nowZ
 
   if (nowZParsed <= maxZ) {
+    for (const other of cards) {
+      other.className = other.className.replace('highlight', '')
+    }
+    card.className = `${card.className} highlight`
+
     maxZ++
     card.style.zIndex = maxZ + 1
   }
