@@ -24,8 +24,13 @@
 @import './layout/components/card.css';
 @import './layout/page.css';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Steinbeck';
+  margin: 0;
 
   --color-primary: #2613ff;
 }
