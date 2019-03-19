@@ -18,7 +18,7 @@
   }
 }
 
-// Workaround for different positions
+/* Workaround for different positions */
 
 .container:nth-child(4n + 1) .card {
   width: 10px;

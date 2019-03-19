@@ -17,10 +17,6 @@
   font-style: italic;
 }
 
-/* custom media queries */
-@custom-media --phoneDown (max-width: 819px);
-@custom-media --phoneUp (min-width: 820px);
-
 @import './layout/components/card.css';
 @import './layout/components/plus.css';
 @import './layout/components/minus.css';
