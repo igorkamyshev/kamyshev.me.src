@@ -34,6 +34,11 @@ body {
   margin: 0;
 }
 
+li {
+  font-size: 18px;
+  line-height: 20px;
+}
+
 p {
   font-size: 18px;
   line-height: 20px;
@@ -47,12 +52,17 @@ a {
   color: var(--color-primary);
 }
 
-h1,
-h2,
-h3,
 h4,
 h5,
 h6 {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
   font-size: 26px;
   line-height: 29px;
   font-weight: normal;

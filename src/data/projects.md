@@ -2,26 +2,34 @@
 
 > 2018-2019
 
-_lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor_
+_[«Просто спросить»](https://ask.nenaprasno.ru) — сервис, который помогает людям, столкнувшимися с онкологическими заболеваниями. Служба бесплатно подскажет как организовать качественное лечение._
+
+_Стек: JS (React, Node.js, TypeScript)._
 
 ### Faster
 
 > 2018
 
-_lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor_
+_Faster — аптечный маркетплейс, в котором можно купить любые лекарства._
+
+_Стек: JS (React, TypeScript), PHP (Yii2)._
 
 ### QEEP-Pro
 
 > 2017-2018
 
-_lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor_
+_QEEP-Pro — это CRM для служб доставки. Проект стартовал в 2011, к 2017 оброс значительным количеством легаси._
+
+_Поддерживал и развивал сайт и мобильное приложение. Разработал генератор интернет-магазинов, сделал функциональность почтовых рассылок._
+
+_Стек: JS (React, ReactNative, Vue, TypeScript), PHP (Symfony)._
 
 ### Procraft
 
 > 2017
 
-_Procraft — это CRM, с помощью которой самозанятые настраивают рекламу, создают лэндинги для продажи своих услуг и получают аналитику по клиентам._
+_[Procraft](https://procraft.com) — это CRM, с помощью которой самозанятые настраивают рекламу, создают лэндинги для продажи своих услуг и получают аналитику по клиентам._
 
 _Занимался модулем статистики. На бэкенде сделал интеграцию с Google Analytics и агрегации полученных данных, сверстал и имплементировал графики для сайта и мобильных приложений._
 
-_Стек: Scala (Play, Slick, Sangria), JS (React, ReactNative, TypeScript, Relay), GraphQL._
+_Стек: JS (React, ReactNative, TypeScript, Relay), Scala (Play, Slick, Sangria), GraphQL._

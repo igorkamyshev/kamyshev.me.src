@@ -48,6 +48,7 @@
 .card_large {
   @media (--phoneUp) {
     width: 85vw;
+    max-width: 1020px;
     height: calc(100vh - 158px);
   }
 }

@@ -3,21 +3,21 @@
 
 Фулстек разработчик, техлид
 
-_lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor_
+_Программирую, программирую._
 
 ### Netology
 > 04.2018-сейчас
 
-Проподаватель
+Методист и лектор
 
-_lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor_
+_Разрабатываю курсы по JavaScript и React. Веду лекции по асинхронному программированию, продвинутым возможностям JS и интеграции React с другими бибилиотеками._
 
 ### QEEP-Pro
 > 11.2016-06.2018
 
 Фулстек разработчик
 
-_lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor_
+_Программировал, программировал._
 
 ### Freelance
 > 01.2014-11.2016
