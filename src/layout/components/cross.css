@@ -1,0 +1,26 @@
+.cross {
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  margin-top: -12px;
+}
+
+.cross:before {
+  content: '';
+  width: 80px;
+  height: 2px;
+  background-color: var(--color-primary);
+  display: block;
+  position: relative;
+  top: 40px;
+}
+.cross:after {
+  content: '';
+  height: 80px;
+  width: 2px;
+  background-color: var(--color-primary);
+  display: block;
+  position: relative;
+  left: 38px;
+  bottom: 2px;
+}

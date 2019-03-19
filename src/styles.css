@@ -24,6 +24,7 @@
 @import './layout/components/card.css';
 @import './layout/components/plus.css';
 @import './layout/components/minus.css';
+@import './layout/components/cross.css';
 @import './layout/page.css';
 
 * {

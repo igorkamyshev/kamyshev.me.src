@@ -84,9 +84,13 @@
 }
 
 .card__close {
-  width: 74px;
+  width: 58px;
   margin: 8px;
   padding: 0px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
 }
 
 // Workaround for different positions
