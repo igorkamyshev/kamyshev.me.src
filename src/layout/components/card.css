@@ -5,10 +5,11 @@
   border-left: 2px solid var(--color-primary);
   border-right: 2px solid var(--color-primary);
   float: left;
+  overflow-x: hidden;
 
   @media (--phoneUp) {
     border: 2px solid var(--color-primary);
-    width: 669px;
+    width: 691px;
     height: 464px;
     overflow-y: hidden;
     position: absolute;

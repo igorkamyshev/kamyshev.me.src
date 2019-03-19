@@ -42,3 +42,9 @@
   font-size: 26px;
   line-height: 29px;
 }
+
+.link-line {
+  & > a:not(:last-child) {
+    margin-right: 24px;
+  }
+}
