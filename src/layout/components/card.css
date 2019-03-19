@@ -122,7 +122,7 @@
 .container:nth-child(4n + 3) .card {
   @media (--phoneUp) {
     top: 100px;
-    left: calc(100vw - 765px);
+    left: calc(100vw - 760px);
     z-index: 2;
   }
 }
