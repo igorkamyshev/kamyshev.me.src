@@ -54,6 +54,7 @@
 }
 
 .container label {
+  cursor: pointer;
   @media (--phoneDown) {
     border-top: 2px solid var(--color-primary);
     border-left: 2px solid var(--color-primary);
@@ -121,8 +122,10 @@
 
 .card__drug {
   width: 100%;
-  margin: 24px;
+  margin: 0;
+  padding: 24px;
   text-transform: capitalize;
+  cursor: grab;
 }
 
 .card__close {
@@ -133,6 +136,7 @@
   border: none;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .container:last-child .card__checker ~ label {
