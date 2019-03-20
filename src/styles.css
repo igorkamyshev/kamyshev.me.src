@@ -32,11 +32,15 @@ body {
 
   font-family: 'Steinbeck';
   margin: 0;
+  height: 100vh;
 
   @media (--phoneDown) {
-    height: 100vh;
     background-color: var(--color-primary);
   }
+}
+
+.dead-screen {
+  background-color: var(--color-primary);
 }
 
 ul {

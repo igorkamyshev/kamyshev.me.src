@@ -22,6 +22,18 @@ const highlightCard = targetCard => {
   targetCard.className = `${targetCard.className} highlight`
 }
 
+const deadScreen = () => {
+  const body = document.getElementsByTagName('body')[0]
+
+  const allClosed = cards.filter(isVisible).length === 0
+
+  if (allClosed) {
+    body.className = `${body.className} dead-screen`
+  } else {
+    body.className = body.className.replace('dead-screen', '')
+  }
+}
+
 const makeCardHighest = card => {
   const cardZ = getZ(card)
 
@@ -45,4 +57,6 @@ export const recalculateCardsState = cardId => {
   if (theHighestCard) {
     highlightCard(theHighestCard)
   }
+
+  deadScreen()
 }

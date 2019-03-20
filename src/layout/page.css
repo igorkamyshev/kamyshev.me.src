@@ -1,4 +1,8 @@
 .app {
+  @media (--phoneUp) {
+    background-color: white;
+  }
+
   @media (--phoneDown) {
     & label {
       background-color: white;
