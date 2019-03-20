@@ -1,7 +1,7 @@
 const NON_BREAKING_SPACE = String.fromCharCode(160)
 
 // polyfill trimEnd
-const trimEnd = str => str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '')
+const trimEnd = str => str.replace(/\s+$/g, '')
 
 const typography = str =>
   str
