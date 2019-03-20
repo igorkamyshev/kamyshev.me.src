@@ -4,14 +4,18 @@ module.exports.linkLine = tree =>
       .filter(child => child !== ' ')
       .every(child => child.tag === 'a')
 
+    const singleLink = i.content.filter(child => child !== ' ').length === 1
+
     if (linkLine) {
       const originalClass = (i.attrs && i.attrs.class) || ''
+
+      const additionalClass = singleLink ? 'single-link' : 'link-line'
 
       return {
         ...i,
         attrs: {
           ...i.attrs,
-          class: `${originalClass} link-line`,
+          class: `${originalClass} ${additionalClass}`,
         },
       }
     }
