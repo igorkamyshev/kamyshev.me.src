@@ -63,11 +63,13 @@
 }
 
 .card__body {
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 84px;
 
   @media (--phoneUp) {
+    padding-left: 24px;
+    padding-right: 24px;
     height: 390px;
     overflow-y: scroll;
   }
