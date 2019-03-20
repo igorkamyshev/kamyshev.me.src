@@ -65,6 +65,7 @@
 .card__body {
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 84px;
 
   @media (--phoneUp) {
     height: 390px;
@@ -124,7 +125,6 @@
   width: 100%;
   margin: 0;
   padding: 24px;
-  text-transform: capitalize;
   cursor: grab;
 }
 

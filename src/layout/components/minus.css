@@ -1,19 +1,26 @@
 .minus {
+  width: 32px;
+  height: 32px;
   float: right;
-  width: 25px;
-  height: 25px;
 
   @media (--phoneUp) {
-    margin-top: 3px;
+    width: 25px;
+    height: 25px;
   }
 }
 
 .minus:before {
   content: '';
-  width: 25px;
-  height: 1px;
-  border-top: 1px solid var(--color-primary);
+  width: 32px;
+  height: 2px;
+  background-color: var(--color-primary);
   display: block;
-  margin-top: 15px;
-  margin-left: 3px;
+  position: relative;
+  top: 16px;
+
+  @media (--phoneUp) {
+    width: 25px;
+    height: 1px;
+    top: 20px;
+  }
 }

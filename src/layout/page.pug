@@ -16,14 +16,14 @@ mixin page(isArticles=false)
 
     body
       main(class="app")
-        +card("about", "обо мне", false, true)
+        +card("about", "Обо мне", false, true)
           include ./blocks/about.pug
 
-        +card("projects", "проекты", !isArticles)
+        +card("projects", "Проекты", !isArticles)
           include ./blocks/projects.pug
 
-        +card("experience", "опыт")
+        +card("experience", "Опыт")
           include ./blocks/experience.pug
 
-        +card("articles", "статьи", isArticles, false, isArticles, true)
+        +card("articles", "Статьи", isArticles, false, isArticles, true)
           include ./blocks/articles.pug

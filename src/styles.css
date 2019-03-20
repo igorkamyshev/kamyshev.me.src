@@ -32,6 +32,11 @@ body {
 
   font-family: 'Steinbeck';
   margin: 0;
+
+  @media (--phoneDown) {
+    height: 100vh;
+    background-color: var(--color-primary);
+  }
 }
 
 ul {

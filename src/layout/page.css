@@ -1,6 +1,7 @@
 .app {
   @media (--phoneDown) {
     & label {
+      background-color: white;
       min-width: 26px;
       display: block;
       font-size: 26px;
@@ -29,7 +30,21 @@
     & label {
       font-size: 40px;
       color: var(--color-primary);
+
+      & > span:first-child {
+        text-transform: lowercase;
+      }
     }
+  }
+
+  & label {
+    color: var(--color-primary);
+  }
+}
+
+.about {
+  @media (--phoneUp) {
+    padding-bottom: 0;
   }
 }
 
