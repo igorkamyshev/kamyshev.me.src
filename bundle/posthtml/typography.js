@@ -1,16 +1,16 @@
 const NON_BREAKING_SPACE = String.fromCharCode(160)
 
+// polyfill trimEnd
+const trimEnd = str => str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '')
+
 const typography = str =>
   str
     .replace(/(“|"|&quot;)(.+?)(”|"|&quot;)/gi, (_1, _2, inner) => `«${inner}»`)
     .replace(/(\s*?)(—)(\s*)/gi, ` — `)
-    .replace(/\s+.{1,2}(\s+)/gi, match => {
-      if (match && match.trimEnd) {
-        return `${match.trimEnd()}${NON_BREAKING_SPACE}`
-      }
-
-      return NON_BREAKING_SPACE
-    })
+    .replace(
+      /\s+.{1,2}(\s+)/gi,
+      match => `${trimEnd(match)}${NON_BREAKING_SPACE}`,
+    )
 
 module.exports.typography = tree =>
   tree.walk(i => {
