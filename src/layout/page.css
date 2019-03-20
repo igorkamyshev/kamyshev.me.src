@@ -8,6 +8,14 @@
       padding: 24px;
       float: left;
       width: 100%;
+
+      display: grid;
+      grid-template-columns: 1fr 32px;
+      align-items: center;
+
+      & > span:first-child {
+        height: 21px;
+      }
     }
   }
 
