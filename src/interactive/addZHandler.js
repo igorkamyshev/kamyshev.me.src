@@ -1,25 +1,9 @@
 import { PHONE_UP, PHONE_DOWN } from './CONFIG'
+import { recalculateCardsState } from './actions/recalculateCardsState'
 
 const cards = document.getElementsByClassName('card')
-let maxZ = cards.length
 
-const applyZ = card => () => {
-  const nowZ = document.defaultView
-    .getComputedStyle(card, null)
-    .getPropertyValue('z-index')
-
-  const nowZParsed = nowZ === 'auto' ? 0 : nowZ
-
-  if (nowZParsed <= maxZ) {
-    for (const other of cards) {
-      other.className = other.className.replace('highlight', '')
-    }
-    card.className = `${card.className} highlight`
-
-    maxZ++
-    card.style.zIndex = maxZ + 1
-  }
-}
+const applyZ = card => () => recalculateCardsState(card.id)
 
 const applyAll = () => {
   for (const card of cards) {

@@ -4,7 +4,7 @@ include ./cross.pug
 
 mixin card(name, title, highlight=false, hideTitle=false, open=true, large=false)
   div(class="container")
-    input(class="card__checker" type="checkbox" id=`${name}-check` checked=open)
+    input(class="card__checker" type="checkbox" id=`${name}-check` checked=open data-card=`${name}-card`)
     label(for=`${name}-check`)
       span #{title}
       +minus("card__open-sign")
