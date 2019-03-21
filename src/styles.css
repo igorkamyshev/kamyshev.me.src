@@ -17,30 +17,52 @@
   font-style: italic;
 }
 
-@import './layout/components/card.css';
-@import './layout/components/plus.css';
-@import './layout/components/minus.css';
-@import './layout/components/cross.css';
+@import './layout/components/card/card.css';
+@import './layout/components/plus/plus.css';
+@import './layout/components/minus/minus.css';
+@import './layout/components/cross/cross.css';
+@import './layout/components/up/up.css';
+@import './layout/special.css';
 @import './layout/page.css';
+
+:root {
+  --main-font: 'Steinbeck';
+
+  --header: 24px/110% var(--main-font);
+  --subheader: 22px/110% var(--main-font);
+  --extra-large-text: 40px/100% var(--main-font);
+  --large-text: 24px/125% var(--main-font);
+  --text: 18px/125% var(--main-font);
+
+  @media (--phoneDown) {
+    --extra-large-text: 26px/100% var(--main-font);
+  }
+
+  @media (--smallPhoneDown) {
+    --header: 20px/110% var(--main-font);
+    --subheader: 17px/110% var(--main-font);
+    --extra-large-text: 20px/100% var(--main-font);
+    --large-text: 20px/125% var(--main-font);
+    --text: 14px/125% var(--main-font);
+  }
+
+  --color-primary: #2613ff;
+}
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  --color-primary: #2613ff;
-
   font-family: 'Steinbeck';
   margin: 0;
   height: 100vh;
 
-  @media (--phoneDown) {
-    background-color: var(--color-primary);
-  }
-}
-
-.dead-screen {
   background-color: var(--color-primary);
+  @media (--phoneUp) {
+    background-color: white;
+    overflow: hidden;
+  }
 }
 
 ul {
@@ -49,13 +71,12 @@ ul {
 }
 
 li {
-  font-size: 18px;
-  line-height: 20px;
+  font: var(--text);
+  padding: 6px 0;
 }
 
 p {
-  font-size: 18px;
-  line-height: 20px;
+  font: var(--text);
 
   margin-block-start: 12px;
   margin-block-end: 12px;
@@ -69,16 +90,14 @@ a {
 h4,
 h5,
 h6 {
-  font-size: 22px;
-  line-height: 24px;
+  font: var(--subheader);
   font-weight: normal;
 }
 
 h1,
 h2,
 h3 {
-  font-size: 26px;
-  line-height: 29px;
+  font: var(--header);
   font-weight: normal;
 }
 
@@ -92,7 +111,7 @@ h6 > blockquote {
 }
 
 blockquote {
-  font-size: 18px;
+  font: var(--text);
 
   margin-block-start: 0;
   margin-block-end: 0;

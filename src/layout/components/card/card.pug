@@ -1,6 +1,7 @@
-include ./plus.pug
-include ./minus.pug
-include ./cross.pug
+include ../plus/plus.pug
+include ../minus/minus.pug
+include ../cross/cross.pug
+include ../up/up.pug
 
 mixin card(name, title, highlight=false, hideTitle=false, open=true, large=false)
   div(class="container")
@@ -18,4 +19,4 @@ mixin card(name, title, highlight=false, hideTitle=false, open=true, large=false
       article(class=`card__body ${large ? 'card__body_large' : ''} ${name}`)
         block
         if large
-          button(class="up" id="articles-up")
+          +up("articles-up")

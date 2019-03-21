@@ -1,0 +1,29 @@
+.link-line {
+  margin-block-start: 24px;
+  margin-block-end: 24px;
+
+  & > a:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.single-link {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0px;
+
+  & > a {
+    border: 1px solid #2613ff;
+    border-radius: 42px;
+    padding: 7px 10px 3px 10px;
+
+    &:hover {
+      color: white;
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+.dead-screen {
+  background-color: var(--color-primary);
+}

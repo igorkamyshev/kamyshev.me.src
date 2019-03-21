@@ -1,16 +1,20 @@
 .app {
-  @media (--phoneUp) {
-    background-color: white;
-  }
+  background-color: white;
 
-  @media (--phoneDown) {
-    & label {
-      background-color: white;
-      min-width: 26px;
+  & label {
+    font: var(--extra-large-text);
+    color: var(--color-primary);
+    background-color: white;
+
+    @media (--phoneUp) {
+      & > * {
+        text-transform: lowercase;
+      }
+    }
+
+    @media (--phoneDown) {
       display: block;
-      font-size: 26px;
-      padding: 24px;
-      float: left;
+      padding: 24px 12px;
       width: 100%;
 
       display: grid;
@@ -19,6 +23,14 @@
 
       & > span:first-child {
         height: 21px;
+      }
+    }
+
+    @media (--smallPhoneDown) {
+      padding: 20px 12px;
+
+      & > span:first-child {
+        height: 15px;
       }
     }
   }
@@ -38,19 +50,6 @@
         margin-right: 24px;
       }
     }
-
-    & label {
-      font-size: 40px;
-      color: var(--color-primary);
-
-      & > span:first-child {
-        text-transform: lowercase;
-      }
-    }
-  }
-
-  & label {
-    color: var(--color-primary);
   }
 }
 
@@ -58,11 +57,10 @@
   @media (--phoneUp) {
     padding-bottom: 0;
   }
-}
 
-.about > p {
-  font-size: 26px;
-  line-height: 29px;
+  & > * {
+    font: var(--large-text);
+  }
 }
 
 .experience {
@@ -77,8 +75,7 @@
   }
 
   & > h3 + p {
-    font-size: 26px;
-    line-height: 29px;
+    font: var(--large-text);
   }
 }
 
@@ -95,10 +92,6 @@
 }
 
 .articles {
-  & > * {
-    max-width: 650px;
-  }
-
   & > h1,
   & > h2,
   & > h3 {
@@ -111,33 +104,6 @@
   & > h6 {
     margin-block-start: 24px;
     margin-block-end: 12px;
-  }
-}
-
-.link-line {
-  margin-block-start: 24px;
-  margin-block-end: 24px;
-
-  & > a:not(:last-child) {
-    margin-right: 24px;
-  }
-}
-
-.single-link {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin: 0px;
-
-  & > a {
-    border: 1px solid #2613ff;
-    border-radius: 42px;
-    padding: 7px 10px 3px 10px;
-    font-size: 18px;
-  }
-
-  & > a:hover {
-    color: white;
-    background-color: var(--color-primary);
   }
 }
 

@@ -1,0 +1,28 @@
+/* For different positions */
+.container:nth-child(4n + 1) .card {
+  @media (--phoneUp) {
+    top: 170px;
+    z-index: 3;
+  }
+}
+.container:nth-child(4n + 2) .card {
+  @media (--phoneUp) {
+    top: calc(100vh - 500px);
+    left: calc(100vw - 800px);
+    z-index: 4;
+  }
+}
+.container:nth-child(4n + 3) .card {
+  @media (--phoneUp) {
+    top: 100px;
+    left: calc(100vw - 760px);
+    z-index: 2;
+  }
+}
+.container:nth-child(4n + 4) .card {
+  @media (--phoneUp) {
+    top: 100px;
+    left: 50px;
+    z-index: 5;
+  }
+}

@@ -1,0 +1,26 @@
+/* Hide the browser's default checkbox */
+.card__checker {
+  display: none;
+}
+
+/* Hide the card if checkbox not checked */
+.card__checker ~ .card {
+  display: none;
+}
+
+.card__checker ~ label > .card__open-sign {
+  display: none;
+}
+
+/* Show the card if checkbox not checked */
+.card__checker:checked ~ .card {
+  display: block;
+}
+
+.card__checker:checked ~ label > .card__open-sign {
+  display: inline;
+}
+
+.card__checker:checked ~ label > .card__close-sign {
+  display: none;
+}
