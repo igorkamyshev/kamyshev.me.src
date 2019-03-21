@@ -1,0 +1,22 @@
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/*.woff"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/*.otf"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/server-push-path"
+  [headers.values]
+    Link = [
+      "</steinbeck-regular.f508b336.woff>; rel=preload; as=font",
+      "</steinbeck-italic.28277c70.woff>; rel=preload; as=font"
+    ]
