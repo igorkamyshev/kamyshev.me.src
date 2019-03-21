@@ -3,13 +3,19 @@ include ../minus/minus.pug
 include ../cross/cross.pug
 include ../up/up.pug
 
+mixin accessible_label(name, title, className, tabindex)
+  label(for=`${name}-check` tabindex=tabindex role="button" class=className)
+    span #{title}
+    +minus("card__open-sign")
+    +plus("card__close-sign")
+
 mixin card(name, title, highlight=false, hideTitle=false, open=true, large=false)
   div(class="container")
     input(class="card__checker" type="checkbox" id=`${name}-check` checked=open data-card=`${name}-card`)
-    label(for=`${name}-check` tabindex="1" role="button")
-      span #{title}
-      +minus("card__open-sign")
-      +plus("card__close-sign")
+
+    //- for accessible labels on desktop/mobile must use different tabindex
+    +accessible_label(name, title, "label_desktop", 1)
+    +accessible_label(name, title, "label_mobile", 0)
 
     section(class=`card ${large ? 'card_large' : ''} ${highlight ? 'highlight' : ''}` id=`${name}-card`)
       header(class="card__header")

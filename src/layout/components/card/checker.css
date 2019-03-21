@@ -12,6 +12,19 @@
   display: none;
 }
 
+/* for accessible labels on desktop/mobile must use different tabindex */
+.label_desktop {
+  @media (--phoneDown) {
+    display: none !important;
+  }
+}
+
+.label_mobile {
+  @media (--phoneUp) {
+    display: none !important;
+  }
+}
+
 /* Show the card if checkbox not checked */
 .card__checker:checked ~ .card {
   display: block;
