@@ -1,4 +1,5 @@
 .container label {
+  user-select: none;
   cursor: pointer;
   @media (--phoneDown) {
     border-top: 2px solid var(--color-primary);
