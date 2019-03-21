@@ -5,13 +5,18 @@ const articles = document.querySelector('.articles')
 const firstHiddenP = document.querySelector('.articles > p:nth-of-type(3)')
 
 const initDisplay = () => {
+  let previousY = 0
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      const currentY = entry.boundingClientRect.y
+
+      if (entry.isIntersecting || previousY > currentY) {
         button.style.display = 'block'
       } else {
         button.style.display = 'none'
       }
+
+      previousY = currentY
     })
   })
   observer.observe(firstHiddenP)
