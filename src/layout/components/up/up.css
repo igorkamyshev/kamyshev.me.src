@@ -1,11 +1,12 @@
 .up {
+  display: none;
+
   @media (--phoneUp) {
     position: absolute;
   }
 
   @media (--phoneDown) {
     position: fixed;
-    display: none;
   }
 
   bottom: 12px;

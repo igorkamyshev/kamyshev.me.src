@@ -1,12 +1,8 @@
 import { PHONE_DOWN } from './CONFIG'
 
-const options = {
-  root: null,
-  threshold: 0.15,
-}
-
 const button = document.querySelector('#articles-up')
 const articles = document.querySelector('.articles')
+const firstHiddenP = document.querySelector('.articles > p:nth-of-type(3)')
 
 const initDisplay = () => {
   const observer = new IntersectionObserver(entries => {
@@ -17,8 +13,8 @@ const initDisplay = () => {
         button.style.display = 'none'
       }
     })
-  }, options)
-  observer.observe(articles)
+  })
+  observer.observe(firstHiddenP)
 }
 
 const initOnClick = () => {
@@ -41,15 +37,6 @@ const initOnClick = () => {
 }
 
 export const addUpButtonDisplay = () => {
-  if (window.innerWidth <= PHONE_DOWN) {
-    initDisplay()
-  } else {
-    window.matchMedia(`(max-width: ${PHONE_DOWN}px)`).addListener(e => {
-      if (e.matches) {
-        initDisplay()
-      }
-    })
-  }
-
+  initDisplay()
   initOnClick()
 }

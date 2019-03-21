@@ -21,8 +21,8 @@
 }
 .container:nth-child(4n + 4) .card {
   @media (--phoneUp) {
-    top: 100px;
-    left: 50px;
+    top: 110px;
+    left: calc(50vw - 300px);
     z-index: 5;
   }
 }
