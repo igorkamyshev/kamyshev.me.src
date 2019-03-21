@@ -23,7 +23,7 @@
   margin: 0px;
 
   & > a {
-    border: 1px solid #2613ff;
+    border: 1px solid var(--color-primary);
     border-radius: 42px;
     padding: 7px 10px 3px 10px;
 
