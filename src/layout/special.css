@@ -2,6 +2,16 @@
   margin-block-start: 24px;
   margin-block-end: 24px;
 
+  @media (--phoneDown) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px 16px;
+
+    & > a:last-child {
+      display: none;
+    }
+  }
+
   & > a:not(:last-child) {
     margin-right: 24px;
   }
