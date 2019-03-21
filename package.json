@@ -32,7 +32,10 @@
   "size-limit": [
     {
       "limit": "2 KB",
-      "path": "./src/index.js"
+      "path": "./src/interactive/index.js"
     }
-  ]
+  ],
+  "dependencies": {
+    "intersection-observer": "^0.5.1"
+  }
 }
