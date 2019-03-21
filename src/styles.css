@@ -51,6 +51,19 @@
 
 * {
   box-sizing: border-box;
+  @media (--phoneUp) {
+    scrollbar-color: blue transparent;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      display: none;
+      width: 4px;
+    }
+
+    &:hover::-webkit-scrollbar {
+      display: block;
+    }
+  }
 }
 
 ::selection {

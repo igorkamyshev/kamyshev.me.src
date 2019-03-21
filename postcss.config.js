@@ -5,5 +5,6 @@ module.exports = {
     require('postcss-custom-media')({
       importFrom: './src/custom-media.css',
     }),
+    require('postcss-scrollbar'),
   ],
 }
