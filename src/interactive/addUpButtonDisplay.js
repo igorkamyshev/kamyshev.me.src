@@ -2,7 +2,7 @@ import { PHONE_DOWN } from './CONFIG'
 
 const button = document.querySelector('#articles-up')
 const articles = document.querySelector('.articles')
-const firstHiddenP = document.querySelector('.articles > p:nth-of-type(3)')
+const firstHiddenP = document.querySelector('.articles > p:nth-of-type(6)')
 
 const initDisplay = () => {
   let previousY = 0
