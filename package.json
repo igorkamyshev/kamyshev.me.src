@@ -36,6 +36,7 @@
     }
   ],
   "dependencies": {
-    "intersection-observer": "^0.5.1"
+    "intersection-observer": "^0.5.1",
+    "smoothscroll-polyfill": "^0.4.3"
   }
 }
