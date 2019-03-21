@@ -6,7 +6,7 @@ include ../up/up.pug
 mixin card(name, title, highlight=false, hideTitle=false, open=true, large=false)
   div(class="container")
     input(class="card__checker" type="checkbox" id=`${name}-check` checked=open data-card=`${name}-card`)
-    label(for=`${name}-check`)
+    label(for=`${name}-check` tabindex="1" role="button")
       span #{title}
       +minus("card__open-sign")
       +plus("card__close-sign")

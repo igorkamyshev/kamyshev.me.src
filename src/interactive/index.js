@@ -3,6 +3,7 @@ import { addDragHandler } from './addDragHandler'
 import { addArticleToggle } from './addArticleToggle'
 import { addCheckerListener } from './addCheckerListener'
 import { addUpButtonDisplay } from './addUpButtonDisplay'
+import { addCheckerKeyPress } from './addCheckerKeyPress'
 import { addCloseButtonsHandler } from './addCloseButtonsHandler'
 
 const bootstrap = () => {
@@ -11,6 +12,7 @@ const bootstrap = () => {
   addArticleToggle()
   addCheckerListener()
   addUpButtonDisplay()
+  addCheckerKeyPress()
   addCloseButtonsHandler()
 }
 
