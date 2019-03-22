@@ -22,9 +22,8 @@
 }
 
 .card__close {
-  width: 58px;
-  margin: 8px;
-  padding: 0px;
+  width: 74px;
+  padding: 8px;
   background: none;
   border: none;
   display: flex;
