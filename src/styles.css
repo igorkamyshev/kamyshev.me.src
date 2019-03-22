@@ -130,10 +130,7 @@ h6 > blockquote {
 blockquote {
   font: var(--text);
 
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+  margin: 0px;
 
   border: 1px solid #000000;
   border-radius: 39px;

@@ -10,6 +10,10 @@
       & > * {
         text-transform: lowercase;
       }
+
+      & > span:first-child {
+        margin-right: 2px;
+      }
     }
 
     @media (--phoneDown) {
