@@ -27,6 +27,7 @@
 
 :root {
   --color-primary: blue;
+  --color-secondary: rgb(255, 59, 106);
   --main-font: 'Steinbeck';
 
   --header: 24px/110% var(--main-font);
@@ -66,7 +67,7 @@
 }
 
 ::selection {
-  background-color: rgba(255, 59, 106, 0.99);
+  background-color: color-mod(var(--color-secondary, alpha(0.99)));
   color: white;
 }
 
@@ -145,6 +146,13 @@ button:active {
   outline: none;
 }
 
+/* accessible */
+
 .js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.focus-visible {
+  --color-primary: var(--color-);
   outline: none;
 }
