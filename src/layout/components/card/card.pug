@@ -15,7 +15,7 @@ mixin card(name, title, highlight=false, hideTitle=false, open=true, large=false
     section(class=`card ${large ? 'card_large' : ''} ${highlight ? 'highlight' : ''}` id=`${name}-card` data-checker=`${name}-check`)
       header(class="card__header")
         h2(class="card__drug" data-card=`${name}-card`) #{`${!hideTitle ? title : ''}`}
-        button(class="card__close" data-checker=`${name}-check`)
+        button(class="card__close" data-checker=`${name}-check` tabindex=-1)
           +cross
       article(class=`card__body ${large ? 'card__body_large' : ''} ${name}`)
         block
