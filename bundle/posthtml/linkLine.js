@@ -1,21 +1,33 @@
 module.exports.linkLine = tree =>
   tree.match({ tag: 'p' }, i => {
-    const linkLine = i.content
-      .filter(child => child !== ' ')
-      .every(child => child.tag === 'a')
+    const clearContent = i.content.filter(child => child !== ' ')
 
-    const singleLink = i.content.filter(child => child !== ' ').length === 1
+    const linkLine = clearContent.every(child => child.tag === 'a')
+
+    const linkWithComment =
+      clearContent.length === 2 &&
+      typeof clearContent[0] === 'string' &&
+      clearContent[1] &&
+      clearContent[1].tag === 'a'
+
+    const originalClass = (i.attrs && i.attrs.class) || ''
 
     if (linkLine) {
-      const originalClass = (i.attrs && i.attrs.class) || ''
-
-      const additionalClass = singleLink ? 'single-link' : 'link-line'
-
       return {
         ...i,
         attrs: {
           ...i.attrs,
-          class: `${originalClass} ${additionalClass}`,
+          class: `${originalClass} link-line`,
+        },
+      }
+    }
+
+    if (linkWithComment) {
+      return {
+        ...i,
+        attrs: {
+          ...i.attrs,
+          class: `${originalClass} single-link`,
         },
       }
     }
