@@ -38,9 +38,3 @@
 .dead-screen {
   background-color: var(--color-primary);
 }
-
-.highlight {
-  @media (--phoneUp) {
-    box-shadow: 0px 0px 40px color-mod(var(--color-secondary) alpha(0.9));
-  }
-}

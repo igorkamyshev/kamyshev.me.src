@@ -17,14 +17,6 @@
   font-style: italic;
 }
 
-@import './layout/components/card/card.css';
-@import './layout/components/plus/plus.css';
-@import './layout/components/minus/minus.css';
-@import './layout/components/cross/cross.css';
-@import './layout/components/up/up.css';
-@import './layout/special.css';
-@import './layout/page.css';
-
 :root {
   --color-primary: blue;
   --color-secondary: rgb(255, 59, 106);
@@ -69,6 +61,12 @@
 ::selection {
   background-color: color-mod(var(--color-secondary) alpha(0.99));
   color: white;
+}
+
+.highlight {
+  @media (--phoneUp) {
+    box-shadow: 0px 0px 40px color-mod(var(--color-secondary) alpha(0.9));
+  }
 }
 
 body {
@@ -156,3 +154,11 @@ button:active {
   --color-primary: var(--color-);
   outline: none;
 }
+
+@import './layout/components/card/card.css';
+@import './layout/components/plus/plus.css';
+@import './layout/components/minus/minus.css';
+@import './layout/components/cross/cross.css';
+@import './layout/components/up/up.css';
+@import './layout/special.css';
+@import './layout/page.css';
