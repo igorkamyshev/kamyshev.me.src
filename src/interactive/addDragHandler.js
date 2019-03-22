@@ -62,13 +62,13 @@ export const addDragHandler = () => {
     }
   })
 
+  window.matchMedia(`(min-width: ${PHONE_UP}px)`).addListener(e => {
+    if (e.matches) {
+      applyDragHandlers()
+    }
+  })
+
   if (window.innerWidth > PHONE_DOWN) {
     applyDragHandlers()
-  } else {
-    window.matchMedia(`(min-width: ${PHONE_UP}px)`).addListener(e => {
-      if (e.matches) {
-        applyDragHandlers()
-      }
-    })
   }
 }

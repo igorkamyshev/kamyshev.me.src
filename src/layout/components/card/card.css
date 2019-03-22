@@ -14,8 +14,8 @@
 
   @media (--phoneUp) {
     border: 2px solid var(--color-primary);
-    width: 691px;
-    height: 464px;
+    width: 670px;
+    height: 460px;
     overflow-y: hidden;
     position: absolute;
   }

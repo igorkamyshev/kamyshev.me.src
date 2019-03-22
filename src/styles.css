@@ -26,6 +26,7 @@
 @import './layout/page.css';
 
 :root {
+  --color-primary: blue;
   --main-font: 'Steinbeck';
 
   --header: 24px/110% var(--main-font);
@@ -45,29 +46,27 @@
     --large-text: 20px/125% var(--main-font);
     --text: 14px/125% var(--main-font);
   }
-
-  --color-primary: #2613ff;
 }
 
 * {
   box-sizing: border-box;
   @media (--phoneUp) {
-    scrollbar-color: blue transparent;
+    scrollbar-color: transparent transparent;
     scrollbar-width: thin;
 
-    &::-webkit-scrollbar {
-      display: none;
-      width: 4px;
+    &:hover {
+      scrollbar-color: blue transparent;
     }
 
-    &:hover::-webkit-scrollbar {
-      display: block;
+    /* not in standart, but so cute =) */
+    &::-webkit-scrollbar {
+      width: 4px;
     }
   }
 }
 
 ::selection {
-  background-color: rgba(255, 150, 150, 0.99);
+  background-color: rgba(255, 59, 106, 0.99);
   color: white;
 }
 
