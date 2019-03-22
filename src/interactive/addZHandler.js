@@ -7,7 +7,10 @@ const applyZ = card => () => recalculateCardsState(card.id)
 
 const applyAll = () => {
   for (const card of cards) {
-    card.onmousedown = applyZ(card)
+    const handler = applyZ(card)
+
+    card.onmousedown = handler
+    card.onkeyup = handler
   }
 }
 
