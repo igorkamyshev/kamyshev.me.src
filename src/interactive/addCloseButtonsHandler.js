@@ -1,12 +1,9 @@
-import { recalculateCardsState } from './actions/recalculateCardsState'
+import { closeCard } from './actions/closeCard'
 
-const closeButtons = document.querySelectorAll('[data-checker]')
+const closeButtons = document.querySelectorAll('.card__close')
 
 const listener = button => () => {
-  const checker = document.getElementById(button.dataset.checker)
-  checker.checked = false
-
-  recalculateCardsState(checker.dataset.card)
+  closeCard(button.dataset.checker)
 }
 
 export const addCloseButtonsHandler = () => {

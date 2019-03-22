@@ -15,13 +15,13 @@ const applyAll = () => {
 }
 
 export const addZhandler = () => {
+  window.matchMedia(`(min-width: ${PHONE_UP}px)`).addListener(e => {
+    if (e.matches) {
+      applyAll()
+    }
+  })
+
   if (window.innerWidth > PHONE_DOWN) {
     applyAll()
-  } else {
-    window.matchMedia(`(min-width: ${PHONE_UP}px)`).addListener(e => {
-      if (e.matches) {
-        applyAll()
-      }
-    })
   }
 }
