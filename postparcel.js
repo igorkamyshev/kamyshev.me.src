@@ -5,6 +5,7 @@ const { promisify } = require('util')
 const readFile = promisify(fs.readFile)
 const writeFile = promisify(fs.writeFile)
 const readDir = promisify(fs.readdir)
+const stat = promisify(fs.stat)
 
 const { plugins } = require('./postparcel.config')
 
@@ -25,6 +26,13 @@ const postparcel = async () => {
   await Promise.all(
     files.map(async file => {
       const filePath = path.join(__dirname, 'dist', file)
+
+      const fileStats = await stat(filePath)
+
+      if (!fileStats.isFile()) {
+        return
+      }
+
       const extension = file.split('.').reverse()[0]
       const originalContent = (await readFile(filePath)).toString()
       let newContent = originalContent
