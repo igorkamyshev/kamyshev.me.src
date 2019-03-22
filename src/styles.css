@@ -125,6 +125,8 @@ h4 > blockquote,
 h5 > blockquote,
 h6 > blockquote {
   margin-left: 12px;
+  position: relative;
+  bottom: 2px;
 }
 
 blockquote {
