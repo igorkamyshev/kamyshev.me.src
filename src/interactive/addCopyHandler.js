@@ -6,7 +6,7 @@ const copyButtons = document.querySelectorAll('[data-copy]')
 const listener = button => () => {
   const { id } = button.parentElement.parentElement
 
-  const urlForCopy = `${window.location.href.replace(/#(.+)$/gi, '')}/#${id}`
+  const urlForCopy = `${window.location.href.replace(/#(.+)$/gi, '')}#${id}`
   copy(urlForCopy)
 
   // rewrite url to article.html
