@@ -1,3 +1,5 @@
+import { randomMoveCard } from './randomMoveCard'
+
 const cards = Array.from(document.getElementsByClassName('card'))
 let maxZ = cards.length + 2
 
@@ -48,6 +50,8 @@ export const recalculateCardsState = cardId => {
 
   if (isVisible(card)) {
     makeCardHighest(card)
+  } else {
+    randomMoveCard(card)
   }
 
   const visibleCards = cards.filter(isVisible)

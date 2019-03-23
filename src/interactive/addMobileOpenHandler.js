@@ -30,7 +30,7 @@ const openAll = () => {
       continue
     }
 
-    openCard(card.dataset.checker)
+    openCard(card.dataset.checker, true)
   }
 }
 
@@ -49,7 +49,5 @@ export const addMobileOpenHandler = () => {
 
   if (window.innerWidth <= PHONE_DOWN) {
     closeAll()
-  } else {
-    openAll()
   }
 }
