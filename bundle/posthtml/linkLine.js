@@ -8,7 +8,7 @@ module.exports.linkLine = tree =>
       clearContent.length === 2 &&
       typeof clearContent[0] === 'string' &&
       clearContent[1] &&
-      clearContent[1].tag === 'a'
+      ['a', 'button'].includes(clearContent[1].tag)
 
     const originalClass = (i.attrs && i.attrs.class) || ''
 

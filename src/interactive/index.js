@@ -1,4 +1,5 @@
 import { addZhandler } from './addZHandler'
+import { addCopyHandler } from './addCopyHandler'
 import { addDragHandler } from './addDragHandler'
 import { addArticleToggle } from './addArticleToggle'
 import { addCheckerListener } from './addCheckerListener'
@@ -9,6 +10,7 @@ import { addCloseButtonsHandler } from './addCloseButtonsHandler'
 
 const bootstrap = () => {
   addZhandler()
+  addCopyHandler()
   addDragHandler()
   addArticleToggle()
   addCheckerListener()

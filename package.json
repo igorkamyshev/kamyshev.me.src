@@ -15,6 +15,7 @@
     "@solid-soda/scripts": "^1.2.4",
     "autoprefixer": "^9.5.0",
     "concurrently": "^4.1.0",
+    "cyrillic-to-translit-js": "^2.1.0",
     "jstransformer-markdown-it": "^2.1.0",
     "parcel-bundler": "^1.12.2",
     "postcss-color-mod-function": "^3.0.3",

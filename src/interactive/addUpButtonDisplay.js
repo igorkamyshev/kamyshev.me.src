@@ -3,7 +3,9 @@ import { restoreArticleUrlAfterScrollStop } from './actions/restoreArticleUrlAft
 
 const button = document.querySelector('#articles-up')
 const articles = document.querySelector('.articles')
-const firstHiddenP = document.querySelector('.articles > p:nth-of-type(6)')
+const firstHiddenP = document.querySelector(
+  '.articles > section > *:nth-child(4)',
+)
 
 const isSafary = () =>
   navigator.vendor &&

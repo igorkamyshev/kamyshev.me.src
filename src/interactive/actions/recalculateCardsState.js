@@ -1,4 +1,5 @@
 import { randomMoveCard } from './randomMoveCard'
+import { correctUrl } from '../helpers/correctUrl'
 
 const cards = Array.from(document.getElementsByClassName('card'))
 let maxZ = cards.length + 2
@@ -63,4 +64,5 @@ export const recalculateCardsState = cardId => {
   }
 
   deadScreen()
+  correctUrl()
 }
