@@ -43,7 +43,8 @@
     padding-bottom: 48px;
   }
 
-  & > *:first-child {
+  & > *:first-child,
+  & > section:first-child > *:first-child {
     margin-block-start: 8px;
   }
 }
