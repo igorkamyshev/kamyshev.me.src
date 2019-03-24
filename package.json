@@ -9,7 +9,8 @@
     "dev": "rimraf .cache && concurrently --kill-others \"parcel src/pages/index.pug\" \"parcel watch src/pages/articles.pug\"",
     "s": "yarn soda",
     "size": "size-limit",
-    "ci": "yarn s lint && yarn size"
+    "spell": "yaspeller ./src/data",
+    "ci": "yarn s lint && yarn size && yarn spell"
   },
   "devDependencies": {
     "@solid-soda/scripts": "^1.2.4",
@@ -24,11 +25,12 @@
     "postcss-scrollbar": "^0.3.0",
     "pug": "^2.0.3",
     "rimraf": "^2.6.3",
-    "size-limit": "^0.21.1"
+    "size-limit": "^0.21.1",
+    "yaspeller": "^5.0.1"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn soda lint-staged && yarn size",
+      "pre-commit": "yarn soda lint-staged && yarn size && yarn spell",
       "commit-msg": "yarn soda commitlint"
     }
   },
