@@ -30,7 +30,7 @@ const openAll = () => {
       continue
     }
 
-    openCard(card.dataset.checker, true)
+    openCard(card.dataset.checker)
   }
 }
 
