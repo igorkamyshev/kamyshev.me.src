@@ -1,0 +1,29 @@
+/* For different positions */
+.container:nth-child(4n + 1) .card {
+  @media (--phoneUp) {
+    top: calc((100vh - 460px - 26px) * 0.685);
+    left: calc((100vw - 670px) * 0.155);
+    z-index: 4;
+  }
+}
+.container:nth-child(4n + 2) .card {
+  @media (--phoneUp) {
+    top: calc((100vh - 460px - 26px) * 0.906);
+    left: calc((100vw - 670px) * 0.778);
+    z-index: 3;
+  }
+}
+.container:nth-child(4n + 3) .card {
+  @media (--phoneUp) {
+    top: calc((100vh - 460px - 26px) * 0.369);
+    left: calc((100vw - 670px) * 0.903);
+    z-index: 2;
+  }
+}
+.container:nth-child(4n + 4) .card {
+  @media (--phoneUp) {
+    top: 100px;
+    left: -2px;
+    z-index: 5;
+  }
+}

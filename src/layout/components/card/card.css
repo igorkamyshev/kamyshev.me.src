@@ -1,0 +1,56 @@
+@import './positions.css';
+@import './checker.css';
+@import './header.css';
+@import './label.css';
+
+.card {
+  width: 100%;
+  background: white;
+  color: black;
+  border-left: 2px solid var(--color-primary);
+  border-right: 2px solid var(--color-primary);
+  float: left;
+  overflow-x: hidden;
+
+  @media (--phoneUp) {
+    border: 2px solid var(--color-primary);
+    width: 670px;
+    height: 460px;
+    overflow-y: hidden;
+    position: absolute;
+  }
+}
+
+.card_large {
+  @media (--phoneUp) {
+    height: calc(100vh - 158px);
+  }
+}
+
+.card__body {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 68px;
+
+  @media (--phoneUp) {
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 390px;
+    overflow-y: scroll;
+  }
+
+  @media (--smallPhoneDown) {
+    padding-bottom: 48px;
+  }
+
+  & > *:first-child,
+  & > section:first-child > *:first-child {
+    margin-block-start: 8px;
+  }
+}
+
+.card__body_large {
+  @media (--phoneUp) {
+    height: calc(100vh - 232px);
+  }
+}

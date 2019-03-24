@@ -1,41 +1,49 @@
 {
+  "name": "kamyshev.me.src",
+  "version": "2.0.0",
+  "repository": "git@github.com:igorkamyshev/kamyshev.me.src.git",
+  "author": "Igor Kamyshev <igor@kamyshev.me>",
+  "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "prod": "next build && next start",
-    "build": "next build && next export -o dist",
-    "lint": "yarn lint-css && yarn lint-js",
-    "lint-css": "stylelint 'pages/**/*.css' && stylelint 'ui/**/*.css' & stylelint 'features/**/*.css'",
-    "lint-js": "eslint 'pages/**/*.js' && eslint 'ui/**/*.js' && eslint 'features/**/*.js'",
-    "ci": "yarn lint"
-  },
-  "dependencies": {
-    "@zeit/next-css": "^1.0.1",
-    "axios": "^0.18.0",
-    "classnames": "^2.2.6",
-    "next": "^8.0.3",
-    "next-compose-plugins": "^2.1.1",
-    "next-optimized-images": "^1.4.1",
-    "react": "^16.8.4",
-    "prop-types": "^15.7.2",
-    "react-dom": "^16.8.4",
-    "react-notify-toast": "^0.5.0",
-    "react-timeline-scribble": "^1.0.14"
+    "build": "rimraf .cache && rimraf dist && parcel build src/pages/* && node postparcel.js",
+    "dev": "rimraf .cache && concurrently --kill-others \"parcel src/pages/index.pug\" \"parcel watch src/pages/articles.pug\"",
+    "s": "yarn soda",
+    "size": "size-limit",
+    "spell": "yaspeller ./src/data",
+    "ci": "yarn s lint && yarn size && yarn spell"
   },
   "devDependencies": {
-    "autoprefixer": "^9.4.10",
-    "babel-plugin-module-resolver": "^3.2.0",
-    "eslint-plugin-jest": "^22.2.2",
-    "eslint": "^5.13.0",
-    "eslint-plugin-react": "^7.12.4",
-    "normalize.css": "^8.0.1",
-    "postcss": "^7.0.14",
-    "postcss-custom-properties": "^8.0.9",
-    "postcss-inherit": "^4.1.0",
+    "@solid-soda/scripts": "^1.2.4",
+    "autoprefixer": "^9.5.0",
+    "concurrently": "^4.1.0",
+    "cyrillic-to-translit-js": "^2.1.0",
+    "jstransformer-markdown-it": "^2.1.0",
+    "parcel-bundler": "^1.12.2",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-custom-media": "^7.0.7",
     "postcss-nesting": "^7.0.0",
-    "postcss-normalize": "^7.0.1",
-    "postcss-preset-env": "^6.6.0",
-    "stylelint": "^9.10.1",
-    "stylelint-config-recess-order": "^2.0.1",
-    "stylelint-config-recommended": "^2.1.0"
+    "postcss-scrollbar": "^0.3.0",
+    "pug": "^2.0.3",
+    "rimraf": "^2.6.3",
+    "size-limit": "^0.21.1",
+    "yaspeller": "^5.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn soda lint-staged && yarn size && yarn spell",
+      "commit-msg": "yarn soda commitlint"
+    }
+  },
+  "size-limit": [
+    {
+      "limit": "4 KB",
+      "path": "./src/interactive/index.js"
+    }
+  ],
+  "dependencies": {
+    "clipboard-polyfill": "^2.7.0",
+    "focus-visible": "^4.1.5",
+    "intersection-observer": "^0.5.1",
+    "smoothscroll-polyfill": "^0.4.3"
   }
 }

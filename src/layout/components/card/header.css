@@ -1,0 +1,32 @@
+.card__header {
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  height: 74px;
+  position: sticky;
+
+  @media (--phoneDown) {
+    display: none;
+  }
+}
+
+.card__drug {
+  width: 100%;
+  margin: 0;
+  padding: 24px;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.card__close {
+  width: 74px;
+  padding: 8px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}

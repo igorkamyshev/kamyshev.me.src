@@ -1,8 +1,11 @@
 module.exports = {
   plugins: [
-    require('postcss-preset-env'),
-    require('postcss-custom-media'),
+    require('autoprefixer'),
     require('postcss-nesting'),
-    require('postcss-inherit'),
-  ]
+    require('postcss-custom-media')({
+      importFrom: './src/custom-media.css',
+    }),
+    require('postcss-scrollbar'),
+    require('postcss-color-mod-function'),
+  ],
 }

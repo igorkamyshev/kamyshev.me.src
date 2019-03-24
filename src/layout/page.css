@@ -1,0 +1,112 @@
+.app {
+  background-color: white;
+
+  & label {
+    font: var(--extra-large-text);
+    color: var(--color-primary);
+    background-color: white;
+
+    @media (--phoneUp) {
+      & > * {
+        text-transform: lowercase;
+      }
+
+      & > span:first-child {
+        margin-right: 2px;
+      }
+    }
+
+    @media (--phoneDown) {
+      display: block;
+      padding: 24px 12px;
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: 1fr 32px;
+      align-items: center;
+
+      & > span:first-child {
+        height: 21px;
+      }
+    }
+
+    @media (--smallPhoneDown) {
+      padding: 20px 12px;
+
+      & > span:first-child {
+        height: 15px;
+      }
+    }
+  }
+
+  @media (--phoneUp) {
+    position: relative;
+    float: left;
+    border: 2px solid var(--color-primary);
+    margin: 24px;
+    padding: 20px 24px;
+    height: 80px;
+
+    & > * {
+      float: left;
+
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+  }
+}
+
+.about {
+  @media (--phoneUp) {
+    padding-bottom: 0;
+  }
+
+  & > * {
+    font: var(--large-text);
+  }
+}
+
+.experience {
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    margin-block-start: 40px;
+    margin-block-end: 8px;
+  }
+
+  & > h3 + p {
+    font: var(--large-text);
+  }
+}
+
+.projects {
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    margin-block-start: 36px;
+    margin-block-end: 12px;
+  }
+}
+
+.articles {
+  & h1,
+  & h2,
+  & h3 {
+    margin-block-start: 80px;
+    margin-block-end: 20px;
+  }
+
+  & h4,
+  & h5,
+  & h6 {
+    margin-block-start: 24px;
+    margin-block-end: 12px;
+  }
+}

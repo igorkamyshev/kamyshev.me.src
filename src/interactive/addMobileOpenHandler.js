@@ -1,0 +1,53 @@
+import { PHONE_DOWN, PHONE_UP } from './CONFIG'
+import { closeCard } from './actions/closeCard'
+import { openCard } from './actions/openCard'
+
+const cards = document.getElementsByClassName('card')
+
+const closeAll = () => {
+  for (const card of cards) {
+    if (card.id.includes('about')) {
+      continue
+    }
+
+    if (
+      card.id.includes('articles') &&
+      window.location.href.includes('articles')
+    ) {
+      continue
+    }
+
+    closeCard(card.dataset.checker)
+  }
+}
+
+const openAll = () => {
+  for (const card of cards) {
+    if (
+      card.id.includes('articles') &&
+      !window.location.href.includes('articles')
+    ) {
+      continue
+    }
+
+    openCard(card.dataset.checker, true)
+  }
+}
+
+export const addMobileOpenHandler = () => {
+  window.matchMedia(`(max-width: ${PHONE_DOWN}px)`).addListener(e => {
+    if (e.matches) {
+      closeAll()
+    }
+  })
+
+  window.matchMedia(`(min-width: ${PHONE_UP}px)`).addListener(e => {
+    if (e.matches) {
+      openAll()
+    }
+  })
+
+  if (window.innerWidth <= PHONE_DOWN) {
+    closeAll()
+  }
+}

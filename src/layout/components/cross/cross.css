@@ -1,0 +1,8 @@
+.cross {
+  width: 80px;
+  height: 80px;
+  margin-top: -1px;
+  background: white
+    url("data:image/svg+xml,%3Csvg width='58' height='58' viewBox='0 0 58 58' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='2.00058' height='80.0233' transform='matrix(0.707108 -0.707105 0.707108 0.707105 0 1.41455)' fill='blue'/%3E%3Crect width='2.00058' height='80.0233' transform='matrix(-0.707108 -0.707105 0.707108 -0.707105 1.41455 58)' fill='blue'/%3E%3C/svg%3E%0A")
+    no-repeat center 1px;
+}
