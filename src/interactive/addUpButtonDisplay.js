@@ -7,13 +7,6 @@ const firstHiddenP = document.querySelector(
   '.articles > section > *:nth-child(4)',
 )
 
-const isSafary = () =>
-  navigator.vendor &&
-  navigator.vendor.includes('Apple') &&
-  navigator.userAgent &&
-  !navigator.userAgent.includes('CriOS') &&
-  !navigator.userAgent.includes('FxiOS')
-
 const initDisplay = () => {
   let previousY = 0
   const observer = new IntersectionObserver(entries => {
@@ -32,6 +25,14 @@ const initDisplay = () => {
   observer.observe(firstHiddenP)
 }
 
+const scrollToTop = (top, scrollElement, stopElement) => {
+  scrollElement.scrollTo({
+    top,
+    behavior: 'smooth',
+  })
+  restoreArticleUrlAfterScrollStop(stopElement)
+}
+
 const initOnClick = () => {
   button.onclick = () => {
     if (window.innerWidth > PHONE_DOWN) {
@@ -44,20 +45,10 @@ const initOnClick = () => {
     } else {
       const rect = articles.getBoundingClientRect()
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+      const top = rect.top + scrollTop - 90
 
-      if (isSafary()) {
-        document.body.scrollTo({
-          top: rect.top + scrollTop - 90,
-          behavior: 'smooth',
-        })
-        restoreArticleUrlAfterScrollStop(document.body)
-      } else {
-        document.documentElement.scrollTo({
-          top: rect.top + scrollTop - 90,
-          behavior: 'smooth',
-        })
-        restoreArticleUrlAfterScrollStop(document)
-      }
+      scrollToTop(top, document.body, document.body) // For iOS
+      scrollToTop(top, document.documentElement, document)
     }
   }
 }

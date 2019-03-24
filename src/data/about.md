@@ -1,4 +1,4 @@
-Игорь Камышев — разработчик веб-приложений и техлид. Люблю чистый код и качественные продукты. Программирую на TypeScript, иногда на JavaScript или PHP.
+Игорь Камышев — разработчик веб-приложений и техлид. Люблю чистый код и работающие продукты. Программирую на TypeScript, иногда на JavaScript или PHP.
 
 [Telegram](https://t.me/igorkamyshev) [GitHub](https://github.com/igorkamyshev) [Twitter](https://twitter.com/kamyshev_code) [Instagram](https://www.instagram.com/kamyshev_trip/) [LinkedIn](https://www.linkedin.com/in/igor-kamyshev-979745110/)
 
