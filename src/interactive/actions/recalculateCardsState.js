@@ -46,7 +46,7 @@ const makeCardHighest = card => {
   }
 }
 
-export const recalculateCardsState = cardId => {
+export const recalculateCardsState = (cardId, skipUrlCorrection = false) => {
   const card = cards.find(c => c.id === cardId)
 
   if (isVisible(card)) {
@@ -64,5 +64,7 @@ export const recalculateCardsState = cardId => {
   }
 
   deadScreen()
-  correctUrl()
+  if (!skipUrlCorrection) {
+    correctUrl()
+  }
 }
