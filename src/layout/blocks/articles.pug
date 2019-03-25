@@ -2,14 +2,6 @@ mixin md
   section
     block
 
-+md
-  include:markdown-it ../../data/articles/004-framework-less.md
-
-+md
-  include:markdown-it ../../data/articles/003-how-to-handle-monetary-values-in-javascript.md
-
-+md
-  include:markdown-it ../../data/articles/002-npm.md
-
-+md
-  include:markdown-it ../../data/articles/001-clean-architecture.md
+each article in articles
+  section
+    != md(article)
