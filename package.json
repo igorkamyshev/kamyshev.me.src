@@ -13,7 +13,7 @@
     "ci": "yarn s lint && yarn size && yarn spell"
   },
   "devDependencies": {
-    "@solid-soda/scripts": "^1.3.0",
+    "@solid-soda/scripts": "^1.4.1",
     "autoprefixer": "^9.5.1",
     "concurrently": "^4.1.0",
     "cyrillic-to-translit-js": "^2.2.0",
