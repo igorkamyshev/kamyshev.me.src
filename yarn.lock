@@ -8283,10 +8283,10 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-size-limit@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-1.3.0.tgz#b1e1210efd39615dde3aafe643ec1b28eb4cd1cf"
-  integrity sha512-gRvX9KtEmbeKd/EghkO4DoRRQQEeYYbO8taX2pPCbOYsyZogxen++b5BFWMe1aE5Vhv8V50m1mfUD0yICtnBhQ==
+size-limit@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-1.3.1.tgz#7521239b6772a66201ee98a4250bf2f24f68aa59"
+  integrity sha512-jCJsjchM1APF1ntl1x4+85rLCPj3da3oe/NFqr6JB9PeCI/sM8Ql7jkuyNV+T49febfBrFKH0h0JzGOYtX1ZvQ==
   dependencies:
     bytes "^3.1.0"
     chalk "^2.4.2"
