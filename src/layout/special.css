@@ -1,3 +1,27 @@
+.single-link {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0px;
+
+  & > a,
+  & > button {
+    padding: 7px 10px 3px 10px;
+    margin-left: 12px;
+
+    font: var(--text);
+    color: var(--color-primary);
+
+    background: white;
+    border: 1px solid var(--color-primary);
+    border-radius: 42px;
+
+    &:hover {
+      color: white;
+      background-color: var(--color-primary);
+    }
+  }
+}
+
 .link-line {
   margin-block-start: 24px;
   margin-block-end: 24px;
@@ -14,30 +38,6 @@
 
   & > a:not(:last-child) {
     margin-right: 24px;
-  }
-}
-
-.single-link {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin: 0px;
-
-  & > a,
-  & > button {
-    margin-left: 12px;
-    border: 1px solid var(--color-primary);
-    border-radius: 42px;
-    padding: 7px 10px 3px 10px;
-
-    background: white;
-    color: var(--color-primary);
-
-    font: var(--text);
-
-    &:hover {
-      color: white;
-      background-color: var(--color-primary);
-    }
   }
 }
 

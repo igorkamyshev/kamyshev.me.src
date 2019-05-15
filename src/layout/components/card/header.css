@@ -1,9 +1,9 @@
 .card__header {
-  user-select: none;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   height: 74px;
-  position: sticky;
+  user-select: none;
 
   @media (--phoneDown) {
     display: none;
@@ -12,8 +12,8 @@
 
 .card__drug {
   width: 100%;
-  margin: 0;
   padding: 24px;
+  margin: 0;
   cursor: grab;
 
   &:active {
@@ -22,11 +22,11 @@
 }
 
 .card__close {
-  width: 74px;
-  padding: 8px;
-  background: none;
-  border: none;
   display: flex;
   justify-content: center;
+  width: 74px;
+  padding: 8px;
   cursor: pointer;
+  background: none;
+  border: none;
 }

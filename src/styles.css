@@ -1,20 +1,20 @@
 /* fonts */
 @font-face {
   font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
   src: url('./fonts/steinbeck-regular/steinbeck-regular.woff') format('woff'),
     url('./fonts/steinbeck-regular/steinbeck-regular.otf') format('otf');
   font-display: block;
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
   font-family: 'Steinbeck';
+  font-style: italic;
+  font-weight: normal;
   src: url('./fonts/steinbeck-italic/steinbeck-italic.woff') format('woff'),
     url('./fonts/steinbeck-italic/steinbeck-italic.otf') format('otf');
   font-display: block;
-  font-weight: normal;
-  font-style: italic;
 }
 
 :root {
@@ -47,20 +47,20 @@
     scrollbar-color: transparent transparent;
     scrollbar-width: thin;
 
-    &:hover {
-      scrollbar-color: blue transparent;
-    }
-
     /* not in standart, but so cute =) */
     &::-webkit-scrollbar {
       width: 4px;
+    }
+
+    &:hover {
+      scrollbar-color: blue transparent;
     }
   }
 }
 
 ::selection {
-  background-color: color-mod(var(--color-secondary) alpha(0.99));
   color: white;
+  background-color: color-mod(var(--color-secondary) alpha(0.99));
 }
 
 .highlight {
@@ -70,25 +70,25 @@
 }
 
 body {
-  font-family: 'Steinbeck';
-  margin: 0;
   height: 100vh;
+  margin: 0;
+  font-family: 'Steinbeck', sans-serif;
 
   background-color: var(--color-primary);
   @media (--phoneUp) {
-    background-color: white;
     overflow: hidden;
+    background-color: white;
   }
 }
 
 ul {
-  list-style: square outside none;
   padding-left: 18px;
+  list-style: square outside none;
 }
 
 li {
-  font: var(--text);
   padding: 6px 0;
+  font: var(--text);
 }
 
 p {
@@ -99,8 +99,8 @@ p {
 }
 
 a {
-  text-decoration: none;
   color: var(--color-primary);
+  text-decoration: none;
 }
 
 h4,
@@ -117,27 +117,26 @@ h3 {
   font-weight: normal;
 }
 
+blockquote {
+  display: inline;
+  padding: 7px 10px 3px 10px;
+
+  margin: 0px;
+  font: var(--text);
+
+  border: 1px solid #000000;
+  border-radius: 39px;
+}
+
 h1 > blockquote,
 h2 > blockquote,
 h3 > blockquote,
 h4 > blockquote,
 h5 > blockquote,
 h6 > blockquote {
-  margin-left: 12px;
   position: relative;
   bottom: 3px;
-}
-
-blockquote {
-  font: var(--text);
-
-  margin: 0px;
-
-  border: 1px solid #000000;
-  border-radius: 39px;
-  padding: 7px 10px 3px 10px;
-
-  display: inline;
+  margin-left: 12px;
 }
 
 button:active {

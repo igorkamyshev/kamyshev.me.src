@@ -18,12 +18,12 @@
 
     @media (--phoneDown) {
       display: block;
-      padding: 24px 12px;
-      width: 100%;
 
       display: grid;
       grid-template-columns: 1fr 32px;
       align-items: center;
+      width: 100%;
+      padding: 24px 12px;
 
       & > span:first-child {
         height: 21px;
@@ -42,10 +42,10 @@
   @media (--phoneUp) {
     position: relative;
     float: left;
-    border: 2px solid var(--color-primary);
-    margin: 24px;
-    padding: 20px 24px;
     height: 80px;
+    padding: 20px 24px;
+    margin: 24px;
+    border: 2px solid var(--color-primary);
 
     & > * {
       float: left;

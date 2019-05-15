@@ -1,7 +1,8 @@
 .minus {
+  float: right;
+
   width: 32px;
   height: 32px;
-  float: right;
 
   @media (--phoneUp) {
     width: 25px;
@@ -10,17 +11,21 @@
 }
 
 .minus:before {
-  content: '';
-  width: 32px;
-  height: 2px;
-  background-color: var(--color-primary);
-  display: block;
   position: relative;
   top: 16px;
 
+  display: block;
+
+  width: 32px;
+  height: 2px;
+
+  content: '';
+  background-color: var(--color-primary);
+
   @media (--phoneUp) {
+    top: 20px;
+
     width: 25px;
     height: 1px;
-    top: 20px;
   }
 }

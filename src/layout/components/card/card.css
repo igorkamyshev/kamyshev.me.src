@@ -4,20 +4,20 @@
 @import './label.css';
 
 .card {
-  width: 100%;
-  background: white;
-  color: black;
-  border-left: 2px solid var(--color-primary);
-  border-right: 2px solid var(--color-primary);
   float: left;
+  width: 100%;
   overflow-x: hidden;
+  color: black;
+  background: white;
+  border-right: 2px solid var(--color-primary);
+  border-left: 2px solid var(--color-primary);
 
   @media (--phoneUp) {
-    border: 2px solid var(--color-primary);
+    position: absolute;
     width: 670px;
     height: 460px;
     overflow-y: hidden;
-    position: absolute;
+    border: 2px solid var(--color-primary);
   }
 }
 
@@ -28,14 +28,14 @@
 }
 
 .card__body {
-  padding-left: 12px;
   padding-right: 12px;
   padding-bottom: 68px;
+  padding-left: 12px;
 
   @media (--phoneUp) {
-    padding-left: 24px;
-    padding-right: 24px;
     height: 390px;
+    padding-right: 24px;
+    padding-left: 24px;
     overflow-y: scroll;
   }
 
