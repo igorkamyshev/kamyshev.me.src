@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@solid-soda/scripts": "^1.11.13",
-    "autoprefixer": "^9.5.1",
+    "autoprefixer": "^9.6.0",
     "concurrently": "^4.1.0",
     "cyrillic-to-translit-js": "^2.2.0",
     "jstransformer-markdown-it": "^2.1.0",
