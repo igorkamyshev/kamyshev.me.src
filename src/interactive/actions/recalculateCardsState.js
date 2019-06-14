@@ -20,9 +20,9 @@ const isVisible = card =>
 
 const highlightCard = targetCard => {
   for (const card of cards) {
-    card.className = card.className.replace('highlight', '')
+    card.classList.remove('highlight')
   }
-  targetCard.className = `${targetCard.className} highlight`
+  targetCard.classList.add('highlight')
 }
 
 const deadScreen = () => {
@@ -31,9 +31,9 @@ const deadScreen = () => {
   const allClosed = cards.filter(isVisible).length === 0
 
   if (allClosed) {
-    body.className = `${body.className} dead-screen`
+    body.classList.add('dead-screen')
   } else {
-    body.className = body.className.replace('dead-screen', '')
+    body.classList.remove('dead-screen')
   }
 }
 
