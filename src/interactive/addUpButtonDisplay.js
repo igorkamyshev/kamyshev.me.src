@@ -3,26 +3,37 @@ import { restoreArticleUrlAfterScrollStop } from './actions/restoreArticleUrlAft
 
 const button = document.querySelector('#articles-up')
 const articles = document.querySelector('.articles')
-const firstHiddenP = document.querySelector(
-  '.articles > section > *:nth-child(4)',
-)
+
+const toggle = predicate => {
+  if (predicate) {
+    button.style.display = 'block'
+  } else {
+    button.style.display = 'none'
+  }
+}
+
+const getArticleTop = () => {
+  const rect = articles.getBoundingClientRect()
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+  const top = rect.top + scrollTop - 90
+
+  return top
+}
 
 const initDisplay = () => {
-  let previousY = 0
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const currentY = entry.boundingClientRect.y
+  const THRESHOLD = 400
 
-      if (entry.isIntersecting || previousY > currentY) {
-        button.style.display = 'block'
-      } else {
-        button.style.display = 'none'
-      }
+  if (window.innerWidth > PHONE_DOWN) {
+    articles.onscroll = () => toggle(articles.scrollTop > THRESHOLD)
+  } else {
+    document.onscroll = () => {
+      const top = getArticleTop()
+      const currentScroll =
+        document.documentElement.scrollTop || document.body.scrollTop
 
-      previousY = currentY
-    })
-  })
-  observer.observe(firstHiddenP)
+      toggle(top + THRESHOLD < currentScroll)
+    }
+  }
 }
 
 const scrollToTop = (top, scrollElement, stopElement) => {
@@ -30,22 +41,16 @@ const scrollToTop = (top, scrollElement, stopElement) => {
     top,
     behavior: 'smooth',
   })
+
   restoreArticleUrlAfterScrollStop(stopElement)
 }
 
 const initOnClick = () => {
   button.onclick = () => {
     if (window.innerWidth > PHONE_DOWN) {
-      articles.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      })
-
-      restoreArticleUrlAfterScrollStop(articles)
+      scrollToTop(0, articles, articles)
     } else {
-      const rect = articles.getBoundingClientRect()
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-      const top = rect.top + scrollTop - 90
+      const top = getArticleTop()
 
       scrollToTop(top, document.body, document.body) // For iOS
       scrollToTop(top, document.documentElement, document)
