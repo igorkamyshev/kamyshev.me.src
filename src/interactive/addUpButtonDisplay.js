@@ -1,5 +1,6 @@
 import { PHONE_DOWN } from './CONFIG'
 import { restoreArticleUrlAfterScrollStop } from './actions/restoreArticleUrlAfterScrollStop'
+import { throttle } from './helpers/throttle'
 
 const button = document.querySelector('#articles-up')
 const articles = document.querySelector('.articles')
@@ -22,17 +23,21 @@ const getArticleTop = () => {
 
 const initDisplay = () => {
   const THRESHOLD = 400
+  const THROTTLE_TIME = 150
 
   if (window.innerWidth > PHONE_DOWN) {
-    articles.onscroll = () => toggle(articles.scrollTop > THRESHOLD)
+    articles.onscroll = throttle(
+      () => toggle(articles.scrollTop > THRESHOLD),
+      THROTTLE_TIME,
+    )
   } else {
-    document.onscroll = () => {
+    document.onscroll = throttle(() => {
       const top = getArticleTop()
       const currentScroll =
         document.documentElement.scrollTop || document.body.scrollTop
 
       toggle(top + THRESHOLD < currentScroll)
-    }
+    }, THROTTLE_TIME)
   }
 }
 
