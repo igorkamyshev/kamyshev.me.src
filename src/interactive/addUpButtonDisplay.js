@@ -59,6 +59,8 @@ const initOnClick = () => {
 }
 
 export const addUpButtonDisplay = () => {
+  window.matchMedia(`(max-width: ${PHONE_DOWN}px)`).addListener(initDisplay)
+
   initDisplay()
   initOnClick()
 }

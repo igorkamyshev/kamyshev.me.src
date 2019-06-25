@@ -2,11 +2,13 @@ import { correctUrl } from '../helpers/correctUrl'
 
 export const restoreArticleUrlAfterScrollStop = element => {
   let isScrolling
-  element.onscroll = () => {
+  function correctAndReset() {
     clearTimeout(isScrolling)
     isScrolling = setTimeout(() => {
       correctUrl()
-      element.onscroll = null
+      element.removeEventListener('scroll', correctAndReset)
     }, 66)
   }
+
+  element.addEventListener('scroll', correctAndReset)
 }
