@@ -1,28 +1,44 @@
 import { PHONE_DOWN } from './CONFIG'
 import { restoreArticleUrlAfterScrollStop } from './actions/restoreArticleUrlAfterScrollStop'
+import { throttle } from './helpers/throttle'
 
 const button = document.querySelector('#articles-up')
 const articles = document.querySelector('.articles')
-const firstHiddenP = document.querySelector(
-  '.articles > section > *:nth-child(4)',
-)
+
+const toggle = predicate => {
+  if (predicate) {
+    button.style.display = 'block'
+  } else {
+    button.style.display = 'none'
+  }
+}
+
+const getArticleTop = () => {
+  const rect = articles.getBoundingClientRect()
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+  const top = rect.top + scrollTop - 90
+
+  return top
+}
 
 const initDisplay = () => {
-  let previousY = 0
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const currentY = entry.boundingClientRect.y
+  const THRESHOLD = 400
+  const THROTTLE_TIME = 150
 
-      if (entry.isIntersecting || previousY > currentY) {
-        button.style.display = 'block'
-      } else {
-        button.style.display = 'none'
-      }
+  if (window.innerWidth > PHONE_DOWN) {
+    articles.onscroll = throttle(
+      () => toggle(articles.scrollTop > THRESHOLD),
+      THROTTLE_TIME,
+    )
+  } else {
+    document.onscroll = throttle(() => {
+      const top = getArticleTop()
+      const currentScroll =
+        document.documentElement.scrollTop || document.body.scrollTop
 
-      previousY = currentY
-    })
-  })
-  observer.observe(firstHiddenP)
+      toggle(top + THRESHOLD < currentScroll)
+    }, THROTTLE_TIME)
+  }
 }
 
 const scrollToTop = (top, scrollElement, stopElement) => {
@@ -30,22 +46,16 @@ const scrollToTop = (top, scrollElement, stopElement) => {
     top,
     behavior: 'smooth',
   })
+
   restoreArticleUrlAfterScrollStop(stopElement)
 }
 
 const initOnClick = () => {
   button.onclick = () => {
     if (window.innerWidth > PHONE_DOWN) {
-      articles.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      })
-
-      restoreArticleUrlAfterScrollStop(articles)
+      scrollToTop(0, articles, articles)
     } else {
-      const rect = articles.getBoundingClientRect()
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-      const top = rect.top + scrollTop - 90
+      const top = getArticleTop()
 
       scrollToTop(top, document.body, document.body) // For iOS
       scrollToTop(top, document.documentElement, document)
@@ -54,6 +64,8 @@ const initOnClick = () => {
 }
 
 export const addUpButtonDisplay = () => {
+  window.matchMedia(`(max-width: ${PHONE_DOWN}px)`).addListener(initDisplay)
+
   initDisplay()
   initOnClick()
 }

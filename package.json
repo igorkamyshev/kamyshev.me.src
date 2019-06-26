@@ -26,8 +26,8 @@
     "postcss-scrollbar": "^0.3.0",
     "pug": "^2.0.4",
     "rimraf": "^2.6.3",
-    "yaspeller": "^5.1.0",
-    "size-limit": "^1.3.7"
+    "size-limit": "^1.3.7",
+    "yaspeller": "^5.1.0"
   },
   "husky": {
     "hooks": {
@@ -37,14 +37,17 @@
   },
   "size-limit": [
     {
-      "limit": "4 KB",
+      "limit": "3.97 KB",
       "path": "./src/interactive/index.js"
+    },
+    {
+      "limit": "2082 B",
+      "path": "./src/polyfills.js"
     }
   ],
   "dependencies": {
     "clipboard-polyfill": "^2.8.1",
     "focus-visible": "^5.0.1",
-    "intersection-observer": "^0.7.0",
     "smoothscroll-polyfill": "^0.4.4"
   }
 }
