@@ -1,6 +1,7 @@
-import { redirect } from './redirect'
-
 export const correctUrl = () => {
   const articleCheckbox = document.getElementById('articles-check')
-  redirect(!articleCheckbox.checked)
+
+  const homePage = !articleCheckbox.checked
+
+  window.history.pushState({}, '', homePage ? '/' : '/articles.html')
 }

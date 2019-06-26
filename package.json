@@ -37,7 +37,7 @@
   },
   "size-limit": [
     {
-      "limit": "3.97 KB",
+      "limit": "4057 B",
       "path": "./src/interactive/index.js"
     },
     {
