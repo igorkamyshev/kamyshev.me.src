@@ -29,7 +29,6 @@
 
 .card__body {
   padding-right: 12px;
-  padding-bottom: 68px;
   padding-left: 12px;
 
   @media (--phoneUp) {
@@ -39,8 +38,12 @@
     overflow-y: scroll;
   }
 
-  @media (--smallPhoneDown) {
-    padding-bottom: 48px;
+  & > *:last-child {
+    margin-bottom: 68px;
+
+    @media (--smallPhoneDown) {
+      margin-bottom: 48px;
+    }
   }
 
   & > *:first-child,
