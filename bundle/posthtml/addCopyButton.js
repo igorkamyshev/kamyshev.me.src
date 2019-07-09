@@ -1,13 +1,6 @@
-const CyrillicToTranslit = require('cyrillic-to-translit-js')
-const transliterator = new CyrillicToTranslit()
+const { generateName } = require('../../utils/helpers/generateName')
 
-const generateId = header =>
-  encodeURIComponent(
-    transliterator
-      .transform(header)
-      .replace(/\s+/gi, '-')
-      .replace(/\./gi, ''),
-  )
+const generateId = header => encodeURIComponent(generateName(header))
 
 const isDate = str => /\d{2}\.\d{2}\.\d{4}/gi.test(str)
 const skipButtonElement = i =>
