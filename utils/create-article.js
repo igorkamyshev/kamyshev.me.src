@@ -38,8 +38,10 @@ const run = async () => {
     throw new Error('Empty title')
   }
 
+  const userFriendlyUrl = await asyncQuestion('User friendly URL')
+
   const nextNumber = await getNextNumber()
-  const generatedName = generateName(articleName)
+  const generatedName = generateName(userFriendlyUrl || articleName)
 
   const fileName = `${nextNumber}-${generatedName}.md`
   const articlePath = path.resolve(__dirname, '../data/articles', fileName)
