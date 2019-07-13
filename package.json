@@ -51,7 +51,7 @@
   ],
   "dependencies": {
     "clipboard-polyfill": "^2.8.1",
-    "focus-visible": "^5.0.1",
+    "focus-visible": "^5.0.2",
     "smoothscroll-polyfill": "^0.4.4"
   }
 }
