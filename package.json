@@ -35,7 +35,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn soda lint-staged && yarn size && yarn spell",
+      "pre-commit": "yarn soda lint-staged",
+      "pre-push": "yarn soda lint && yarn size && yarn spell",
       "commit-msg": "yarn soda commitlint"
     }
   },
@@ -53,5 +54,8 @@
     "clipboard-polyfill": "^2.8.1",
     "focus-visible": "^5.0.2",
     "smoothscroll-polyfill": "^0.4.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
