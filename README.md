@@ -1,6 +1,6 @@
 # kamyshev.me.src
 
-Source of Personal site
+Source of personal site
 
 ## Content
 
