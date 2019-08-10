@@ -972,10 +972,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@solid-soda/scripts@^1.12.7":
-  version "1.12.7"
-  resolved "https://registry.yarnpkg.com/@solid-soda/scripts/-/scripts-1.12.7.tgz#b184e3446cc4482dacb71e30e8f29747853b9785"
-  integrity sha512-0HxJ8rcp916lLPMOkAgMPthJMjCuw+/Ey2/5afyAERCSemJsG+jZsHz10K4PHj8rIA24IWfxcBLcKVfcD0lcuA==
+"@solid-soda/scripts@^1.12.8":
+  version "1.12.8"
+  resolved "https://registry.yarnpkg.com/@solid-soda/scripts/-/scripts-1.12.8.tgz#8cc0e0aa8d43ef9e02757420d2303cd44847e1ce"
+  integrity sha512-yDSOVq+tdaCcWc/ErmMAjpsNygoNx1j0jfhsd9DT+0/1tGIrO+jwuSX8WS3eRECPl/d7Eots2bgcg93/VOjkJw==
   dependencies:
     "@commitlint/cli" "7"
     "@commitlint/config-conventional" "7"
