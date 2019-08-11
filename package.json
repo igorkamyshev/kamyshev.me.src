@@ -14,6 +14,8 @@
     "ci": "yarn s lint && yarn size && yarn spell"
   },
   "devDependencies": {
+    "@size-limit/file": "^2.0.1",
+    "@size-limit/webpack": "^2.0.1",
     "@solid-soda/scripts": "^1.12.8",
     "autoprefixer": "^9.6.1",
     "concurrently": "^4.1.1",
@@ -30,7 +32,6 @@
     "pug": "^2.0.4",
     "readline": "^1.3.0",
     "rimraf": "^2.6.3",
-    "size-limit": "^1.3.8",
     "yaspeller": "^6.0.0"
   },
   "husky": {
@@ -46,13 +47,14 @@
       "path": "./src/interactive/index.js"
     },
     {
-      "limit": "2087 B",
+      "limit": "2088 B",
       "path": "./src/polyfills.js"
     }
   ],
   "dependencies": {
     "clipboard-polyfill": "^2.8.1",
     "focus-visible": "^5.0.2",
+    "size-limit": "^2.0.1",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "publishConfig": {
