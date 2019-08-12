@@ -2283,10 +2283,10 @@ cli-width@^2.0.0:
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
   integrity sha1-/xnt6Kml5XkyQUewwR8PvLq+1jk=
 
-clipboard-polyfill@^2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/clipboard-polyfill/-/clipboard-polyfill-2.8.1.tgz#a53fb77e9d8bac0a3db6792f5815a8979e585f61"
-  integrity sha512-2qclMYSM/L5Wv8mNeF2rvvtaKFJiG3y5mI2wwsFIUt0yE2hWjNg6qvsRo6D8TTaLTNXDfEI47TyaxSxjwD8ADQ==
+clipboard-polyfill@^2.8.4:
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/clipboard-polyfill/-/clipboard-polyfill-2.8.4.tgz#6653ba148e9203f623a011e54f05ee8b20a555de"
+  integrity sha512-QQ2h3nIzHMAFo83a89CgfcUJ324McUOYkQQQ410AIRTNQnW5pEt53T+6Shiy66XvDvxypZsFvf9Z13sBH/yqTA==
 
 cliui@^2.1.0:
   version "2.1.0"
