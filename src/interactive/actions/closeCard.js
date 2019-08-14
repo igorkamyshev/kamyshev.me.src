@@ -1,8 +1,8 @@
-import { recalculateCardsState } from './recalculateCardsState'
+import { recalculateCardsState } from './recalculateCardsState';
 
 export const closeCard = (id, skipUrlCorrection = false) => {
-  const checker = document.getElementById(id)
-  checker.checked = false
+  const checker = document.getElementById(id);
+  checker.checked = false;
 
-  recalculateCardsState(checker.dataset.card, skipUrlCorrection)
-}
+  recalculateCardsState(checker.dataset.card, skipUrlCorrection);
+};

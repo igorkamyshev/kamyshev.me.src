@@ -1,25 +1,25 @@
-import { PHONE_DOWN, PHONE_UP } from './CONFIG'
-import { closeCard } from './actions/closeCard'
-import { openCard } from './actions/openCard'
+import { PHONE_DOWN, PHONE_UP } from './CONFIG';
+import { closeCard } from './actions/closeCard';
+import { openCard } from './actions/openCard';
 
-const cards = document.getElementsByClassName('card')
+const cards = document.getElementsByClassName('card');
 
 const closeAll = () => {
   for (const card of cards) {
     if (card.id.includes('about')) {
-      continue
+      continue;
     }
 
     if (
       card.id.includes('articles') &&
       window.location.href.includes('articles')
     ) {
-      continue
+      continue;
     }
 
-    closeCard(card.dataset.checker, true)
+    closeCard(card.dataset.checker, true);
   }
-}
+};
 
 const openAll = () => {
   for (const card of cards) {
@@ -27,27 +27,27 @@ const openAll = () => {
       card.id.includes('articles') &&
       !window.location.href.includes('articles')
     ) {
-      continue
+      continue;
     }
 
-    openCard(card.dataset.checker)
+    openCard(card.dataset.checker);
   }
-}
+};
 
 export const addMobileOpenHandler = () => {
   window.matchMedia(`(max-width: ${PHONE_DOWN}px)`).addListener(e => {
     if (e.matches) {
-      closeAll()
+      closeAll();
     }
-  })
+  });
 
   window.matchMedia(`(min-width: ${PHONE_UP}px)`).addListener(e => {
     if (e.matches) {
-      openAll()
+      openAll();
     }
-  })
+  });
 
   if (window.innerWidth <= PHONE_DOWN) {
-    closeAll()
+    closeAll();
   }
-}
+};

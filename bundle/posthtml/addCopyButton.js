@@ -1,18 +1,18 @@
-const { generateName } = require('../../utils/helpers/generateName')
+const { generateName } = require('../../utils/helpers/generateName');
 
-const generateId = header => encodeURIComponent(generateName(header))
+const generateId = header => encodeURIComponent(generateName(header));
 
-const isDate = str => /\d{2}\.\d{2}\.\d{4}/gi.test(str)
+const isDate = str => /\d{2}\.\d{2}\.\d{4}/gi.test(str);
 const skipButtonElement = i =>
   i.content.length !== 1 ||
   typeof i.content[0] !== 'string' ||
-  !isDate(i.content[0])
+  !isDate(i.content[0]);
 
 module.exports.addCopyButton = tree => {
   // add button
   tree.match({ tag: 'p' }, i => {
     if (skipButtonElement(i)) {
-      return i
+      return i;
     }
 
     return {
@@ -27,20 +27,20 @@ module.exports.addCopyButton = tree => {
           },
         },
       ],
-    }
-  })
+    };
+  });
 
   // add id to section
   tree.match({ tag: 'section' }, i => {
     if (!i.content[0] || i.content[0].tag !== 'h3') {
-      return i
+      return i;
     }
 
-    const id = generateId(i.content[0].content[0])
+    const id = generateId(i.content[0].content[0]);
 
     return {
       ...i,
       attrs: { id },
-    }
-  })
-}
+    };
+  });
+};

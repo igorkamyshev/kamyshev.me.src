@@ -1,14 +1,14 @@
-import { correctUrl } from '../helpers/correctUrl'
+import { correctUrl } from '../helpers/correctUrl';
 
 export const restoreArticleUrlAfterScrollStop = element => {
-  let isScrolling
+  let isScrolling;
   function correctAndReset() {
-    clearTimeout(isScrolling)
+    clearTimeout(isScrolling);
     isScrolling = setTimeout(() => {
-      correctUrl()
-      element.removeEventListener('scroll', correctAndReset)
-    }, 66)
+      correctUrl();
+      element.removeEventListener('scroll', correctAndReset);
+    }, 66);
   }
 
-  element.addEventListener('scroll', correctAndReset)
-}
+  element.addEventListener('scroll', correctAndReset);
+};

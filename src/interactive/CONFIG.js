@@ -1,2 +1,2 @@
-export const PHONE_DOWN = 839
-export const PHONE_UP = 840
+export const PHONE_DOWN = 839;
+export const PHONE_UP = 840;

@@ -1,3 +1,3 @@
-import * as clipboard from 'clipboard-polyfill'
+import * as clipboard from 'clipboard-polyfill';
 
-export const copy = text => clipboard.writeText(text)
+export const copy = text => clipboard.writeText(text);

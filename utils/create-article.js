@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 
-const fs = require('fs-extra')
-const readline = require('readline')
-const path = require('path')
-const { format } = require('date-fns')
+const fs = require('fs-extra');
+const readline = require('readline');
+const path = require('path');
+const { format } = require('date-fns');
 
-const { generateName } = require('./helpers/generateName')
+const { generateName } = require('./helpers/generateName');
 
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
-})
+});
 
 const getNextNumber = () =>
   fs
@@ -19,37 +19,39 @@ const getNextNumber = () =>
     .then(file => file.split('-')[0])
     .then(str => parseInt(str, 10) + 1)
     .then(num => num.toString())
-    .then(str => str.padStart(3, '0'))
+    .then(str => str.padStart(3, '0'));
 
 const asyncQuestion = async (text, mapper = t => t) => {
-  const answer = await new Promise(resolve => rl.question(`${text}\n`, resolve))
+  const answer = await new Promise(resolve =>
+    rl.question(`${text}\n`, resolve),
+  );
 
-  const value = mapper(answer)
+  const value = mapper(answer);
 
-  rl.write('\n')
+  rl.write('\n');
 
-  return value
-}
+  return value;
+};
 
 const run = async () => {
-  const articleName = await asyncQuestion('Article title')
+  const articleName = await asyncQuestion('Article title');
 
   if (!articleName) {
-    throw new Error('Empty title')
+    throw new Error('Empty title');
   }
 
-  const userFriendlyUrl = await asyncQuestion('User friendly URL')
+  const userFriendlyUrl = await asyncQuestion('User friendly URL');
 
-  const nextNumber = await getNextNumber()
-  const generatedName = generateName(userFriendlyUrl || articleName)
+  const nextNumber = await getNextNumber();
+  const generatedName = generateName(userFriendlyUrl || articleName);
 
-  const fileName = `${nextNumber}-${generatedName}.md`
-  const articlePath = path.resolve(__dirname, '../data/articles', fileName)
+  const fileName = `${nextNumber}-${generatedName}.md`;
+  const articlePath = path.resolve(__dirname, '../data/articles', fileName);
 
   const sampleArticle = fs.readFileSync(
     path.resolve(__dirname, './assets/sample.md'),
     'utf-8',
-  )
+  );
 
   const replaces = [
     {
@@ -60,42 +62,42 @@ const run = async () => {
       pattern: '{{date}}',
       value: format(new Date(), 'DD.MM.YYYY'),
     },
-  ]
+  ];
 
   const external = await asyncQuestion(
     'Does it place on external resource? [yes, no]',
     answer => ['y', 'yes'].includes(answer.trim().toLowerCase()),
-  )
+  );
 
   if (external) {
-    const res = await asyncQuestion('Resource name')
+    const res = await asyncQuestion('Resource name');
     replaces.push({
       pattern: '{{res}}',
       value: res,
-    })
+    });
 
-    const link = await asyncQuestion('Article link')
+    const link = await asyncQuestion('Article link');
     replaces.push({
       pattern: '{{link}}',
       value: link,
-    })
+    });
   } else {
     replaces.push({
       pattern: ' [Читать на {{res}}]({{link}})',
       value: '',
-    })
+    });
   }
 
   const newArticle = replaces.reduce(
     (text, { pattern, value }) => text.replace(pattern, value),
     sampleArticle,
-  )
+  );
 
-  await fs.writeFile(articlePath, newArticle)
+  await fs.writeFile(articlePath, newArticle);
 
-  rl.write(`Article created -> ${articlePath}\n`)
+  rl.write(`Article created -> ${articlePath}\n`);
 
-  rl.close()
-}
+  rl.close();
+};
 
-run()
+run();
