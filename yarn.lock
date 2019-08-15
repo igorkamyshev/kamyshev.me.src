@@ -995,10 +995,10 @@
     webpack "^4.39.1"
     webpack-bundle-analyzer "^3.4.1"
 
-"@solid-soda/scripts@^1.12.8":
-  version "1.12.8"
-  resolved "https://registry.yarnpkg.com/@solid-soda/scripts/-/scripts-1.12.8.tgz#8cc0e0aa8d43ef9e02757420d2303cd44847e1ce"
-  integrity sha512-yDSOVq+tdaCcWc/ErmMAjpsNygoNx1j0jfhsd9DT+0/1tGIrO+jwuSX8WS3eRECPl/d7Eots2bgcg93/VOjkJw==
+"@solid-soda/scripts@^1.13.4":
+  version "1.13.4"
+  resolved "https://registry.yarnpkg.com/@solid-soda/scripts/-/scripts-1.13.4.tgz#e719f5785bf3f57d06d148a27353642b6c5946d1"
+  integrity sha512-ZIm/LOx6+/aqtJ9fsfKzssck/gnT9qPtjJa704XpATWIb1dfdwBAuHd21fQaZeD4MesNsinOF/g1EYO5fjEYPA==
   dependencies:
     "@commitlint/cli" "7"
     "@commitlint/config-conventional" "7"
@@ -5913,12 +5913,12 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@4.17.11, lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.2.1:
+lodash@4.17.11:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
 
-lodash@^4.17.15, lodash@^4.17.5:
+lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.15, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
