@@ -1,7 +1,7 @@
+const fs = require('fs');
+const path = require('path');
 const posthtml = require('posthtml');
 const { promisify } = require('util');
-const path = require('path');
-const fs = require('fs');
 
 const readFile = promisify(fs.readFile);
 

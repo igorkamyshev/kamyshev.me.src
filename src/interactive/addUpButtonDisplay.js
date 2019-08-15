@@ -1,5 +1,5 @@
-import { PHONE_DOWN } from './CONFIG';
 import { restoreArticleUrlAfterScrollStop } from './actions/restoreArticleUrlAfterScrollStop';
+import { PHONE_DOWN } from './CONFIG';
 import { throttle } from './helpers/throttle';
 
 const button = document.querySelector('#articles-up');

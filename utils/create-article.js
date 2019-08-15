@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-const fs = require('fs-extra');
-const readline = require('readline');
-const path = require('path');
 const { format } = require('date-fns');
+const fs = require('fs-extra');
+const path = require('path');
+const readline = require('readline');
 
 const { generateName } = require('./helpers/generateName');
 

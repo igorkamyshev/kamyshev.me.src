@@ -1,12 +1,12 @@
-import { addZhandler } from './addZHandler';
+import { addArticleToggle } from './addArticleToggle';
+import { addCheckerKeyPress } from './addCheckerKeyPress';
+import { addCheckerListener } from './addCheckerListener';
+import { addCloseButtonsHandler } from './addCloseButtonsHandler';
 import { addCopyHandler } from './addCopyHandler';
 import { addDragHandler } from './addDragHandler';
-import { addArticleToggle } from './addArticleToggle';
-import { addCheckerListener } from './addCheckerListener';
-import { addUpButtonDisplay } from './addUpButtonDisplay';
-import { addCheckerKeyPress } from './addCheckerKeyPress';
 import { addMobileOpenHandler } from './addMobileOpenHandler';
-import { addCloseButtonsHandler } from './addCloseButtonsHandler';
+import { addUpButtonDisplay } from './addUpButtonDisplay';
+import { addZhandler } from './addZHandler';
 
 const bootstrap = () => {
   addZhandler();
@@ -22,6 +22,6 @@ const bootstrap = () => {
 
 try {
   bootstrap();
-} catch (e) {
+} catch (error) {
   document.addEventListener('DOMContentLoaded', bootstrap);
 }

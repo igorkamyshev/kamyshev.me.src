@@ -1,5 +1,5 @@
-import { correctUrl } from './helpers/correctUrl';
 import { copy } from './helpers/copy';
+import { correctUrl } from './helpers/correctUrl';
 
 const copyButtons = document.querySelectorAll('[data-copy]');
 

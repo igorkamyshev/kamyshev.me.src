@@ -1,6 +1,6 @@
-import { PHONE_DOWN, PHONE_UP } from './CONFIG';
 import { closeCard } from './actions/closeCard';
 import { openCard } from './actions/openCard';
+import { PHONE_DOWN, PHONE_UP } from './CONFIG';
 
 const cards = document.getElementsByClassName('card');
 

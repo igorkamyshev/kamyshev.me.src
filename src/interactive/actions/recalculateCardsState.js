@@ -1,5 +1,5 @@
-import { randomMoveCard } from './randomMoveCard';
 import { correctUrl } from '../helpers/correctUrl';
+import { randomMoveCard } from './randomMoveCard';
 
 const cards = Array.from(document.getElementsByClassName('card'));
 let maxZ = cards.length + 2;
