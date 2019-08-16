@@ -1002,10 +1002,10 @@
     webpack "^4.39.1"
     webpack-bundle-analyzer "^3.4.1"
 
-"@solid-soda/scripts@^1.14.1":
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/@solid-soda/scripts/-/scripts-1.14.1.tgz#3a4726fc6eba06e6fe86977dfe4ab15f240e49b4"
-  integrity sha512-oV/myVB3Tw1FU1kjFreJGxyDgVfUjAO5vmEZ8qUKEpeUEPb8pOYyL0yEQQA+pSUv37U4AMaJGDyxKak71MGxAA==
+"@solid-soda/scripts@^1.14.2":
+  version "1.14.2"
+  resolved "https://registry.yarnpkg.com/@solid-soda/scripts/-/scripts-1.14.2.tgz#b15456ceac4737209e4742c0a217884fee41f04e"
+  integrity sha512-kyfJ2XikzYoKcgvEbGvDgazDz7T/WvVMdLEsd5hVHQ/7eBrER87epTRa+73Btq7OpHG4EzldJQ4hcdUusKC4EA==
   dependencies:
     "@commitlint/cli" "7"
     "@commitlint/config-conventional" "7"
@@ -9742,9 +9742,9 @@ synchronous-promise@^2.0.6:
   integrity sha512-LO95GIW16x69LuND1nuuwM4pjgFGupg7pZ/4lU86AmchPKrhk0o2tpMU2unXRrqo81iAFe1YJ0nAGEVwsrZAgg==
 
 table@^5.2.3:
-  version "5.4.5"
-  resolved "https://registry.yarnpkg.com/table/-/table-5.4.5.tgz#c8f4ea2d8fee08c0027fac27b0ec0a4fe01dfa42"
-  integrity sha512-oGa2Hl7CQjfoaogtrOHEJroOcYILTx7BZWLGsJIlzoWmB2zmguhNfPJZsWPKYek/MgCxfco54gEi31d1uN2hFA==
+  version "5.4.6"
+  resolved "https://registry.yarnpkg.com/table/-/table-5.4.6.tgz#1292d19500ce3f86053b05f0e8e7e4a3bb21079e"
+  integrity sha512-wmEc8m4fjnob4gt5riFRtTu/6+4rSe12TpAELNSqHMfF3IqnA+CH37USM6/YR3qRZv7e56kAEAtd6nKZaxe0Ug==
   dependencies:
     ajv "^6.10.2"
     lodash "^4.17.14"
