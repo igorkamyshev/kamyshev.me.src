@@ -9109,10 +9109,22 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-size-limit@2.0.1, size-limit@^2.0.1:
+size-limit@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-2.0.1.tgz#90d1bb54c09b441ab8ecde84e6f77b877c43d363"
   integrity sha512-oQvrf3KNRXYxjWVdN7ID0x+5Vp5/6ue3L4HbFYOxD0MqwxtDD+bVVlPWxNSXtvTJuHNB5XI5Mk5gUNCyzgdkig==
+  dependencies:
+    bytes "^3.1.0"
+    chalk "^2.4.2"
+    ci-job-number "^0.3.0"
+    cosmiconfig "^5.2.1"
+    globby "^10.0.1"
+    read-pkg-up "^6.0.0"
+
+size-limit@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-2.0.2.tgz#af961b0f8bb4017750ba3d1e7edd4b3e5144d4c8"
+  integrity sha512-yMY4y7ouuo/2HyLZPk9QHR8oSesK4Sj7JoJACuzydvUAPDODLtPeOpk1aAOxDU3AEZVLxcYIqFq+xSw2EoVnWg==
   dependencies:
     bytes "^3.1.0"
     chalk "^2.4.2"
