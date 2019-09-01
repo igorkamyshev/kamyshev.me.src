@@ -986,20 +986,20 @@
   dependencies:
     size-limit "2.0.1"
 
-"@size-limit/webpack@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@size-limit/webpack/-/webpack-2.0.1.tgz#35a92fc2ae0bd15171c565599849f4134b95149c"
-  integrity sha512-zIZa05bhHUb//bH5UUSfY3zZXVt1fUqQruAVU+bOgYpovm1X/a3M/JH9prdUJv+jPWN9veoHFlYCCVW0kTDvLA==
+"@size-limit/webpack@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@size-limit/webpack/-/webpack-2.1.1.tgz#a13bb4052130cc188524e0d2dd7d13a5ebfcad3f"
+  integrity sha512-A00NV9q4znon1rXEuqLQp4eBVpH+avjdzA5Hk34Z6ddOpDNXDai5eXTDecryapSCb/Q5rs/iKHwDxZiMgHH2DA==
   dependencies:
     css-loader "^3.2.0"
     escape-string-regexp "^2.0.0"
     file-loader "^4.2.0"
     nanoid "^2.0.3"
     optimize-css-assets-webpack-plugin "^5.0.3"
-    rimraf "^2.6.3"
-    size-limit "2.0.1"
+    rimraf "^3.0.0"
+    size-limit "2.1.1"
     style-loader "^1.0.0"
-    webpack "^4.39.1"
+    webpack "^4.39.2"
     webpack-bundle-analyzer "^3.4.1"
 
 "@solid-soda/scripts@^1.14.5":
@@ -9114,7 +9114,7 @@ size-limit@2.0.1:
     globby "^10.0.1"
     read-pkg-up "^6.0.0"
 
-size-limit@^2.1.1:
+size-limit@2.1.1, size-limit@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-2.1.1.tgz#92ec1f22e709b74a488efb20ac649607e56d036a"
   integrity sha512-OMODRoyU1ZeSAttafaOvVTnCG93z3pF6bw0ZIu8cxGEq8VZSnmhUC4/zgt/O9hUwDWEEE/INMR3ST5DYJlHvHA==
@@ -10490,10 +10490,10 @@ webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@^4.39.1:
-  version "4.39.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.39.1.tgz#60ed9fb2b72cd60f26ea526c404d2a4cc97a1bd8"
-  integrity sha512-/LAb2TJ2z+eVwisldp3dqTEoNhzp/TLCZlmZm3GGGAlnfIWDgOEE758j/9atklNLfRyhKbZTCOIoPqLJXeBLbQ==
+webpack@^4.39.2:
+  version "4.39.3"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.39.3.tgz#a02179d1032156b713b6ec2da7e0df9d037def50"
+  integrity sha512-BXSI9M211JyCVc3JxHWDpze85CvjC842EvpRsVTc/d15YJGlox7GIDd38kJgWrb3ZluyvIjgenbLDMBQPDcxYQ==
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"
