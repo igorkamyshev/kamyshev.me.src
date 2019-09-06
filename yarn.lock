@@ -1002,10 +1002,10 @@
     webpack "^4.39.1"
     webpack-bundle-analyzer "^3.4.1"
 
-"@solid-soda/scripts@^1.14.3":
-  version "1.14.3"
-  resolved "https://registry.yarnpkg.com/@solid-soda/scripts/-/scripts-1.14.3.tgz#70b93d79859dfe99ca39941215c52cc137a39a96"
-  integrity sha512-SM/zoSPdliLjriIjUHyUwG935YszleUHu2bvIozJNcm3DajWVFkO+0wfuNGVCJa+b38XqhQRPIxDDg9JMlpwGA==
+"@solid-soda/scripts@^1.14.5":
+  version "1.14.5"
+  resolved "https://registry.yarnpkg.com/@solid-soda/scripts/-/scripts-1.14.5.tgz#c2f5c84a7ee9ed16df605a4a19b6aa99033f20ce"
+  integrity sha512-Q7397+ypjy2DSnvvTRg3AtmmTMq3UFJQ6S21kmoIu3XS27eE4it2SJFOa8+OmpvWYNuymw4jPeeZjJ8acTYRaA==
   dependencies:
     "@commitlint/cli" "7"
     "@commitlint/config-conventional" "7"
@@ -6501,9 +6501,9 @@ mississippi@^3.0.0:
     through2 "^2.0.0"
 
 mixin-deep@^1.2.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.1.tgz#a49e7268dce1a0d9698e45326c5626df3543d0fe"
-  integrity sha512-8ZItLHeEgaqEvd5lYBXfm4EZSFCX29Jb9K+lAHhDKzReKBQKj3R+7NOF6tjqYi9t4oI8VUfaWITJQm86wnXGNQ==
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.2.tgz#1120b43dc359a785dce65b55b82e257ccf479566"
+  integrity sha512-WRoDn//mXBiJ1H40rqa3vH0toePwSsGb45iInWlTySa+Uu4k3tYUSxa2v1KqAiLtvlrSzaExqS1gtk96A9zvEA==
   dependencies:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
