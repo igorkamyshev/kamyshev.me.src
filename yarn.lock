@@ -979,12 +979,12 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@size-limit/file@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-2.1.4.tgz#b59280bde1879304b463c5bc4c0339be90c0db3c"
-  integrity sha512-hA5ZBCgX/4TStbQjlzgZshm5EIvQm6XdxjdnWrEyKVzCT7N2VIVHB/dizQEX3iqk0iGdXxNpGZOBriA702NdsQ==
+"@size-limit/file@^2.1.5":
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-2.1.5.tgz#73451631a1289725645358c39ab754b99b86222b"
+  integrity sha512-TD46Xf3nCgDSJYA7cvOQLr2MyzQ7HnhbPzIjo4oH6p6C3WX6oemeT9jWRDvDJK9nYnqFRAlnsu2wqMJ4fg27qg==
   dependencies:
-    size-limit "2.1.4"
+    size-limit "2.1.5"
 
 "@size-limit/webpack@^2.1.5":
   version "2.1.5"
