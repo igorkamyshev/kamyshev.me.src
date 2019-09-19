@@ -60,7 +60,7 @@ const run = async () => {
     },
     {
       pattern: '{{date}}',
-      value: format(new Date(), 'DD.MM.YYYY'),
+      value: format(new Date(), 'dd.MM.yyyy'),
     },
   ];
 
