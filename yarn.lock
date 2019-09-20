@@ -979,12 +979,12 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@size-limit/file@^2.1.5":
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-2.1.5.tgz#73451631a1289725645358c39ab754b99b86222b"
-  integrity sha512-TD46Xf3nCgDSJYA7cvOQLr2MyzQ7HnhbPzIjo4oH6p6C3WX6oemeT9jWRDvDJK9nYnqFRAlnsu2wqMJ4fg27qg==
+"@size-limit/file@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-2.1.6.tgz#007249f45bfea905b88b85f67ffb26558b56feef"
+  integrity sha512-t6tRlVbgACPkS2tc5i4LaH8uPxUWeCruaWwv+XRACdUUoJjCcsMlKiquiGE81qO+e3Yho3MUpoS2kPw1ij7U+Q==
   dependencies:
-    size-limit "2.1.5"
+    size-limit "2.1.6"
 
 "@size-limit/webpack@^2.1.5":
   version "2.1.5"
@@ -9111,6 +9111,18 @@ size-limit@2.1.5:
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-2.1.5.tgz#f8b3caea5d1f6a5eb7c5778634965f378065ba69"
   integrity sha512-MG+kALmBNAw46QwDr62uPJlfeUjnKy+fLvBjQbIh6egPPelMjDaDb4b9ZgaJa0EkJGVF9khCV1ne1uNWsMZZ6w==
+  dependencies:
+    bytes "^3.1.0"
+    chalk "^2.4.2"
+    ci-job-number "^0.3.0"
+    cosmiconfig "^5.2.1"
+    globby "^10.0.1"
+    read-pkg-up "^6.0.0"
+
+size-limit@2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-2.1.6.tgz#d0a9ced5a08d1b73eaab149e66f16cb71bcfe985"
+  integrity sha512-BXrH1jMA6uXtqyv/9koJQocGn8pHogv5r+zs9eMFI+Qh5oQVmN0GPxK3ok5gkBFJ6AQ5Ug7LM1E8SDp635XG8Q==
   dependencies:
     bytes "^3.1.0"
     chalk "^2.4.2"
