@@ -20,7 +20,7 @@
     "autoprefixer": "^9.6.1",
     "concurrently": "^4.1.2",
     "cyrillic-to-translit-js": "^2.2.0",
-    "date-fns": "^2.2.1",
+    "date-fns": "^2.3.0",
     "fs-extra": "^8.1.0",
     "jstransformer-markdown-it": "^2.1.0",
     "marked": "^0.7.0",
