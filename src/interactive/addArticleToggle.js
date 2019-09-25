@@ -1,11 +1,11 @@
-import { correctUrl } from './helpers/correctUrl'
+import { correctUrl } from './helpers/correctUrl';
 
-const articleCheckbox = document.getElementById('articles-check')
+const articleCheckbox = document.getElementById('articles-check');
 const articleCloseButton = document.querySelector(
   '[data-checker=articles-check]',
-)
+);
 
 export const addArticleToggle = () => {
-  articleCheckbox.addEventListener('change', correctUrl)
-  articleCloseButton.addEventListener('click', correctUrl)
-}
+  articleCheckbox.addEventListener('change', correctUrl);
+  articleCloseButton.addEventListener('click', correctUrl);
+};

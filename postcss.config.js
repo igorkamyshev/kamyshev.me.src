@@ -8,4 +8,4 @@ module.exports = {
     require('postcss-scrollbar'),
     require('postcss-color-mod-function'),
   ],
-}
+};

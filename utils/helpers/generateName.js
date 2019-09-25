@@ -1,5 +1,5 @@
-const CyrillicToTranslit = require('cyrillic-to-translit-js')
-const transliterator = new CyrillicToTranslit()
+const CyrillicToTranslit = require('cyrillic-to-translit-js');
+const transliterator = new CyrillicToTranslit();
 
 const generateName = header =>
   transliterator
@@ -7,8 +7,8 @@ const generateName = header =>
     .trim()
     .replace(/\s+/gi, '-')
     .replace(/\./gi, '')
-    .toLowerCase()
+    .toLowerCase();
 
 module.exports = {
   generateName,
-}
+};

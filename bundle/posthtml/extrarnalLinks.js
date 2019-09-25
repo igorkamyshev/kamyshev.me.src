@@ -7,4 +7,4 @@ module.exports.extrarnalLinks = tree =>
       target: '_blank',
       rel: 'noopener',
     },
-  }))
+  }));
