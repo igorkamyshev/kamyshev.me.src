@@ -134,8 +134,6 @@ h3 > blockquote,
 h4 > blockquote,
 h5 > blockquote,
 h6 > blockquote {
-  position: relative;
-  bottom: 3px;
   margin-left: 12px;
 }
 
