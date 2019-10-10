@@ -24,7 +24,7 @@
     "fs-extra": "^8.1.0",
     "jstransformer-markdown-it": "^2.1.0",
     "marked": "^0.7.0",
-    "parcel-bundler": "^1.12.3",
+    "parcel-bundler": "^1.12.4",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-custom-media": "^7.0.8",
     "postcss-nesting": "^7.0.1",
