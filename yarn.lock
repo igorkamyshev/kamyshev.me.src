@@ -3048,10 +3048,12 @@ cyclist@~0.2.2:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-0.2.2.tgz#1b33792e11e914a2fd6d6ed6447464444e5fa640"
   integrity sha1-GzN5LhHpFKL9bW7WRHRkRE5fpkA=
 
-cyrillic-to-translit-js@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/cyrillic-to-translit-js/-/cyrillic-to-translit-js-2.2.0.tgz#1a592c30077903f000c5e41174a2c188878af9d7"
-  integrity sha512-kUp5VdCEPkmwDQq5v5S/sOPtm2nIDa/c+wMvCMPVyy8OJ8pI3SUhBGiWZFNNF0Z9/8ZYjzGs+7tR+SYXz5aUZw==
+cyrillic-to-translit-js@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/cyrillic-to-translit-js/-/cyrillic-to-translit-js-3.0.0.tgz#ee92ace123e9bc5889685cd2990a6bb677dc0d52"
+  integrity sha512-UDNudY1AyGvi5+RO4noH8ZelMr7fP3mvbbU7dHJFpOjAAXO+Ky2hgeK7nvIF/z1YHqsARGGEWJkvBQYOTsj63Q==
+  dependencies:
+    lodash.invert "^4.3.0"
 
 cz-conventional-changelog@2, cz-conventional-changelog@2.1.0:
   version "2.1.0"
@@ -5839,6 +5841,11 @@ lodash.get@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+
+lodash.invert@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/lodash.invert/-/lodash.invert-4.3.0.tgz#8ffe20d4b616f56bea8f1aa0c6ebd80dcf742aee"
+  integrity sha1-j/4g1LYW9WvqjxqgxuvYDc90Ku4=
 
 lodash.ismatch@^4.4.0:
   version "4.4.0"
