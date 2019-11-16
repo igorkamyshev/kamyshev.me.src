@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@size-limit/file": "^2.2.0",
-    "@size-limit/webpack": "^2.2.0",
+    "@size-limit/webpack": "^2.2.1",
     "@solid-soda/scripts": "^1.14.9",
     "autoprefixer": "^9.7.1",
     "concurrently": "^5.0.0",
