@@ -948,12 +948,12 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@size-limit/file@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-2.2.0.tgz#8595668bada5bf792d319acc8bcd84564ff498f7"
-  integrity sha512-FCrrpOh9YF1UHYilspC0R1+Di/yso0Tcam7m6GXTqgY+Uvv7HJ3LPG4TXvLbUSbgzLKRDVdf3JX7GRMH5+yfKA==
+"@size-limit/file@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-2.2.1.tgz#112a13652a87070974b31d5fae191c4392931d08"
+  integrity sha512-ZmIgXZLO4jxPhlHVe679Q2LZOPz7KJ7OsAwlu/RD7YW3H4kwO8T8VYM7Y0eDv7atxHeP7rwLQyFEUpkkPUOOCQ==
   dependencies:
-    size-limit "2.2.0"
+    size-limit "2.2.1"
 
 "@size-limit/webpack@^2.2.1":
   version "2.2.1"
