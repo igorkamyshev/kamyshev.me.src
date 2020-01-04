@@ -3,24 +3,25 @@
   font-family: 'Steinbeck';
   font-style: normal;
   font-weight: normal;
-  src: url('./fonts/steinbeck-regular/steinbeck-regular.woff') format('woff'),
-    url('./fonts/steinbeck-regular/steinbeck-regular.otf') format('otf');
-  font-display: block;
+  src: url('./fonts/steinbeck-regular.woff2') format('woff2'),
+    url('./fonts/steinbeck-regular.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Steinbeck';
   font-style: italic;
   font-weight: normal;
-  src: url('./fonts/steinbeck-italic/steinbeck-italic.woff') format('woff'),
-    url('./fonts/steinbeck-italic/steinbeck-italic.otf') format('otf');
-  font-display: block;
+  src: url('./fonts/steinbeck-italic.woff2') format('woff2'),
+    url('./fonts/steinbeck-italic.woff') format('woff');
+  font-display: swap;
 }
 
 :root {
   --color-primary: blue;
   --color-secondary: rgb(255, 59, 106);
-  --main-font: 'Steinbeck';
+  --main-font: 'Steinbeck', -apple-system, BlinkMacSystemFont,
+    'Apple Color Emoji', Arial, sans-serif;
 
   --header: 24px/110% var(--main-font);
   --subheader: 22px/110% var(--main-font);
