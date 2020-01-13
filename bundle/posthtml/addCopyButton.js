@@ -1,6 +1,7 @@
 const { generateName } = require('../../utils/helpers/generateName');
 
-const generateId = header => encodeURIComponent(generateName(header));
+const generateId = header =>
+  `article-${encodeURIComponent(generateName(header))}`;
 
 const isDate = str => /\d{2}\.\d{2}\.\d{4}/gi.test(str);
 const skipButtonElement = i =>
@@ -32,7 +33,8 @@ module.exports.addCopyButton = tree => {
 
   // add id to section
   tree.match({ tag: 'section' }, i => {
-    if (!i.content[0] || i.content[0].tag !== 'h3') {
+    const firstChildIsArticleHeader = i.content[0] && i.content[0].tag !== 'h3';
+    if (!firstChildIsArticleHeader) {
       return i;
     }
 
