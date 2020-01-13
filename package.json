@@ -16,7 +16,7 @@
   "devDependencies": {
     "@size-limit/file": "^2.2.4",
     "@size-limit/webpack": "^2.2.4",
-    "@solid-soda/scripts": "^1.14.9",
+    "@solid-soda/scripts": "^1.15.2",
     "autoprefixer": "^9.7.3",
     "concurrently": "^5.0.2",
     "cyrillic-to-translit-js": "^3.0.1",
