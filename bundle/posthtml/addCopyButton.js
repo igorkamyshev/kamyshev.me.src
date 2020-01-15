@@ -33,8 +33,7 @@ module.exports.addCopyButton = tree => {
 
   // add id to section
   tree.match({ tag: 'section' }, i => {
-    const firstChildIsArticleHeader = i.content[0] && i.content[0].tag !== 'h3';
-    if (!firstChildIsArticleHeader) {
+    if (!i.content[0] || i.content[0].tag !== 'h3') {
       return i;
     }
 
