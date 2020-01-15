@@ -24,3 +24,8 @@
 .card__checker:checked ~ label > .card__close-sign {
   display: none;
 }
+
+/* .container used for specificity */
+.container > .card__checker_hide ~ label {
+  display: none;
+}

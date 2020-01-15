@@ -6,6 +6,7 @@ export const addZhandler = () => {
   for (const card of cards) {
     const handler = () => recalculateCardsState(card.id);
 
+    card.addEventListener('click', handler);
     card.onmousedown = handler;
     card.onkeyup = handler;
   }

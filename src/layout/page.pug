@@ -36,3 +36,6 @@ mixin page(isArticles=false)
 
         +card("articles", "Статьи", isArticles, false, isArticles, true)
           include ./blocks/articles.pug
+
+        +card("mustread", "Маст-риды", false, false, false, false, true, true)
+          include ./blocks/mustread.pug

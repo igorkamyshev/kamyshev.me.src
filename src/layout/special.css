@@ -44,3 +44,10 @@
 .dead-screen {
   background-color: var(--color-primary);
 }
+
+.iframe {
+  width: 100%;
+  height: calc(100% - 74px);
+  margin: 0px !important;
+  border: none;
+}

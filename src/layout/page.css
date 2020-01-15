@@ -110,3 +110,13 @@
     margin-block-end: 12px;
   }
 }
+
+.mustread {
+  width: calc(100% + 4px);
+  height: 100%;
+  padding: 0px;
+
+  @media (--phoneDown) {
+    display: none;
+  }
+}
