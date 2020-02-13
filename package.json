@@ -17,7 +17,7 @@
     "@size-limit/file": "^2.2.4",
     "@size-limit/webpack": "^2.2.4",
     "@solid-soda/scripts": "^1.17.0",
-    "autoprefixer": "^9.7.3",
+    "autoprefixer": "^9.7.4",
     "concurrently": "^5.1.0",
     "cyrillic-to-translit-js": "^3.0.1",
     "date-fns": "^2.8.1",
