@@ -15,7 +15,6 @@
   },
   "devDependencies": {
     "@size-limit/file": "^4.0.1",
-    "@size-limit/webpack": "^4.0.1",
     "@solid-soda/scripts": "^1.17.0",
     "autoprefixer": "^9.7.4",
     "concurrently": "^5.1.0",
@@ -44,12 +43,12 @@
   },
   "size-limit": [
     {
-      "limit": "3552 B",
-      "path": "./src/interactive/index.js"
+      "limit": "6 KB",
+      "path": "./dist/interactive.*.js"
     },
     {
-      "limit": "2088 B",
-      "path": "./src/polyfills.js"
+      "limit": "3 KB",
+      "path": "./dist/polyfills.*.js"
     }
   ],
   "dependencies": {
