@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@size-limit/file": "^4.0.1",
-    "@solid-soda/scripts": "^1.17.0",
+    "@solid-soda/scripts": "^1.18.0",
     "autoprefixer": "^9.7.4",
     "concurrently": "^5.1.0",
     "cyrillic-to-translit-js": "^3.0.1",
