@@ -948,12 +948,12 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@size-limit/file@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-4.0.1.tgz#9d98a529d7856d0e666dc0d87a091dbfd1779023"
-  integrity sha512-0IribiiEXz7WkX8oJdmXLn1XXpvOYZgDld0Db+o4EZjigdopfDqSzH3Jkef0MpNRERtfi0DCZR1/dSe2o6jN3g==
+"@size-limit/file@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-4.0.2.tgz#062576ca01dadfb7c1ce1bd26d585374d19df242"
+  integrity sha512-+ggddIGbyhF/mmZJgGnUCDOaL+aMo+3qGSmE9De4vd+/1eSss4S/JPO1SGxdnGlfPPWxK55/Mhy8qa70TEDygA==
   dependencies:
-    semver "7.1.2"
+    semver "7.1.3"
 
 "@solid-soda/scripts@^1.17.0":
   version "1.17.0"
@@ -2057,10 +2057,10 @@ ci-info@^2.0.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
   integrity sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
 
-ci-job-number@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/ci-job-number/-/ci-job-number-0.3.1.tgz#4354e45bb3ed5a7301f09358d2876d510d4a570e"
-  integrity sha512-OfY2Cg+mTqZz7lWOxONGbAXVZNNWPSiyGtOpAjYHEVTXIae8lGCOg3cDfJpPh8zcl+2CqItOsxbvH6ueV+QOmw==
+ci-job-number@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ci-job-number/-/ci-job-number-1.0.0.tgz#383b9bff6065bb2e4ad0a68ba09fbc8d6ee25e29"
+  integrity sha512-w6+qJ7Rx/N9jdDrxhQmoSWxoD7fjk0urZEq1e3TgdEsExE/tZ2vwhjq0D3q7Fw3fbp+Tu6DfJBkfhjPzKS9+Yg==
 
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   version "1.0.4"
@@ -8237,10 +8237,10 @@ semver@6.0.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.0.0.tgz#05e359ee571e5ad7ed641a6eec1e547ba52dea65"
   integrity sha512-0UewU+9rFapKFnlbirLi3byoOuhrSsli/z/ihNnvM24vgF+8sNBiI1LZPBSH9wJKUwaUbw+s3hToDLCXkrghrQ==
 
-semver@7.1.2:
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.1.2.tgz#847bae5bce68c5d08889824f02667199b70e3d87"
-  integrity sha512-BJs9T/H8sEVHbeigqzIEo57Iu/3DG6c4QoqTfbQB3BPA4zgzAomh/Fk9E7QtjWQ8mx2dgA9YCfSF4y9k9bHNpQ==
+semver@7.1.3:
+  version "7.1.3"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.1.3.tgz#e4345ce73071c53f336445cfc19efb1c311df2a6"
+  integrity sha512-ekM0zfiA9SCBlsKa2X1hxyxiI4L3B6EbVJkkdgQXnSEEaHlGdvyodMruTiulSRWMMB4NeIuYNMC9rTKTz97GxA==
 
 semver@^6.0.0, semver@^6.1.2, semver@^6.3.0:
   version "6.3.0"
@@ -8387,14 +8387,14 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-size-limit@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-4.0.1.tgz#7e001ea7f113a25a0d863ac2dac4b3f81269242f"
-  integrity sha512-UwXXuMeyoUx3BbCBdsnSEQFg4G4yj0ViItvFCq46LOWbDQOXJU8rx7LwQEbu9lte7fDHQy+BkZS8PxKNXbju9A==
+size-limit@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-4.0.2.tgz#fad45d0a99c55fc443903666c1bda601417508cc"
+  integrity sha512-Pk6Ckqio81mUq/D88nRG9EqmMRS8GIuQU3dayVFQtFw9a8Q+HZ9XKZmZTE8tHsKXtXviaVxuRF98vkuBQctxbg==
   dependencies:
     bytes "^3.1.0"
     chalk "^3.0.0"
-    ci-job-number "^0.3.1"
+    ci-job-number "^1.0.0"
     cosmiconfig "^6.0.0"
     globby "^11.0.0"
     read-pkg-up "^7.0.1"
