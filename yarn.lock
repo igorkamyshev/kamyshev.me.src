@@ -2866,10 +2866,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-cyrillic-to-translit-js@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/cyrillic-to-translit-js/-/cyrillic-to-translit-js-3.0.1.tgz#599d499d41b86bc5bbd6d7c289046f03cd6c82bd"
-  integrity sha512-ZtifU5TsUOdVC1WIMzFfX9Lp0Mci4rQiN9cr1CgcippHpYh3lcKbxtyv1mwnAYbv5C9Qck6QLb8lhG89J2Nj0w==
+cyrillic-to-translit-js@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/cyrillic-to-translit-js/-/cyrillic-to-translit-js-3.1.0.tgz#b6c9e0f7cc09bd8ffa16b40df9114aa768ce5eb7"
+  integrity sha512-xsM5JuhAGZLoGQV8DNjkSDUxQ1mYjQeh3iG8WnfMhS2fjdQKi5+05GoHaO5cF60BiIheFsV7GZPnCULJEeuGgQ==
   dependencies:
     browserify "^16.5.0"
     lodash.invert "^4.3.0"
