@@ -18,7 +18,7 @@
     "@solid-soda/scripts": "^1.17.0",
     "autoprefixer": "^9.7.4",
     "concurrently": "^5.1.0",
-    "cyrillic-to-translit-js": "^3.0.1",
+    "cyrillic-to-translit-js": "^3.1.0",
     "date-fns": "^2.9.0",
     "fs-extra": "^8.1.0",
     "jstransformer-markdown-it": "^2.1.0",
