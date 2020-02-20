@@ -14,7 +14,7 @@
     "ci": "yarn s lint && yarn size && yarn spell"
   },
   "devDependencies": {
-    "@solid-soda/scripts": "^1.18.0",
+    "@solid-soda/scripts": "^1.19.1",
     "@size-limit/file": "^4.0.2",
     "autoprefixer": "^9.7.4",
     "concurrently": "^5.1.0",
