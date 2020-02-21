@@ -9,7 +9,7 @@
     "dev": "rimraf .cache && concurrently --kill-others \"parcel src/pages/index.pug\" \"parcel watch src/pages/articles.pug\"",
     "s": "yarn soda",
     "size": "yarn build && size-limit",
-    "spell": "yaspeller ./src/data",
+    "spell": "yaspeller ./data",
     "create-article": "node ./utils/create-article.js",
     "ci": "yarn s lint && yarn size && yarn spell"
   },
