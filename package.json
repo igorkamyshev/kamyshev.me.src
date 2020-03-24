@@ -10,7 +10,7 @@
   "devDependencies": {
     "@size-limit/file": "^4.4.1",
     "@solid-soda/scripts": "^1.19.1",
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.7.5",
     "concurrently": "^5.1.0",
     "cyrillic-to-translit-js": "^3.1.0",
     "date-fns": "^2.11.0",
