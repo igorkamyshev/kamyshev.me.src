@@ -4,7 +4,7 @@
   "author": "Igor Kamyshev <igor@kamyshev.me>",
   "dependencies": {
     "clipboard-polyfill": "^2.8.6",
-    "focus-visible": "^5.0.2",
+    "focus-visible": "^5.1.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
