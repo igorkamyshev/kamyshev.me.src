@@ -948,10 +948,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@size-limit/file@^4.4.4":
-  version "4.4.4"
-  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-4.4.4.tgz#a48e48a18ca94f9b119a1752c862cc175f1f790b"
-  integrity sha512-mkLhaptkhD+X3fwTd2VLL1xbi2aa1QuXzvZQltGwBLyrmyrz+EGNlMi0iLYDCchLMkT1oUpDFV0QPFprChrLew==
+"@size-limit/file@^4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-4.4.5.tgz#e32dab2113ebeb33605f126b6079dddd5c4662e0"
+  integrity sha512-1kQu7HEwA57mIeRStYFTFiwCpIAnHdOrxE6H8q/iSnQvCnjtJuMFmW0uBAGnbW4yp8XantVlhCNaFavxkcqCjA==
   dependencies:
     semver "7.1.3"
 
@@ -2025,6 +2025,14 @@ chalk@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
   integrity sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
+chalk@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.0.0.tgz#6e98081ed2d17faab615eb52ac66ec1fe6209e72"
+  integrity sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
@@ -8524,13 +8532,13 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-size-limit@^4.4.4:
-  version "4.4.4"
-  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-4.4.4.tgz#def5534c1d1727768c1acf26800a1980a06d802a"
-  integrity sha512-mZVCgRC7O/dUP0d+z5nTdGNc4FaYOXvlyvuPVPE6NqRP1HLXkQyyJuQCMuXNovfszABRJxSEIGr5WfBLVkWAaA==
+size-limit@^4.4.5:
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-4.4.5.tgz#b700621bf2c2ca0814425d78e530722996caf889"
+  integrity sha512-BSczblK8xSm5ErI+8DTYvnIZN23EdlzadAlzaIEBIu+6HzuwM70fbDWUkb5eL0YLIm61vF6BO9uYaO3XLz8vDw==
   dependencies:
     bytes "^3.1.0"
-    chalk "^3.0.0"
+    chalk "^4.0.0"
     chokidar "^3.3.1"
     ci-job-number "^1.2.1"
     cosmiconfig "^6.0.0"
