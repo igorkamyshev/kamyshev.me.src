@@ -10284,13 +10284,13 @@ yargs@~3.10.0:
     decamelize "^1.0.0"
     window-size "0.1.0"
 
-yaspeller@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/yaspeller/-/yaspeller-6.1.0.tgz#387b1545f88d0b596d50877cf84fc39464df07cf"
-  integrity sha512-6peC/EiHgesEa5JLYveDaKeVCejN3I8/rsLDdVKNFtlbEHQrXxOYqNy1GTohrr2oIY9tvapBBCTgawatIGx06g==
+yaspeller@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/yaspeller/-/yaspeller-7.0.0.tgz#c49af3b5b147edda430996fa1e65b1e577bfb4f4"
+  integrity sha512-M8phUfHrL0dGCU5jUK9k85hikCSmjpPFAdjnH/Lg1/E81TEuTI7m8m5jhIWAXHWjfZ+wPEhGBz8HLDuEs4areA==
   dependencies:
     async "^3.2.0"
-    chalk "^3.0.0"
+    chalk "^4.0.0"
     commander "^3.0.0"
     cosmiconfig "^6.0.0"
     entities "^2.0.0"
