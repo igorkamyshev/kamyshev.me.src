@@ -5,7 +5,7 @@ import { throttle } from './helpers/throttle';
 const button = document.querySelector('#articles-up');
 const articles = document.querySelector('.articles');
 
-const toggle = predicate => {
+const toggle = (predicate) => {
   if (predicate) {
     button.style.display = 'block';
   } else {
@@ -26,18 +26,21 @@ const initDisplay = () => {
   const THROTTLE_TIME = 150;
 
   if (window.innerWidth > PHONE_DOWN) {
-    articles.onscroll = throttle(
-      () => toggle(articles.scrollTop > THRESHOLD),
-      THROTTLE_TIME,
+    articles.addEventListener(
+      'scroll',
+      throttle(() => toggle(articles.scrollTop > THRESHOLD), THROTTLE_TIME),
     );
   } else {
-    document.onscroll = throttle(() => {
-      const top = getArticleTop();
-      const currentScroll =
-        document.documentElement.scrollTop || document.body.scrollTop;
+    document.addEventListener(
+      'scroll',
+      throttle(() => {
+        const top = getArticleTop();
+        const currentScroll =
+          document.documentElement.scrollTop || document.body.scrollTop;
 
-      toggle(top + THRESHOLD < currentScroll);
-    }, THROTTLE_TIME);
+        toggle(top + THRESHOLD < currentScroll);
+      }, THROTTLE_TIME),
+    );
   }
 };
 
@@ -51,7 +54,7 @@ const scrollToTop = (top, scrollElement, stopElement) => {
 };
 
 const initOnClick = () => {
-  button.onclick = () => {
+  button.addEventListener('click', () => {
     if (window.innerWidth > PHONE_DOWN) {
       scrollToTop(0, articles, articles);
     } else {
@@ -60,7 +63,7 @@ const initOnClick = () => {
       scrollToTop(top, document.body, document.body); // For iOS
       scrollToTop(top, document.documentElement, document);
     }
-  };
+  });
 };
 
 export const addUpButtonDisplay = () => {

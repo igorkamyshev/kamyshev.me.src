@@ -1,10 +1,10 @@
-module.exports.moveBlockquoteToHeader = tree =>
-  tree.match({ tag: 'article' }, i => {
-    const tags = i.content.filter(child => child.tag);
+module.exports.moveBlockquoteToHeader = (tree) =>
+  tree.match({ tag: 'article' }, (i) => {
+    const tags = i.content.filter((child) => child.tag);
 
     const newChildren = [];
-    for (let index = 0; index < tags.length; index++) {
-      const currentH = /h(\d{1}$)/gi.test(tags[index].tag);
+    for (let index = 0; index < tags.length; index += 1) {
+      const currentH = /h(\d$)/gi.test(tags[index].tag);
       const nextBlockquote =
         tags[index + 1] && tags[index + 1].tag === 'blockquote';
 
@@ -17,7 +17,7 @@ module.exports.moveBlockquoteToHeader = tree =>
         };
 
         newChildren.push(newTag);
-        index++; // because next item (blockquote) already in `newChildren`
+        index += 1; // because next item (blockquote) already in `newChildren`
       } else {
         newChildren.push(tags[index]);
       }

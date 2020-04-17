@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 const fs = require('fs');
 const path = require('path');
 const posthtml = require('posthtml');
@@ -16,13 +18,13 @@ const postHtmlPlugin = (tree, cb) => {
     }
   };
 
-  tree.match({ tag: 'link', attrs: { rel: 'stylesheet' } }, node => {
+  tree.match({ tag: 'link', attrs: { rel: 'stylesheet' } }, (node) => {
     const cssPath = path.join(__dirname, '..', '..', 'dist', node.attrs.href);
 
     readFile(cssPath)
-      .then(buffer => buffer.toString())
-      .then(css => ({ tag: 'style', content: [css] }))
-      .then(newNode => {
+      .then((buffer) => buffer.toString())
+      .then((css) => ({ tag: 'style', content: [css] }))
+      .then((newNode) => {
         node.tag = newNode.tag;
         node.content = newNode.content;
         node.attrs = undefined;
@@ -37,9 +39,9 @@ const postHtmlPlugin = (tree, cb) => {
   });
 };
 
-module.exports.inlineCss = on =>
-  on('html', async file =>
+module.exports.inlineCss = (on) =>
+  on('html', async (file) =>
     posthtml([postHtmlPlugin])
       .process(file)
-      .then(result => result.html),
+      .then((result) => result.html),
   );

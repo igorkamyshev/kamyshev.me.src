@@ -7,7 +7,7 @@ export const addZhandler = () => {
     const handler = () => recalculateCardsState(card.id);
 
     card.addEventListener('click', handler);
-    card.onmousedown = handler;
-    card.onkeyup = handler;
+    card.addEventListener('mousedown', handler);
+    card.addEventListener('keyup', handler);
   }
 };

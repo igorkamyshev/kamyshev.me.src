@@ -1,27 +1,30 @@
+/* eslint-disable unicorn/prefer-add-event-listener */
+/* eslint-disable no-param-reassign */
+
 import { PHONE_DOWN, PHONE_UP } from './CONFIG';
 
 const cardHeaders = document.querySelectorAll('[data-card]');
 
 const DEFAULT_MARGIN = 24;
 
-const calculateCoordinates = elem => {
+const calculateCoordinates = (elem) => {
   const box = elem.getBoundingClientRect();
 
   return {
-    top: box.top + pageYOffset - DEFAULT_MARGIN,
-    left: box.left + pageXOffset - DEFAULT_MARGIN,
+    top: box.top + window.pageYOffset - DEFAULT_MARGIN,
+    left: box.left + window.pageXOffset - DEFAULT_MARGIN,
   };
 };
 
 const disabledHtml5DragAndDrop = () => false;
 
-const customDragAndDrop = (header, card) => event => {
+const customDragAndDrop = (header, card) => (event) => {
   const coordinates = calculateCoordinates(card);
 
   const shiftX = event.pageX - coordinates.left;
   const shiftY = event.pageY - coordinates.top;
 
-  const moveAt = e => {
+  const moveAt = (e) => {
     card.style.left = `${e.pageX - shiftX}px`;
     card.style.top = `${e.pageY - shiftY}px`;
   };
@@ -56,13 +59,13 @@ const resetAll = () => {
 };
 
 export const addDragHandler = () => {
-  window.matchMedia(`(max-width: ${PHONE_DOWN}px)`).addListener(e => {
+  window.matchMedia(`(max-width: ${PHONE_DOWN}px)`).addListener((e) => {
     if (e.matches) {
       resetAll();
     }
   });
 
-  window.matchMedia(`(min-width: ${PHONE_UP}px)`).addListener(e => {
+  window.matchMedia(`(min-width: ${PHONE_UP}px)`).addListener((e) => {
     if (e.matches) {
       applyDragHandlers();
     }

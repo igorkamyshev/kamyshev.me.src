@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 const PADDING = 26;
 
 const getActualSize = (card, sizeType) =>
@@ -8,13 +10,14 @@ const getActualSize = (card, sizeType) =>
     10,
   );
 
+// The maximum is exclusive and the minimum is inclusive
 const getRandomInt = (from, to) => {
   const min = Math.ceil(from);
   const max = Math.floor(to);
-  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+  return Math.floor(Math.random() * (max - min)) + min;
 };
 
-export const randomMoveCard = card => {
+export const randomMoveCard = (card) => {
   const cardWidth = getActualSize(card, 'width');
   const cardHeight = getActualSize(card, 'height');
 
