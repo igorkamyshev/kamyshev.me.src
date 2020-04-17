@@ -17,8 +17,9 @@ yarn dev
 
 Quality script:
 
-- `yarn s lint` for ESLint + Stylelint
-- `yarn s pretty` for Prettier
+- `yarn lint:code` for ESLint
+- `yarn lint:styles` for Stylelint
+- `yarn pretty` for Prettier
 - `yarn spell` for Yandex.Speller
 - `yarn size` for Size Limit
 
