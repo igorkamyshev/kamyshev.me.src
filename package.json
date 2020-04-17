@@ -55,7 +55,6 @@
   "repository": "git@github.com:igorkamyshev/kamyshev.me.src.git",
   "scripts": {
     "build": "rimraf .cache && rimraf dist && parcel build src/pages/* && node postparcel.js",
-    "ci": "yarn lint:code && yarn lint:styles && yarn size && yarn spell",
     "create-article": "node ./utils/create-article.js",
     "dev": "rimraf .cache && concurrently --kill-others \"parcel src/pages/index.pug\" \"parcel watch src/pages/articles.pug\"",
     "size": "yarn build && size-limit",
