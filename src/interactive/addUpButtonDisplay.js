@@ -5,7 +5,7 @@ import { throttle } from './helpers/throttle';
 const button = document.querySelector('#articles-up');
 const articles = document.querySelector('.articles');
 
-const toggle = predicate => {
+const toggle = (predicate) => {
   if (predicate) {
     button.style.display = 'block';
   } else {

@@ -6,33 +6,34 @@ jobs:
   spelling:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: actions/setup-node@v1
-      with:
-        version: 10.x
-    - name: Spelling
-      run: |
-        yarn install
-        yarn spell
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          version: 10.x
+      - name: Spelling
+        run: |
+          yarn install
+          yarn spell
   size:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: actions/setup-node@v1
-      with:
-        version: 10.x
-    - name: Size Checking
-      run: |
-        yarn install
-        yarn size
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          version: 10.x
+      - name: Size Checking
+        run: |
+          yarn install
+          yarn size
   static_analysis:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: actions/setup-node@v1
-      with:
-        version: 10.x
-    - name: Linting
-      run: |
-        yarn install
-        yarn s lint
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          version: 10.x
+      - name: Linting
+        run: |
+          yarn install
+          yarn lint:code
+          yarn lint:styles

@@ -1,8 +1,8 @@
-module.exports.linkLine = tree =>
-  tree.match({ tag: 'p' }, i => {
-    const clearContent = i.content.filter(child => child !== ' ');
+module.exports.linkLine = (tree) =>
+  tree.match({ tag: 'p' }, (i) => {
+    const clearContent = i.content.filter((child) => child !== ' ');
 
-    const linkLine = clearContent.every(child => child.tag === 'a');
+    const linkLine = clearContent.every((child) => child.tag === 'a');
 
     const linkWithComment =
       clearContent.length === 2 &&

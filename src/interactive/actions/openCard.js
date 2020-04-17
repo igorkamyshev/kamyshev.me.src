@@ -1,6 +1,6 @@
 import { recalculateCardsState } from './recalculateCardsState';
 
-export const openCard = id => {
+export const openCard = (id) => {
   const checker = document.getElementById(id);
   checker.checked = true;
 

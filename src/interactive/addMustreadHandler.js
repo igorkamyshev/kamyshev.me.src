@@ -5,9 +5,9 @@ import { PHONE_DOWN } from './CONFIG';
 const initIframes = () => {
   const iframes = Array.from(document.getElementsByClassName('iframe'));
 
-  window.addEventListener('message', event => {
+  window.addEventListener('message', (event) => {
     if (event.data === 'click-mustread') {
-      iframes.forEach(iframe => iframe.parentElement.click());
+      iframes.forEach((iframe) => iframe.parentElement.click());
     }
   });
 };
@@ -15,7 +15,7 @@ const initIframes = () => {
 const initButtons = () => {
   const links = Array.from(document.getElementsByTagName('a'));
 
-  const mustreadButton = links.find(link =>
+  const mustreadButton = links.find((link) =>
     link.href.includes('#magic_mustread'),
   );
   const mustreadCard = document.getElementById('mustread-card');
@@ -29,7 +29,7 @@ const initButtons = () => {
     window.open('https://read.kamyshev.me/standalone.html', '_blank');
   };
 
-  mustreadButton.addEventListener('click', event => {
+  mustreadButton.addEventListener('click', (event) => {
     event.stopPropagation();
     event.preventDefault();
 

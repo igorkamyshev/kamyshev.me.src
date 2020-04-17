@@ -1,5 +1,5 @@
-module.exports.extrarnalLinks = tree =>
-  tree.match({ tag: 'a' }, i => {
+module.exports.extrarnalLinks = (tree) =>
+  tree.match({ tag: 'a' }, (i) => {
     if (i.attrs.href.startsWith('#magic')) {
       return i;
     }

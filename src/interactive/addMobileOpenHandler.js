@@ -35,13 +35,13 @@ const openAll = () => {
 };
 
 export const addMobileOpenHandler = () => {
-  window.matchMedia(`(max-width: ${PHONE_DOWN}px)`).addListener(e => {
+  window.matchMedia(`(max-width: ${PHONE_DOWN}px)`).addListener((e) => {
     if (e.matches) {
       closeAll();
     }
   });
 
-  window.matchMedia(`(min-width: ${PHONE_UP}px)`).addListener(e => {
+  window.matchMedia(`(min-width: ${PHONE_UP}px)`).addListener((e) => {
     if (e.matches) {
       openAll();
     }

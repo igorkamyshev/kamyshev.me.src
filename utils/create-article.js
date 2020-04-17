@@ -15,14 +15,14 @@ const rl = readline.createInterface({
 const getNextNumber = () =>
   fs
     .readdir(path.resolve(__dirname, '../data/articles'))
-    .then(files => files.pop())
-    .then(file => file.split('-')[0])
-    .then(str => parseInt(str, 10) + 1)
-    .then(num => num.toString())
-    .then(str => str.padStart(3, '0'));
+    .then((files) => files.pop())
+    .then((file) => file.split('-')[0])
+    .then((str) => parseInt(str, 10) + 1)
+    .then((num) => num.toString())
+    .then((str) => str.padStart(3, '0'));
 
-const asyncQuestion = async (text, mapper = t => t) => {
-  const answer = await new Promise(resolve =>
+const asyncQuestion = async (text, mapper = (t) => t) => {
+  const answer = await new Promise((resolve) =>
     rl.question(`${text}\n`, resolve),
   );
 
@@ -66,7 +66,7 @@ const run = async () => {
 
   const external = await asyncQuestion(
     'Does it place on external resource? [yes, no]',
-    answer => ['y', 'yes'].includes(answer.trim().toLowerCase()),
+    (answer) => ['y', 'yes'].includes(answer.trim().toLowerCase()),
   );
 
   if (external) {
