@@ -3,7 +3,7 @@ import { correctUrl } from './helpers/correctUrl';
 
 const copyButtons = document.querySelectorAll('[data-copy]');
 
-const listener = button => () => {
+const listener = (button) => () => {
   const { id } = button.parentElement.parentElement;
 
   const urlForCopy = `${window.location.href.replace(/#(.+)$/gi, '')}#${id}`;
@@ -12,10 +12,10 @@ const listener = button => () => {
   // rewrite url to article.html
   setTimeout(correctUrl);
 
-  button.innerText = 'Скопировано!';
+  button.textContent = 'Скопировано!';
 
   setTimeout(() => {
-    button.innerText = 'Скопировать ссылку';
+    button.textContent = 'Скопировать ссылку';
   }, 2000);
 };
 
