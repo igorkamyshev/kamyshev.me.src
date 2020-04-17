@@ -24,7 +24,7 @@ const postparcel = async () => {
   const files = await readDir('./dist');
 
   await Promise.all(
-    files.map(async file => {
+    files.map(async (file) => {
       const filePath = path.join(__dirname, 'dist', file);
 
       const fileStats = await stat(filePath);

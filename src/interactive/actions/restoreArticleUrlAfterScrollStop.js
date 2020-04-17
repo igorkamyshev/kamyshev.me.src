@@ -1,6 +1,6 @@
 import { correctUrl } from '../helpers/correctUrl';
 
-export const restoreArticleUrlAfterScrollStop = element => {
+export const restoreArticleUrlAfterScrollStop = (element) => {
   let isScrolling;
   function correctAndReset() {
     clearTimeout(isScrolling);
