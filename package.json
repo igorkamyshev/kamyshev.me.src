@@ -28,7 +28,7 @@
     "fs-extra": "^9.0.0",
     "husky": "^4.2.5",
     "jstransformer-markdown-it": "^2.1.0",
-    "lint-staged": "^10.1.3",
+    "lint-staged": "^10.1.6",
     "marked": "^0.8.2",
     "parcel-bundler": "^1.12.4",
     "postcss-color-mod-function": "^3.0.3",
