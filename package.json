@@ -8,8 +8,8 @@
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^9.0.1",
     "@commitlint/cli": "^9.0.1",
-    "@commitlint/config-conventional": "^8.3.4",
     "@size-limit/file": "^4.5.1",
     "autoprefixer": "^9.8.2",
     "babel-eslint": "^10.1.0",
