@@ -1098,10 +1098,10 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@size-limit/file@^4.5.4":
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-4.5.4.tgz#7c05aabfb0c20f8d699f1edae7dd2703e259ae57"
-  integrity sha512-NLqS44ZBTx2KAh/FbPzg2KijQ+mbQqUfN16W/hkjXyOucjbFGtKp3FF1LlbMsdXaaXZ/diwKW0NyKH9tynSlVQ==
+"@size-limit/file@^4.5.5":
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-4.5.5.tgz#98a435f68f598d71c6f6e9684a45af10ec9bf37d"
+  integrity sha512-VabOMoIllRc36/HthwY7xctwyqzQ/Piy1EEIb/SOHjB2S7IVRKRtXDNULRRD+gaY0gMyHZaK1u81M3xJkVKBAg==
   dependencies:
     semver "7.3.2"
 
@@ -2074,10 +2074,10 @@ chokidar@^2.1.5:
   optionalDependencies:
     fsevents "^1.2.7"
 
-chokidar@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.4.0.tgz#b30611423ce376357c765b9b8f904b9fba3c0be8"
-  integrity sha512-aXAaho2VJtisB/1fg1+3nlLJqGOuewTzQpd/Tz0yTg2R0e4IGtshYvtjowyEumcBv2z+y4+kc75Mz7j5xJskcQ==
+chokidar@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.4.1.tgz#e905bdecf10eaa0a0b1db0c664481cc4cbc22ba1"
+  integrity sha512-TQTJyr2stihpC4Sya9hs2Xh+O2wf+igjL36Y75xx2WdHuiICcn/XJza46Jwt0eT5hVpQOzo3FpY3cj3RVYLX0g==
   dependencies:
     anymatch "~3.1.1"
     braces "~3.0.2"
@@ -7886,13 +7886,13 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-size-limit@^4.5.4:
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-4.5.4.tgz#ee2cbb3d2a9b2c0ab1b7ef10593da03ed85805a6"
-  integrity sha512-126uqTLSDf9UUppC1vFvIpeY1gECBLqFkd4h9AzpST/x8w1fZ3ac/bbZ72mUr4pR8/hcRoFqHZXWgsbfFTM/Cw==
+size-limit@^4.5.5:
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-4.5.5.tgz#ce89846dfa947d4fafaa0dd4baf6d7e8888ea5be"
+  integrity sha512-rh4HSU0UVbOjX0vrzJjPjeCvPz6l+xW6QiA+BCAoLv1WzfnklBUnOdHmboF3UzZIxuNa1TmvCUCCDKmIC5XDVw==
   dependencies:
     bytes "^3.1.0"
-    chokidar "^3.4.0"
+    chokidar "^3.4.1"
     ci-job-number "^1.2.2"
     colorette "^1.2.1"
     cosmiconfig "^6.0.0"
