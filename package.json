@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "author": "Igor Kamyshev <igor@kamyshev.me>",
   "dependencies": {
-    "clipboard-polyfill": "^2.8.6",
+    "clipboard-polyfill": "^3.0.0",
     "focus-visible": "^5.1.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
@@ -66,11 +66,11 @@
   },
   "size-limit": [
     {
-      "limit": "6 KB",
+      "limit": "6.1 KB",
       "path": "./dist/interactive.*.js"
     },
     {
-      "limit": "3 KB",
+      "limit": "2.8 KB",
       "path": "./dist/polyfills.*.js"
     }
   ],
