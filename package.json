@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "author": "Igor Kamyshev <igor@kamyshev.me>",
   "dependencies": {
-    "clipboard-polyfill": "^2.8.6",
+    "clipboard-polyfill": "^3.0.1",
     "focus-visible": "^5.1.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
@@ -11,14 +11,14 @@
     "@commitlint/config-conventional": "^9.1.1",
     "@commitlint/cli": "^9.1.1",
     "@size-limit/file": "^4.5.5",
-    "autoprefixer": "^9.8.5",
+    "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
     "commitizen": "^4.1.2",
     "concurrently": "^5.2.0",
     "cyrillic-to-translit-js": "^3.1.0",
     "cz-conventional-changelog": "^3.1.0",
     "date-fns": "^2.15.0",
-    "eslint": "^7.5.0",
+    "eslint": "^7.6.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-node": "^0.3.4",
@@ -41,7 +41,7 @@
     "rimraf": "^3.0.2",
     "size-limit": "^4.5.5",
     "stylelint": "^13.6.1",
-    "stylelint-config-recess-order": "^2.0.4",
+    "stylelint-config-recess-order": "^2.1.0",
     "stylelint-config-recommended": "^3.0.0",
     "yaspeller": "^7.0.0"
   },
@@ -66,11 +66,11 @@
   },
   "size-limit": [
     {
-      "limit": "6 KB",
+      "limit": "6.1 KB",
       "path": "./dist/interactive.*.js"
     },
     {
-      "limit": "3 KB",
+      "limit": "2.8 KB",
       "path": "./dist/polyfills.*.js"
     }
   ],
