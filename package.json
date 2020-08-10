@@ -14,7 +14,7 @@
     "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
     "commitizen": "^4.1.2",
-    "concurrently": "^5.2.0",
+    "concurrently": "^5.3.0",
     "cyrillic-to-translit-js": "^3.1.0",
     "cz-conventional-changelog": "^3.1.0",
     "date-fns": "^2.15.0",
