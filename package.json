@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^9.1.1",
-    "@commitlint/cli": "^9.1.1",
+    "@commitlint/cli": "^9.1.2",
     "@size-limit/file": "^4.5.6",
     "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
