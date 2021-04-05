@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "author": "Igor Kamyshev <igor@kamyshev.me>",
   "dependencies": {
-    "clipboard-polyfill": "^3.0.2",
+    "clipboard-polyfill": "^3.0.3",
     "focus-visible": "^5.2.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
