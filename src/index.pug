@@ -1,6 +1,5 @@
 include ./layout/components/card/card.pug
 
-
 doctype html
 
 html(lang="ru")
@@ -26,16 +25,22 @@ html(lang="ru")
   body
     main(class="app")
       +card("about", "Обо мне", true, true)
-        include ./layout/blocks/about.pug
+        include:markdown-it ../data/about.md
 
       +card("projects", "Проекты")
-        include ./layout/blocks/projects.pug
+        include:markdown-it ../data/projects.md
 
       +card("experience", "Опыт")
-        include ./layout/blocks/experience.pug
+        include:markdown-it ../data/experience.md
 
       +card("articles", "Статьи", false, false, false, true)
-        include ./layout/blocks/articles.pug
+        mixin md
+          section
+            block
+
+        each article in articles
+          section
+            != md(article)
 
       +card("mustread", "Маст-риды", false, false, false, true, true)
-        include ./layout/blocks/mustread.pug
+        iframe(src="https://read.kamyshev.me/embedded.html", class="iframe")
