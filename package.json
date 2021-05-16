@@ -3,18 +3,16 @@
   "version": "2.0.0",
   "author": "Igor Kamyshev <igor@kamyshev.me>",
   "dependencies": {
-    "clipboard-polyfill": "^3.0.3",
     "focus-visible": "^5.2.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^12.1.4",
     "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@size-limit/file": "^4.10.2",
     "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
     "commitizen": "^4.2.4",
-    "concurrently": "^6.1.0",
     "cyrillic-to-translit-js": "^3.1.0",
     "cz-conventional-changelog": "^3.3.0",
     "date-fns": "^2.21.3",
@@ -47,9 +45,9 @@
   "license": "MIT",
   "repository": "git@github.com:igorkamyshev/kamyshev.me.src.git",
   "scripts": {
-    "build": "rimraf .cache && rimraf dist && parcel build src/pages/* && node postparcel.js",
+    "build": "rimraf .cache && rimraf dist && parcel build src/index.pug && node postparcel.js",
     "create-article": "node ./utils/create-article.js",
-    "dev": "rimraf .cache && concurrently --kill-others \"parcel src/pages/index.pug\" \"parcel watch src/pages/articles.pug\"",
+    "dev": "rimraf .cache && parcel src/index.pug",
     "size": "yarn build && size-limit",
     "spell": "yaspeller ./data",
     "pretty": "prettier --write .",

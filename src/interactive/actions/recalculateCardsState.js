@@ -1,4 +1,3 @@
-import { correctUrl } from '../helpers/correctUrl';
 import { randomMoveCard } from './randomMoveCard';
 
 const cards = Array.from(document.getElementsByClassName('card'));
@@ -46,7 +45,7 @@ const makeCardHighest = (card) => {
   }
 };
 
-export const recalculateCardsState = (cardId, skipUrlCorrection = false) => {
+export const recalculateCardsState = (cardId) => {
   const card = cards.find((c) => c.id === cardId);
 
   if (isVisible(card)) {
@@ -64,7 +63,4 @@ export const recalculateCardsState = (cardId, skipUrlCorrection = false) => {
   }
 
   deadScreen();
-  if (!skipUrlCorrection) {
-    correctUrl();
-  }
 };
