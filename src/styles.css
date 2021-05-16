@@ -1,3 +1,11 @@
+@import './layout/components/card/card.css';
+@import './layout/components/plus/plus.css';
+@import './layout/components/minus/minus.css';
+@import './layout/components/cross/cross.css';
+@import './layout/components/up/up.css';
+@import './layout/special.css';
+@import './layout/page.css';
+
 /* fonts */
 @font-face {
   font-family: 'Steinbeck';
@@ -152,11 +160,3 @@ button:active {
   --color-primary: var(--color-secondary);
   outline: none;
 }
-
-@import './layout/components/card/card.css';
-@import './layout/components/plus/plus.css';
-@import './layout/components/minus/minus.css';
-@import './layout/components/cross/cross.css';
-@import './layout/components/up/up.css';
-@import './layout/special.css';
-@import './layout/page.css';
