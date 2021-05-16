@@ -17,7 +17,7 @@ const closeAll = () => {
       continue;
     }
 
-    closeCard(card.dataset.checker, true);
+    closeCard(card.dataset.checker);
   }
 };
 
