@@ -6,28 +6,3 @@ updates:
     interval: daily
     time: "02:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: date-fns
-    versions:
-    - 2.21.0
-  - dependency-name: husky
-    versions:
-    - 5.0.9
-    - 5.1.0
-    - 5.1.1
-    - 5.1.2
-    - 5.1.3
-    - 5.2.0
-    - 6.0.0
-  - dependency-name: marked
-    versions:
-    - 2.0.2
-  - dependency-name: "@commitlint/cli"
-    versions:
-    - 12.1.0
-  - dependency-name: "@commitlint/config-conventional"
-    versions:
-    - 12.1.0
-  - dependency-name: pug
-    versions:
-    - 3.0.1
