@@ -24,7 +24,7 @@
     "eslint-import-resolver-node": "^0.3.4",
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-import-helpers": "^1.1.0",
-    "fs-extra": "^9.1.0",
+    "fs-extra": "^10.0.0",
     "jstransformer-markdown-it": "^2.1.0",
     "lint-staged": "^11.0.0",
     "marked": "^2.0.3",
