@@ -1028,10 +1028,10 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@size-limit/file@^4.10.3":
-  version "4.10.3"
-  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-4.10.3.tgz#0d101a951a223e30efa43091ae32898dc5a88eaf"
-  integrity sha512-AB1Oz1g5U+QbxI8fJjhi58E/nOChG48QeyOFxoH2bJXh3pCBkYBTwFS22nOJObhfc/YAplu69E3vR2/ZaTr1lQ==
+"@size-limit/file@^4.11.0":
+  version "4.11.0"
+  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-4.11.0.tgz#d453ea543e4f4f1ba5e8b3bd517d1f27759b747d"
+  integrity sha512-GPQPcFHBa6U8Z7xEl42gB1RJxCDqUILL5/WzgWDC9Q9WujnKuZwq16+yoCxrvTQfbl4Ol+Z42M50FvvibFMy9w==
   dependencies:
     semver "7.3.5"
 
@@ -7802,10 +7802,10 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-size-limit@^4.10.3:
-  version "4.10.3"
-  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-4.10.3.tgz#159612e4a40bb2371e4b38b3f24d7c1fd1ab75bf"
-  integrity sha512-XUYQvgsZDgr4OZKRRtx+Zyp5qcpIx3adgujLEYm+Hpqi2EHoHwxYco1XmEkXA4/0Br5CopowEwDnN7QYh+klOA==
+size-limit@^4.11.0:
+  version "4.11.0"
+  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-4.11.0.tgz#61b325752e1978615ff9acc0745438ee3272172b"
+  integrity sha512-vguQEHxnBt0ldv4Q1gMkjSKNpCtH5/eXLbVqUumMvUOcA2BI/I82wTe7Ag3it5hKdbZYebDmRutDizxNsvpUAw==
   dependencies:
     bytes-iec "^3.1.1"
     chokidar "^3.5.1"
