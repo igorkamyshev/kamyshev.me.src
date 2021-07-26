@@ -7,7 +7,7 @@
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
+    "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^12.1.4",
     "@size-limit/file": "^5.0.1",
     "autoprefixer": "^9.8.6",
