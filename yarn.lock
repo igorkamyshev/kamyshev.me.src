@@ -9362,10 +9362,10 @@ yargs@^17.0.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
-yaspeller@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/yaspeller/-/yaspeller-7.2.0.tgz#0bd9d5423d8319466b6b31ca721cf1d5d436f755"
-  integrity sha512-remrayG57ND8qsV2mRbULZLl388iZ+XgslGZoh9U5wkaoEVGm30VpzOJAsSdPXK8ecQCF4jLM7MiQ+JfGrx06w==
+yaspeller@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/yaspeller/-/yaspeller-7.2.1.tgz#59fcc0268247b449d059a1e90cb842d247ec076b"
+  integrity sha512-Iq1WUHckdH7SCXGkJdXsUhO/3Wmp7tPgBhAQQJjWlyQZKmwv+zigPKZFWAheVDefUSBvldTKINRgTv9dG/JL/g==
   dependencies:
     async "^3.2.1"
     chalk "^4.1.2"
