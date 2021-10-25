@@ -40,7 +40,7 @@
     "stylelint": "^13.13.1",
     "stylelint-config-recess-order": "^2.5.0",
     "stylelint-config-recommended": "^4.0.0",
-    "yaspeller": "^7.2.0"
+    "yaspeller": "^7.2.1"
   },
   "license": "MIT",
   "repository": "git@github.com:igorkamyshev/kamyshev.me.src.git",
