@@ -24,7 +24,7 @@
     "eslint-plugin-import-helpers": "^1.1.0",
     "fs-extra": "^9.1.0",
     "jstransformer-markdown-it": "^2.1.0",
-    "lint-staged": "^11.2.4",
+    "lint-staged": "^11.2.6",
     "marked": "^3.0.8",
     "parcel-bundler": "^1.12.5",
     "postcss-color-mod-function": "^3.0.3",
