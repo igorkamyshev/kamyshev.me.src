@@ -7,20 +7,16 @@
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "^14.1.0",
-    "@commitlint/config-conventional": "^14.1.0",
     "@size-limit/file": "^6.0.4",
     "autoprefixer": "^9.8.8",
     "babel-eslint": "^10.1.0",
-    "commitizen": "^4.2.4",
     "cyrillic-to-translit-js": "^3.1.0",
-    "cz-conventional-changelog": "^3.3.0",
     "date-fns": "^2.25.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.2",
     "eslint-import-resolver-node": "^0.3.6",
+    "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-import-helpers": "^1.1.0",
     "fs-extra": "^9.1.0",
     "jstransformer-markdown-it": "^2.1.0",
@@ -51,7 +47,6 @@
     "size": "yarn build && size-limit",
     "spell": "yaspeller ./data",
     "pretty": "prettier --write .",
-    "commit": "git-cz",
     "lint:code": "eslint \"./**/*.{js,jsx}\"",
     "lint:styles": "stylelint \"./**/*.css\""
   },
@@ -68,16 +63,6 @@
   "prettier": {
     "trailingComma": "all",
     "singleQuote": true
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
   },
   "lint-staged": {
     "*.{tsx,ts,js,jsx,scss,css,js,json,md}": [
