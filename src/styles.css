@@ -101,10 +101,9 @@ li {
 }
 
 p {
-  font: var(--text);
-
   margin-block-start: 12px;
   margin-block-end: 12px;
+  font: var(--text);
 }
 
 a {
