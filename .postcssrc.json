@@ -1,0 +1,11 @@
+{
+  "plugins": {
+    "autoprefixer": true,
+    "postcss-nesting": true,
+    "postcss-custom-media": {
+      "importFrom": "./src/custom-media.css"
+    },
+    "postcss-scrollbar": true,
+    "postcss-color-mod-function": true
+  }
+}
