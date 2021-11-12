@@ -2,4 +2,4 @@
 
 Год назад в Breadhead мы начали делать непрерывную интеграцию и доставку приложений. Рассказываю, зачем мы это делаем, какие технологии используем, сколько денег тратим, как повторить, что планируем улучшить.
 
-02.07.2019 [Читать на Medium](https://medium.com/breadhead-stories/ci-cd-workflow-65a93a72eef6)
+02.07.2019 [Читать в блоге](https://blog.kamyshev.me/breadhead-ci-cd/?utm_source=personal_site)

@@ -1,4 +1,3 @@
-import { restoreArticleUrlAfterScrollStop } from './actions/restoreArticleUrlAfterScrollStop';
 import { PHONE_DOWN } from './CONFIG';
 import { throttle } from './helpers/throttle';
 
@@ -41,24 +40,22 @@ const initDisplay = () => {
   }
 };
 
-const scrollToTop = (top, scrollElement, stopElement) => {
+const scrollToTop = (top, scrollElement) => {
   scrollElement.scrollTo({
     top,
     behavior: 'smooth',
   });
-
-  restoreArticleUrlAfterScrollStop(stopElement);
 };
 
 const initOnClick = () => {
   button.onclick = () => {
     if (window.innerWidth > PHONE_DOWN) {
-      scrollToTop(0, articles, articles);
+      scrollToTop(0, articles);
     } else {
       const top = getArticleTop();
 
-      scrollToTop(top, document.body, document.body); // For iOS
-      scrollToTop(top, document.documentElement, document);
+      scrollToTop(top, document.body); // For iOS
+      scrollToTop(top, document.documentElement);
     }
   };
 };

@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v1
         with:
-          version: 10.x
+          version: 14.x
       - name: Spelling
         run: |
           yarn install
@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v1
         with:
-          version: 10.x
+          version: 14.x
       - name: Size Checking
         run: |
           yarn install
@@ -31,7 +31,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v1
         with:
-          version: 10.x
+          version: 14.x
       - name: Linting
         run: |
           yarn install

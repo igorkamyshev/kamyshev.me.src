@@ -2,4 +2,4 @@
 
 Node.js работает в одном потоке. Чаще всего это не создаёт проблем, потому что почти все операции в наших приложениях неблокирующие. Недавно я делал обработку натурального языка на JS и упёрся в однопоточность. Решение — воркер-треды.
 
-10.07.2019 [Читать на Medium](https://medium.com/breadhead-stories/worker-threads-b42e432caed9)
+10.07.2019 [Читать в блоге](https://blog.kamyshev.me/nodejs-worker-threads/?utm_source=personal_site)
