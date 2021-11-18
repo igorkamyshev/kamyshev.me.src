@@ -7,7 +7,7 @@
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
-    "@size-limit/file": "^6.0.4",
+    "@size-limit/file": "^7.0.0",
     "autoprefixer": "^9.8.8",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
@@ -28,7 +28,7 @@
     "pug": "^3.0.2",
     "rimraf": "^3.0.2",
     "simple-git-hooks": "^2.7.0",
-    "size-limit": "^6.0.4",
+    "size-limit": "^7.0.0",
     "stylelint": "^13.13.1",
     "stylelint-config-recess-order": "^2.6.0",
     "stylelint-config-recommended": "^5.0.0",
