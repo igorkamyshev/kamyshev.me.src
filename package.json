@@ -21,15 +21,14 @@
     "eslint-plugin-import-helpers": "^1.2.0",
     "jstransformer-markdown-it": "^2.1.0",
     "lint-staged": "^11.2.6",
-    "parcel": "^2.0.1",
     "marked": "^4.0.7",
+    "parcel": "^2.0.1",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-custom-media": "^7.0.8",
     "postcss-nesting": "^7.0.1",
     "postcss-scrollbar": "^0.3.0",
     "prettier": "^2.5.1",
     "pug": "^3.0.2",
-    "rimraf": "^3.0.2",
     "simple-git-hooks": "^2.7.0",
     "size-limit": "^7.0.4",
     "stylelint": "^13.13.1",
@@ -41,8 +40,7 @@
   "repository": "git@github.com:igorkamyshev/kamyshev.me.src.git",
   "scripts": {
     "build": "parcel build src/index.pug",
-    "create-article": "node ./utils/create-article.js",
-    "dev": "rimraf .cache && parcel src/index.pug",
+    "dev": "parcel src/index.pug",
     "size": "yarn build && size-limit",
     "spell": "yaspeller ./data",
     "pretty": "prettier --write .",
@@ -51,12 +49,12 @@
   },
   "size-limit": [
     {
-      "limit": "3 KB",
-      "path": "./dist/interactive.*.js"
+      "limit": "3.9 KB",
+      "path": "./dist/*.js"
     },
     {
-      "limit": "2.8 KB",
-      "path": "./dist/polyfills.*.js"
+      "limit": "2.6 KB",
+      "path": "./dist/*.css"
     }
   ],
   "prettier": {
