@@ -20,8 +20,8 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-import-helpers": "^1.2.0",
     "jstransformer-markdown-it": "^2.1.0",
-    "lint-staged": "^11.2.6",
     "marked": "^4.0.7",
+    "nano-staged": "^0.5.0",
     "parcel": "^2.0.1",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-custom-media": "^7.0.8",
@@ -61,7 +61,7 @@
     "trailingComma": "all",
     "singleQuote": true
   },
-  "lint-staged": {
+  "nano-staged": {
     "*.{tsx,ts,js,jsx,scss,css,js,json,md}": [
       "prettier --write"
     ]
