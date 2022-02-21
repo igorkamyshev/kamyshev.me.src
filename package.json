@@ -21,7 +21,7 @@
     "eslint-plugin-import-helpers": "^1.2.1",
     "jstransformer-markdown-it": "^2.1.0",
     "marked": "^4.0.12",
-    "nano-staged": "^0.5.0",
+    "nano-staged": "^0.6.0",
     "parcel": "^2.0.1",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-custom-media": "^7.0.8",
