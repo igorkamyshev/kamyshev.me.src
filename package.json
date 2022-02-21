@@ -9,7 +9,7 @@
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.0.1",
     "@parcel/transformer-pug": "^2.0.1",
-    "@parcel/transformer-webmanifest": "^2.0.1",
+    "@parcel/transformer-webmanifest": "^2.3.2",
     "@size-limit/file": "^7.0.5",
     "autoprefixer": "^9.8.8",
     "babel-eslint": "^10.1.0",
