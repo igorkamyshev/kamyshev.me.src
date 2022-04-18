@@ -4317,10 +4317,10 @@ nan@^2.14.2:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.15.0.tgz#3f34a473ff18e15c1b5626b62903b5ad6e665fee"
   integrity sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ==
 
-nano-staged@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/nano-staged/-/nano-staged-0.5.0.tgz#147fd4e176f6baa11bcec706571fcae298b08ad0"
-  integrity sha512-5jkhLvyZM974RmCyI8vt7zo0QK6GIAOCBe6e7L36awXIlG+40/5zJiDvESFrFmO4PhBCRm9lUlnH0SsWAFLDLg==
+nano-staged@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/nano-staged/-/nano-staged-0.7.0.tgz#ebb7daf70abd6ba658646d45df81fe86bcb850a9"
+  integrity sha512-dXR8t3lAUH28HLzDAJyqw8j2HP72sGq1vlFMpTjAAah8euWULjJR4JhML8imUCJWwjpw9aAVwwaAdevQ5YsEzw==
   dependencies:
     picocolors "^1.0.0"
 
