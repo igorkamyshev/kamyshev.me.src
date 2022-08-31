@@ -20,7 +20,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-import-helpers": "^1.2.1",
     "jstransformer-markdown-it": "^2.1.0",
-    "marked": "^4.0.12",
+    "marked": "^4.1.0",
     "nano-staged": "^0.8.0",
     "parcel": "^2.0.1",
     "postcss-color-mod-function": "^3.0.3",
