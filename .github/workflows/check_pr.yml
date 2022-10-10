@@ -3,17 +3,6 @@ name: Check PR
 on: pull_request
 
 jobs:
-  spelling:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@v1
-        with:
-          version: 14.x
-      - name: Spelling
-        run: |
-          yarn install
-          yarn spell
   size:
     runs-on: ubuntu-latest
     steps:

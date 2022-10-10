@@ -13,7 +13,6 @@ Quality script:
 
 - `yarn s lint` for ESLint + Stylelint
 - `yarn s pretty` for Prettier
-- `yarn spell` for Yandex.Speller
 - `yarn size` for Size Limit
 
 ## Release
