@@ -1,79 +1,79 @@
-### Смены Самоката
+### Shifts of Samokat
 
 > 2019-2020
 
-_Внутреннее приложение «Смены» помогает сотрудникам Самоката планировать рабочее время. В нем курьеры отмечают, когда они готовы работать, а директора складов распределяют смены._
+_The internal "Shifts" app helps Samokat employees plan their working hours. In it, couriers mark when they are ready to work, and warehouse directors allocate shifts._
 
-_Я построил бэкенд приложения, интегрировал его с другими внутренними и внешними сервисами. Спроектировал API для мобильного приложения и веб-интерфейса. Продумал и реализовал архитектуру фронтенд-приложения, верстал экраны, делал анимации. Проводил код-ревью и лоджик-ревью. Координировал релиз и внедрение._
+_I built the backend of the application, integrated it with other internal and external services. Designed the API for the mobile app and the web interface. I designed and implemented the architecture of the front-end. Conducted code and architecture reviews. Coordinated the release and execution._
 
-_Стек: JS (React, Node.js, TypeScript)_
+_Stack: JS (React, Node.js, TypeScript)_
 
-### Самокат
+### Samokat
 
 > 2019
 
-_Мобильное приложение [«Самокат»](https://apps.apple.com/us/app/id1401500803) — это замена магазину у дома с моментальной доставкой продуктов (15-30 минут)._
+_The mobile app ["Samokat"](https://apps.apple.com/us/app/id1401500803) — is a replacement for the convenience store with instant grocery delivery (15-30 minutes)._
 
-_Сделал карту с зонами доставки, интегрировал Mapbox. Сверстал экран для отображения электронных чеков от АТОЛ Онлайн. Спроектировал и реализовал систему диплинков для приложения. Переписал функциональность сторис с Preact (внутри веб-вью) на ReactNative._
+_I made a map with delivery zones, integrated Mapbox. Built a screen for displaying electronic receipts from ATOL Online. Designed and implemented the deep link system for the application. Rewrote stories functionality from Preact (inside web view) to ReactNative._
 
-_Стек: JS (ReactNative, TypeScript)._
+_Stack: JS (ReactNative, TypeScript)._
 
 ### Stomweb
 
 > 2019
 
-_Образовательная платформа [Stomweb](https://stomweb.ru) для врачей-стоматологов: статьи, видеолекции, вебинары. Мы перезапустили сайт с новым дизайном._
+_[Stomweb](https://stomweb.ru) is an educational platform for dentists: articles, video lectures, webinars. We relaunched the site with a new design._
 
-_Написал сервис для конвертации видео в M3U и последующего стриминга через HLS. Перевёл легаси-код админки на современную версию PHP, завернул её в Docker, добавил новые формы и исправил баги в старых. Верстал обновлённый фронтенд._
+_I wrote a service for converting videos to M3U and streaming them via HLS. Moved the backend legacy code to the modern version of PHP, wrapped it up into Docker, added new forms and fixed bugs in old ones. Developing the new frontend._
 
-_Стек: JS (React, Node.js, TypeScript), PHP._
+_Stack: JS (React, Node.js, TypeScript), PHP._
 
-### Просто спросить
+### Just Ask
 
 > 2018-2019
 
-_Сервис [«Просто спросить»](https://ask.nenaprasno.ru) помогает людям, столкнувшимися с онкологическими заболеваниями. Служба бесплатно подскажет, как организовать качественное лечение._
+_The service ["Just Ask"](https://ask.nenaprasno.ru) helps people facing cancer. The service tells them for free how to arrange high-quality treatment._
 
-_Спроектировал приложение, руководил разработкой при несдвигаемом дедлайне. Сделал синхронизацию данных приложения с Trello-досками. Написал Telegram-бота для экспертов сервиса._
+_I designed the app, managed the development with a strict-scheduled deadline. Made app data sync with Trello boards. Wrote Telegram bot for service experts._
 
-_Стек: JS (React, Node.js, TypeScript)._
+_Stack: JS (React, Node.js, TypeScript)._
 
 ### Faster
 
 > 2018
 
-_Faster — аптечный маркетплейс, в котором можно забронировать лекарства в любой аптеке города._
+_Faster is a pharmacy marketplace where you can book medications at any pharmacy in the city._
 
-_Организовал рефакторинг легаси-кода и ускорил поиск по лекарствам в 10 раз. Реализовал масштабируемую архитектуру. Автоматизировал поиск изображений для товаров. Перевёл фронтенд на TypeScript._
+_I organized refactoring of legacy code and accelerated search by 10 times. Implemented scalable architecture. Automated image search for products. Moved frontend to TypeScript._
 
-_Стек: JS (React, TypeScript), PHP (Yii2)._
+_Stack: JS (React, TypeScript), PHP (Yii2)._
 
-### CRM ФРМСП
+### CRM FDSME
 
 > 2018
 
-_CRM Фонда развития малого и среднего предпринимательства позволяет работникам легко обрабатывать обращения, прослеживать их историю и отчитываться перед регулятором._
+_CRM for Foundation for the Development of Small and Medium Enterprises allows employees to easily process appeals, track their history and report to the regulator._
 
-_Полностью разработал приложение: реализовал возможность подписи обращений через ЭЦП из браузера, фильтрацию обращений по всем возможным полям, выгрузку отчётов для регулятора, интеграцию со старой системой для регистрации обращений._
+_I completely developed the application: implemented the ability to sign appeals via EDS from the browser, filtering appeals by all possible fields, unloading reports for the regulator, integration with the old system to register appeals._
 
-_Стек: JS (Vue), PHP (Symfony)._
+_Stack: JS (Vue), PHP (Symfony)._
 
 ### QEEP-Pro
 
 > 2017-2018
 
-_Платформа ["QEEP-Pro"](https://qeep.pro) объединяет в себе CRM, интернет-магазин и мобильное приложение. Проект стартовал в 2011, к 2017 оброс значительным количеством легаси._
+_The platform ["QEEP-Pro"](https://qeep.pro) combines a CRM, an online store, and a mobile application. The project started in 2011, and by 2017 it had grown to a significant amount of legacy._
 
-_Поддерживал и развивал сайт и мобильное приложение. Разработал генератор интернет-магазинов, сделал функциональность почтовых рассылок._
+_I was maintaining and developing the website and mobile application. I created the online-shop generator, developed mailing lists functionality._
 
-_Стек: JS (React, ReactNative, Vue, TypeScript), PHP (Symfony)._
+_Stack: JS (React, ReactNative, Vue, TypeScript), PHP (Symfony)._
 
 ### Procraft
 
 > 2017
 
-_[Procraft](https://procraft.com) — это CRM, с помощью которой самозанятые настраивают рекламу, создают лэндинги для продажи своих услуг и получают аналитику по клиентам._
+_[Procraft](https://procraft.com) — is a CRM thanks to which self-employed people set up ads, create landing pages to sell their services and get analytics on clients._
 
-_Занимался модулем статистики. На бэкенде сделал интеграцию с Google Analytics и агрегации полученных данных, сверстал и имплементировал графики для сайта и мобильных приложений._
+_I worked on the statistics module. On the backend, I integrated with Google Analytics and aggregation of the data, created and implemented charts for the website and mobile apps._
 
-_Стек: JS (React, ReactNative, TypeScript, Relay), Scala (Play, Slick, Sangria), GraphQL._
+_Stack: JS (React, ReactNative, TypeScript, Relay), Scala (Play, Slick, Sangria), GraphQL_

@@ -1,5 +1,5 @@
-### Не решайте воображаемые проблемы
+### The best part of Effector
 
-Частая причина трудностей внесения изменений в программу — плохая архитектура. Программисты переусложняют код, потому что решают не реальные проблемы, а интересные им. Перевод статьи о воображаемых проблемах при проектировании ПО.
+Effector is a lightweight and performant state manager. It is UI frameworks agnostic, predictable and easy to use. Almost half a year ago, Aviasales team has started migration from RxJS to Effector. While I was investigating this library, I found a completely unexpected feature. It changed my mind about Effector.
 
-07.11.2018 [Читать на Medium](https://medium.com/breadhead-stories/%D0%BD%D0%B5-%D1%80%D0%B5%D1%88%D0%B0%D0%B9%D1%82%D0%B5-%D0%B2%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D1%8B-6aa5bba92e2)
+04.10.2021 [Read on dev.to](https://dev.to/effector/the-best-part-of-effector-4c27)

@@ -1,63 +1,66 @@
-### Авиасейлс
+### Aviasales
 
-> 03.2020-сейчас
+> 03.2020-now
 
-Фронтенд разработчик
+Frontend Engineer
 
-_Сейчас работаю в команде веб-платформы [Авиасейлс](https://aviasales.ru/): мы помогаем фронтендерам продуктовых команд быть более эффективными, вырабатываем общие решения, строим инфраструктуру для разработки, онбордим новых сотрудников._
+_[Aviasales](https://aviasales.com) is the largest meta search for flight tickets in Russia and CIS._
+
+_I am working in the Web Platform team: we are helping frontend developers of product teams to be more efficient, developing common solutions, building development infrastructure, and onboarding new employees._
 
 ### Frontend Crew
 
 > 01.2021-12.2021
 
-Директор направления
+Director
 
-_[Podlodka Crew](https://podlodka.io/crew) — семейство онлайн конференций про IT. Я руководил фронтенд-направлением._
+_[Podlodka Crew](https://podlodka.io/crew) — is a family of online IT conferences. I ran the frontend division._
 
-_Собирал программные комитеты сезонов и координировал их работу, валидировал программы конференций, договаривался со спонсорами, придумывал и организовывал коммьюнити-активности._
+_I hired and coordinated program committees for the seasons, validated conference programs, negotiated sponsors, invented and organized community activities._
 
-### Самокат
+### Samokat
 
 > 08.2019-03.2020
 
-Фронтенд разработчик, техлид
+Frontend Engineer, Techlead
 
-_[Самокат](https://samokat.ru) — сервис моментальной доставки продуктов (10-15 минут), без минимальной суммы заказа. Я занимался внутренними продуктами компании: приложения для складских работников, сотрудников отдела кадров, службы технической поддержки и отдела закупок._
+_[Samokat](https://samokat.ru) — is an instant grocery delivery service (10-15 minutes), with no minimum order amount. I dealt with the company's internal products: applications for warehouse workers, human resources, technical support, and the purchasing department._
 
-_Я декомпозировал проекты от состояния «должно быть классно» до конкретных задач разработчикам. Программировал фронтенды на React, бэкенды на Node.js, поддерживал легаси-приложение на Angular. Контролировал качество кода, проектировал интеграции с другими внутренними сервисами, координировал релизы. Руководил командой из 3 разработчиков._
+_I decomposed projects from "should be cool" to specific tasks for developers. Furthermore, I programmed frontends in React, backends in Node.js, supported legacy application in Angular. I was monitoring code quality, designing integrations with other internal services, coordinating releases. Managed a team of 3 developers._
 
-### Нетология
+### Netology
 
 > 04.2018-01.2020
 
-Методист и лектор
+Lecturer and author
 
-_Работал над курсами, вебинарами и домашними заданиями в онлайн-университете [Нетология](https://netology.ru/)._
+_I was developing courses, webinars and homework assignments at [Netology](https://netology.ru/) Online University._
 
-_Разработал и год вёл несколько занятий для курса по React, проверял домашние задания. Читал лекции на первом запуске продвинутого курса по JavaScript. Курировал 7 потоков курса по базовому JS, вёл вебинары, корректировал содержание курса, помогал студентам и преподавателям._
+_I developed and led several classes for a React course for a year, I was checking homework. Lectured the first launch of the advanced JavaScript course. Supervised 7 course threads on basic JS, led webinars, adjusted course content, and helped students and other lecturers._
 
 ### Breadhead
 
 > 06.2018-08.2019
 
-Фулстек разработчик, техлид
+Fullstack Engineer, Techlead
 
-_[Breadhead](https://breadhead.ru/) делает веб-сервисы, связанные с образованием, e‑commerce и автоматизацией процессов. Я строил архитектуру новых приложений и оптимизировал легаси-код, контролировал качество кода. Писал сложные фронтенды и надёжные бэкенды._
+_[Breadhead](https://breadhead.ru/) creates web services related to education, e-commerce, and process automation. I was building the architecture of new applications and optimizing legacy code, controlling code quality. I wrote countless complex frontends and robust backends._
 
-_Руководил командой из 4 разработчиков. Валидировал запросы бизнеса, превращал их в задачи и распределял между разработчиками. Привёл все приложения к единому стеку технологий. Ввёл практику написания тестов и код-ревью. Автоматизировал интеграцию и доставку, настроил CI/CD._
+_Likewise, I was managing a team of 4 developers. Validated business requests, turned them into tasks, and distributed them among the developers. Led all applications to a unified technology stack. Implemented the practice of writing tests and code reviews. Automated integration and delivery, set up CI/CD._
 
 ### QEEP-Pro
 
 > 11.2016-06.2018
 
-Фулстек разработчик
+Fullstack Engineer
 
-_QEEP-Pro специализируется на создании CRM и ERP систем. Я писал внутренние продукты и работал над заказными проектами для Procraft, Фонда развития малого и среднего предпринимательства и локальных служб доставки. Привил практику непрерывной интеграции приложений, настроил CI. Руководил командой из 3 разработчиков._
+_QEEP-Pro specializes in creating CRM and ERP systems. I've written in-house products and worked on custom projects for Procraft, the SME Development Fund, and local delivery services. Instilled the practice
+of application continuous integration, set up CI. Managed a team of 3 developers._
 
-### Фриланс
+### Freelance
 
 > 01.2014-11.2016
 
-Веб-разработчик
+Web Developer
 
-_Верстал сайты, писал jQuery-плагины, поднимал и дорабатывал CMS. Сделал свою систему управления контентом, запустил на ней 5 сайтов._
+_I was creating websites, wring jQuery plugins, deploying and polishing CMS. I had made my own content management system, ran five sites on it._
