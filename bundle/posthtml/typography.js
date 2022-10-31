@@ -6,7 +6,6 @@ const trimEnd = (str) => str.replace(/\s+$/g, '');
 
 const typography = (str) =>
   str
-    .replace(/(“|"|&quot;)(.+?)(”|"|&quot;)/gi, (_1, _2, inner) => `«${inner}»`)
     .replace(/(\s*?)(—)(\s*)/gi, ` — `)
     .replace(
       /\s+.{1,2}(\s+)/gi,

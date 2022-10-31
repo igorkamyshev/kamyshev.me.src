@@ -1,5 +1,5 @@
-Игорь Камышев — разработчик веб-приложений и техлид. Люблю чистый код и работающие продукты. Программирую на TypeScript, иногда на Elixir или Dart.
+Igor Kamyshev is a software engineer and an open-source contributor. I love clean code and working products. Writing code on TypeScript and JavaScript.
 
-[Telegram](https://t.me/igorkamyshev) [GitHub](https://github.com/igorkamyshev) [Twitter](https://twitter.com/kamyshev_code) [Instagram](https://www.instagram.com/kamyshev_trip/) [LinkedIn](https://www.linkedin.com/in/igor-kamyshev-979745110/)
+[Telegram](https://t.me/igorkamyshev) [GitHub](https://github.com/igorkamyshev) [Twitter](https://twitter.com/kamyshev_dev) [Instagram](https://www.instagram.com/kamyshev_trip/) [LinkedIn](https://www.linkedin.com/in/igor-kamyshev-979745110/)
 
-Веду канал в Телеграме [kamyshev.code](https://t.me/kamyshev_code) об архитектуре ПО и софт-скиллах. Курирую список [маст-ридов](https://read.kamyshev.me) для программистов.
+Part of [Effector](https://effector.dev) core-team and write articles about software engineering. Currently working on an open-source library [Farfetched](https://farfetched.pages.dev). Live in Thailand.

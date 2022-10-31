@@ -2,19 +2,17 @@ include ./layout/components/card/card.pug
 
 doctype html
 
-html(lang="ru")
+html(lang="en")
   head
-    title Игорь Камышев
+    title Igor Kamyshev
 
     link(rel='stylesheet', href='./styles.css')
 
     script(src= './polyfills.js' type="module"  defer)
     script(src='./interactive.js' type="module" defer)
 
-    script(defer, data-domain="kamyshev.me", src="https://plausible.io/js/plausible.js")
-
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    meta(name="description" content="Техлид и разработчик веб-приложений. Люблю чистый код и качественные продукты. Программирую на TypeScript, иногда на Elixir или Dart.")
+    meta(name="description" content="Software engineer and open-source contributor")
 
     link(rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png")
     link(rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png")
@@ -26,16 +24,16 @@ html(lang="ru")
 
   body
     main(class="app")
-      +card("about", "Обо мне", true, true)
+      +card("about", "About", true, true)
         include:markdown-it ../data/about.md
 
-      +card("projects", "Проекты")
+      +card("projects", "Projects")
         include:markdown-it ../data/projects.md
 
-      +card("experience", "Опыт")
+      +card("experience", "Experience")
         include:markdown-it ../data/experience.md
 
-      +card("articles", "Статьи", false, false, false, true)
+      +card("articles", "Articles", false, false, false, true)
         mixin md
           section
             block
@@ -44,5 +42,3 @@ html(lang="ru")
           section
             != md(article)
 
-      +card("mustread", "Маст-риды", false, false, false, true, true)
-        iframe(src="https://read.kamyshev.me/embedded.html", class="iframe")

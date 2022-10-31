@@ -3,9 +3,9 @@ include ../minus/minus.pug
 include ../cross/cross.pug
 include ../up/up.pug
 
-mixin card(name, title, highlight=false, hideTitle=false, open=true, large=false, hideCheckbox=false)
+mixin card(name, title, highlight=false, hideTitle=false, open=true, large=false)
   div(class="container")
-    input(class=`card__checker ${hideCheckbox ? 'card__checker_hide' : ''}` type="checkbox" id=`${name}-check` checked=open data-card=`${name}-card`)
+    input(class=`card__checker` type="checkbox" id=`${name}-check` checked=open data-card=`${name}-card`)
 
     label(for=`${name}-check` tabindex=0 role="button")
       span #{title}

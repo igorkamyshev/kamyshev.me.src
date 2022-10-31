@@ -33,8 +33,7 @@
     "size-limit": "^7.0.8",
     "stylelint": "^13.13.1",
     "stylelint-config-recess-order": "^2.6.0",
-    "stylelint-config-recommended": "^5.0.0",
-    "yaspeller": "^8.0.1"
+    "stylelint-config-recommended": "^5.0.0"
   },
   "license": "MIT",
   "repository": "git@github.com:igorkamyshev/kamyshev.me.src.git",
@@ -42,7 +41,6 @@
     "build": "parcel build src/index.pug",
     "dev": "parcel src/index.pug",
     "size": "yarn build && size-limit",
-    "spell": "yaspeller ./data",
     "pretty": "prettier --write .",
     "lint:code": "eslint \"./**/*.{js,jsx}\"",
     "lint:styles": "stylelint \"./**/*.css\""

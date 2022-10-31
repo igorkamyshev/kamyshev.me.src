@@ -5,12 +5,10 @@ import { addDragHandler } from './interactive/addDragHandler';
 import { addMobileOpenHandler } from './interactive/addMobileOpenHandler';
 import { addUpButtonDisplay } from './interactive/addUpButtonDisplay';
 import { addZhandler } from './interactive/addZHandler';
-import { addMustreadHandler } from './interactive/addMustreadHandler';
 
 const bootstrap = () => {
   addZhandler();
   addDragHandler();
-  addMustreadHandler();
   addCheckerListener();
   addUpButtonDisplay();
   addCheckerKeyPress();
