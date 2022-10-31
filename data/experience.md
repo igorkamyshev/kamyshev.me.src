@@ -14,9 +14,9 @@ _I am working in the Web Platform team: we are helping frontend developers of pr
 
 Director
 
-_[Podlodka Crew](https://podlodka.io/crew) — is a family of online IT conferences. I ran the frontend division._
+_[Podlodka Crew](https://podlodka.io/crew) is a family of online IT conferences. I ran the frontend division._
 
-_I hired and coordinated program committees for the seasons, validated conference programs, negotiated sponsors, invented and organized community activities._
+_I hired and coordinated program committees for the seasons, validated conference programs, negotiated with sponsors, invented and organized community activities._
 
 ### Samokat
 
@@ -24,9 +24,9 @@ _I hired and coordinated program committees for the seasons, validated conferenc
 
 Frontend Engineer, Techlead
 
-_[Samokat](https://samokat.ru) — is an instant grocery delivery service (10-15 minutes), with no minimum order amount. I dealt with the company's internal products: applications for warehouse workers, human resources, technical support, and the purchasing department._
+_[Samokat](https://samokat.ru) is an instant grocery delivery service (10-15 minutes), with no minimum order amount. I dealt with the company's internal products: applications for warehouse workers, human resources, technical support, and the purchasing department._
 
-_I decomposed projects from "should be cool" to specific tasks for developers. Furthermore, I programmed frontends in React, backends in Node.js, supported legacy application in Angular. I was monitoring code quality, designing integrations with other internal services, coordinating releases. Managed a team of 3 developers._
+_I decomposed projects from "should be cool" to specific tasks for developers. Furthermore, I programmed frontends in React and backends in Node.js, supported legacy application in Angular. I was monitoring code quality, designing integrations with other internal services, coordinating releases. Managed a team of 3 developers._
 
 ### Netology
 
@@ -44,9 +44,9 @@ _I developed and led several classes for a React course for a year, I was checki
 
 Fullstack Engineer, Techlead
 
-_[Breadhead](https://breadhead.ru/) creates web services related to education, e-commerce, and process automation. I was building the architecture of new applications and optimizing legacy code, controlling code quality. I wrote countless complex frontends and robust backends._
+_[Breadhead](https://breadhead.ru/) creates web services related to education, e-commerce, and process automation. I was building the architecture of new applications and optimizing legacy code, controlling code quality. I wrote numerous complex frontends and robust backends._
 
-_Likewise, I was managing a team of 4 developers. Validated business requests, turned them into tasks, and distributed them among the developers. Led all applications to a unified technology stack. Implemented the practice of writing tests and code reviews. Automated integration and delivery, set up CI/CD._
+_Likewise, I was managing a team of 4 developers. Validated business requests, turned them into tasks, and distributed them among the developers. Led all applications to a unified technology stack. Implemented the practice of writing tests and code reviews. Automated integration and delivery, set up CI/CD pipeline._
 
 ### QEEP-Pro
 
@@ -54,8 +54,8 @@ _Likewise, I was managing a team of 4 developers. Validated business requests, t
 
 Fullstack Engineer
 
-_QEEP-Pro specializes in creating CRM and ERP systems. I've written in-house products and worked on custom projects for Procraft, the SME Development Fund, and local delivery services. Instilled the practice
-of application continuous integration, set up CI. Managed a team of 3 developers._
+_QEEP-Pro specializes in creating CRM and ERP systems. I created a lot of in-house products and worked on custom projects for Procraft, the SME Development Fund, and local delivery services. Instilled the practice
+of application continuous integration, built CI pipelint. Managed a team of 3 developers._
 
 ### Freelance
 
@@ -63,4 +63,4 @@ of application continuous integration, set up CI. Managed a team of 3 developers
 
 Web Developer
 
-_I was creating websites, wring jQuery plugins, deploying and polishing CMS. I had made my own content management system, ran five sites on it._
+_I was creating websites, writing jQuery plugins, deploying and polishing CMS. I had made my own content management system, ran five sites on it._
