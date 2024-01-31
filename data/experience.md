@@ -6,7 +6,13 @@ Frontend Engineer
 
 _[Aviasales](https://aviasales.com) is the largest meta search for flight tickets in Russia and CIS._
 
-_I am working in the Web Platform team: we are helping frontend developers of product teams to be more efficient, developing common solutions, building development infrastructure, and onboarding new employees._
+_I worked in the Web Platform team: we were helping frontend developers of product teams to be more efficient, developing common solutions, building development infrastructure, and onboarding new employees._
+
+_After two years, I migrated to the product team, since it, I work in the team Explore. We focus on user experience before search starts: how users choose destination and dates, how they interact with a search form and which services we can provide to simplify their path._
+
+_I work on technical design and implementation, mentor teammates and lead particular projects inside our team._
+
+_Stack: JS (TypeScript, CoffeeScript, React, Effector), Elixir (Phoenix)_
 
 ### Frontend Crew
 
