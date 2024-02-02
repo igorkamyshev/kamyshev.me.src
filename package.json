@@ -31,9 +31,9 @@
     "pug": "^3.0.2",
     "simple-git-hooks": "^2.8.0",
     "size-limit": "^7.0.8",
-    "stylelint": "^13.13.1",
+    "stylelint": "^14.16.0",
     "stylelint-config-recess-order": "^2.6.0",
-    "stylelint-config-recommended": "^5.0.0"
+    "stylelint-config-recommended": "^9.0.0"
   },
   "license": "MIT",
   "repository": "git@github.com:igorkamyshev/kamyshev.me.src.git",
